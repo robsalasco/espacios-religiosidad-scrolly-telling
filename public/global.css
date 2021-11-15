@@ -81,6 +81,14 @@ header .wrapper {
 	background-color: white;
 }
 
+footer .wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
 section, nav, footer, figure, caption {
 	display: -webkit-box;
 	display: -ms-flexbox;
