@@ -5612,13 +5612,19 @@ var app = (function () {
     	let footer;
     	let div1;
     	let div0;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
     			footer = element("footer");
     			div1 = element("div");
     			div0 = element("div");
-    			set_style(div0, "height", "200px");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Logos");
+    			add_location(img, file$1, 3, 6, 72);
+    			set_style(div0, "height", "150px");
     			add_location(div0, file$1, 2, 4, 37);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 1, 2, 11);
@@ -5631,6 +5637,7 @@ var app = (function () {
     			insert_dev(target, footer, anchor);
     			append_dev(footer, div1);
     			append_dev(div1, div0);
+    			append_dev(div0, img);
     		},
     		p: noop,
     		i: noop,
