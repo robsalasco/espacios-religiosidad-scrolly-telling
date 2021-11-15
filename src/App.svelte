@@ -79,7 +79,8 @@
     indexPrev[1] = index[1];
   }
 
-  let values = { preselected: ["bar"] };
+  let values = { preselected: ["es"] };
+  
 </script>
 
 <Headroom duration="350ms" offset={50} tolerance={5}>
@@ -87,7 +88,7 @@
     <div class="wrapper col-full">
       <div class="logo">
         <img
-          src="https://cite.ong/wp-content/uploads/2020/09/blue-cite.png"
+          src="images/logo.png"
           alt=""
           width="80"
           title="blue-cite"
@@ -95,10 +96,10 @@
       </div>
       <div class="lang-container">
         <ButtonGroup bind:value={values.preselected}>
-          <Button value="bar" lang="es">
+          <Button value="es" lang="es">
             Español
           </Button>
-          <Button value="baz" lang="ht"}>
+          <Button value="ht" lang="ht"}>
             Kreyòl
           </Button>
         </ButtonGroup>
