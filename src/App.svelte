@@ -9,8 +9,7 @@
   import Em from "./Em.svelte";
   import Section from "./Section.svelte";
   import Divider from "./Divider.svelte";
-  import Button from "./Button.svelte";
-  import ButtonGroup from "./ButtonGroup.svelte";
+  import Footer from "./Footer.svelte";
 
   // Languages
 
@@ -225,3 +224,6 @@
     urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.
   </p>
 </Section>
+
+<Footer />
+
