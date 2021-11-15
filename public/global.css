@@ -332,10 +332,10 @@ svelte-scroller-background-container {
 } 
 
 .border-pad-subtitle {
-	top: 77%;
-	right: 5%;
+	top: 74%;
+	right: 4.5%;
 	position: absolute;
-	background-color: #E40B0C;
+	background-color:#0055CC;
 	color: white;
     padding: 0.5% 0.75%;
     -webkit-transform: skew(-20deg);
