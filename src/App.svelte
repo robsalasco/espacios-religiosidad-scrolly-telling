@@ -6,10 +6,10 @@
   import Header from "./Header.svelte";
   import Scroller from "./Scroller.svelte";
   import Map from "./map/Map.svelte";
-  import Em from "./Em.svelte";
   import Section from "./Section.svelte";
   import Divider from "./Divider.svelte";
   import Footer from "./Footer.svelte";
+
 
   // Languages
 
@@ -78,7 +78,6 @@
     indexPrev[1] = index[1];
   }
 
-  let values = { preselected: ["es"] };
   
 </script>
 
