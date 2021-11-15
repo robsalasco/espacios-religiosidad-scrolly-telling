@@ -3,7 +3,7 @@
   import {getMotion } from "./utils.js";
   import { addMessages, init, _ } from "svelte-i18n";
 
-  import Headroom from "svelte-headroom";
+  import Header from "./Header.svelte";
   import Scroller from "./Scroller.svelte";
   import Map from "./map/Map.svelte";
   import Em from "./Em.svelte";
@@ -83,31 +83,7 @@
   
 </script>
 
-<Headroom duration="350ms" offset={50} tolerance={5}>
-  <header>
-    <div class="wrapper col-full">
-      <div class="logo">
-        <img
-          src="images/logo.png"
-          alt=""
-          width="80"
-          title="blue-cite"
-        />
-      </div>
-      <div class="lang-container">
-        <ButtonGroup bind:value={values.preselected}>
-          <Button value="es" lang="es">
-            Español
-          </Button>
-          <Button value="ht" lang="ht"}>
-            Kreyòl
-          </Button>
-        </ButtonGroup>
-      </div>
-    </div>
-  </header>
-</Headroom>
-
+<Header />
 <section style="margin-top:180px;position: relative;">
   <img src="images/image1.jpeg" alt="Test" style="width:100%;height:100%" />
   <span class="border-pad-title bdbc">
