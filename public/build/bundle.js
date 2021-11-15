@@ -5624,7 +5624,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logos");
     			add_location(img, file$1, 3, 6, 72);
-    			set_style(div0, "height", "150px");
+    			set_style(div0, "height", "125px");
     			add_location(div0, file$1, 2, 4, 37);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 1, 2, 11);
