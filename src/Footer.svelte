@@ -1,5 +1,7 @@
 <footer>
   <div class="wrapper">
-    <div style="height: 200px;"></div>
+    <div style="height: 150px;">
+      <img src="images/footer-logos.png" alt="Logos"/>
+    </div>
   </div>
 </footer>
