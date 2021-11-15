@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: 'Zing';
+  src: url('./ZingRustD2Demo-Base.woff2') format('woff2'),
+      url('./ZingRustD2Demo-Base.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zing';
+  src: url('./ZingRustDemo-Base.woff2') format('woff2'),
+      url('./ZingRustDemo-Base.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zing';
+  src: url('./ZingRustDemo-Sh1.woff2') format('woff2'),
+      url('./ZingRustDemo-Sh1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zing';
+  src: url('./ZingRustLH1Demo-Fill.woff2') format('woff2'),
+      url('./ZingRustLH1Demo-Fill.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}

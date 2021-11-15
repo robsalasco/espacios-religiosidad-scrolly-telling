@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Touche';
+  src: url('./Touche-W03-Light.woff2') format('woff2'),
+       url('./Touche-W03-Light.woff') format('woff'); 
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Touche';
+  src: url('./Touche-Medium.woff2') format('woff2'),
+       url('./Touche-Medium.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Touche';
+  src: url('./Touche-Semibold.woff2') format('woff2'),
+       url('./Touche-Semibold.woff') format('woff'); 
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Touche';
+  src: url('./Touche-Bold.woff2') format('woff2'),
+       url('./Touche-Bold.woff') format('woff'); 
+  font-weight: bold;
+  font-style: normal;
+}
