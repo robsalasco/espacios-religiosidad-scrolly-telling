@@ -164,6 +164,10 @@ small {
 	margin: 0 24px;
 }
 
+section .col-medium img {
+	margin-bottom: 15px;
+}
+
 .height-full {
 	min-height: 100vh;
 }
