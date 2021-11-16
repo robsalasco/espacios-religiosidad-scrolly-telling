@@ -5937,25 +5937,25 @@ var app = (function () {
     			p2.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 162, 8, 5424);
-    			add_location(p0, file, 163, 8, 5483);
-    			attr_dev(div0, "class", "col-medium");
+    			add_location(img0, file, 162, 8, 5429);
+    			add_location(p0, file, 163, 8, 5488);
+    			attr_dev(div0, "class", "col-medium card");
     			add_location(div0, file, 161, 6, 5391);
     			add_location(section0, file, 160, 4, 5375);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 181, 6, 6460);
-    			add_location(p1, file, 182, 6, 6513);
-    			attr_dev(div1, "class", "col-medium");
-    			add_location(div1, file, 180, 6, 6429);
-    			add_location(section1, file, 179, 4, 6413);
+    			add_location(img1, file, 181, 6, 6470);
+    			add_location(p1, file, 182, 6, 6523);
+    			attr_dev(div1, "class", "col-medium card");
+    			add_location(div1, file, 180, 6, 6434);
+    			add_location(section1, file, 179, 4, 6418);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 199, 8, 7405);
-    			add_location(p2, file, 200, 8, 7461);
-    			attr_dev(div2, "class", "col-medium");
-    			add_location(div2, file, 198, 6, 7372);
-    			add_location(section2, file, 197, 4, 7356);
+    			add_location(img2, file, 199, 8, 7420);
+    			add_location(p2, file, 200, 8, 7476);
+    			attr_dev(div2, "class", "col-medium card");
+    			add_location(div2, file, 198, 6, 7382);
+    			add_location(section2, file, 197, 4, 7366);
     			attr_dev(div3, "slot", "foreground");
     			add_location(div3, file, 159, 2, 5347);
     		},
@@ -6008,9 +6008,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 215, 2, 7914);
+    			add_location(h2, file, 215, 2, 7929);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 216, 2, 7938);
+    			add_location(p, file, 216, 2, 7953);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);

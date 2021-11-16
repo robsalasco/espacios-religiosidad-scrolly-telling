@@ -164,7 +164,11 @@ small {
 	margin: 0 24px;
 }
 
-section .col-medium img {
+.card {
+	font-size: 12px;
+}
+
+.card img {
 	margin-bottom: 15px;
 }
 
