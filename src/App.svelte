@@ -39,19 +39,39 @@
 
   // MAP CODE
   // Config
-  const mapstyle = "mapbox://styles/mapbox/light-v8";
+  const mapstyle = "mapbox://styles/robsalasco/ckvuzcvvf05k014qa4om6ldop";
   const mapbounds = {
-    ew: [
-      [-70.90639,-33.55921],
-      [-70.86639,-33.51921],
+    one: [
+      [-70.74942, -33.35468],
+      [-70.74942, -33.35468],
     ],
-    fareham: [
-      [-70.7407,-33.372115],
-      [-70.705799,-33.355235],
+    two: [
+      [-70.7611, -33.3631],
+      [-70.7611, -33.3631],
     ],
-    newport: [
-      [-70.778391,-33.392035],
-      [-70.74349,-33.375159],
+    three: [
+      [-70.73630, -33.37752],
+      [-70.73630, -33.37752],
+    ],
+    four: [
+      [-70.74917, -33.36477],
+      [-70.74917, -33.36477],
+    ],
+    five: [
+      [-70.72975, -33.36544],
+      [-70.72975, -33.36544],
+    ],
+    six: [
+      [-70.71925, -33.36972],
+      [-70.71925, -33.36972],
+    ],
+    seven: [
+      [-70.74120, -33.38473],
+      [-70.74120, -33.38473],
+    ],
+    eight: [
+      [-70.73216, -33.36904],
+      [-70.73216, -33.36904],
     ],
   };
   // State
@@ -60,13 +80,28 @@
   // Actions for MAP scroller
   const mapActions = [
     () => {
-      map.fitBounds(mapbounds.ew, { animate: animation });
+      map.fitBounds(mapbounds.one, { animate: animation });
     },
     () => {
-      map.fitBounds(mapbounds.fareham, { animate: animation });
+      map.fitBounds(mapbounds.two, { animate: animation });
     },
     () => {
-      map.fitBounds(mapbounds.newport, { animate: animation });
+      map.fitBounds(mapbounds.three, { animate: animation });
+    },
+    () => {
+      map.fitBounds(mapbounds.four, { animate: animation });
+    },
+    () => {
+      map.fitBounds(mapbounds.five, { animate: animation });
+    },
+    () => {
+      map.fitBounds(mapbounds.six, { animate: animation });
+    },
+    () => {
+      map.fitBounds(mapbounds.seven, { animate: animation });
+    },
+    () => {
+      map.fitBounds(mapbounds.eight, { animate: animation });
     },
   ];
 
@@ -182,6 +217,66 @@
           scelerisque tortor. Integer tincidunt lacus venenatis fringilla
           viverra. Aliquam pulvinar orci non consectetur lacinia. Aenean quis
           posuere ipsum.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="col-medium card">
+        <img src="images/card3.jpg" alt="Cementerio" />
+        <p>
+          Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
+          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
+          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.
+          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,
+          at rhoncus magna viverra semper.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="col-medium card">
+        <img src="images/card3.jpg" alt="Cementerio" />
+        <p>
+          Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
+          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
+          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.
+          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,
+          at rhoncus magna viverra semper.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="col-medium card">
+        <img src="images/card3.jpg" alt="Cementerio" />
+        <p>
+          Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
+          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
+          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.
+          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,
+          at rhoncus magna viverra semper.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="col-medium card">
+        <img src="images/card3.jpg" alt="Cementerio" />
+        <p>
+          Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
+          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
+          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.
+          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,
+          at rhoncus magna viverra semper.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="col-medium card">
+        <img src="images/card3.jpg" alt="Cementerio" />
+        <p>
+          Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
+          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
+          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.
+          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,
+          at rhoncus magna viverra semper.
         </p>
       </div>
     </section>
