@@ -205,7 +205,7 @@
     <section>
       <div class="col-medium card">
       <img src="images/card2.jpg" alt="Parroquia" />
-      <h3>Punto 2</h3>
+      <h3>Iglesia Evangélica Tabernaclé de la Grace</h3>
       <p>
           Actualmente es una de los templos más activos y con más asistentes de Quilicura.El templo es principalmente es principalmente utilizado por la comunidad haitiana, impartiendo la oración en Creolé, sin embargo, el acceso es libre. En la iglesia se imparte la oración cada domingo, pero adicionlmente funciona un escuela dominical.
         </p>
