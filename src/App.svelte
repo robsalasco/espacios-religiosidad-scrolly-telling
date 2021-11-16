@@ -42,8 +42,8 @@
   const mapstyle = "mapbox://styles/mapbox/light-v8";
   const mapbounds = {
     ew: [
-      [-70.765793,-33.366741],
-      [-70.730892,-33.349861],
+      [-70.90639,-33.55921],
+      [-70.86639,-33.51921],
     ],
     fareham: [
       [-70.7407,-33.372115],
@@ -152,7 +152,7 @@
   <div slot="background">
     <figure>
       <div class="col-full height-full">
-        <Map style={mapstyle} bind:map interactive={false} />
+        <Map style={mapstyle} bind:map interactive={true} />
       </div>
     </figure>
   </div>
@@ -161,19 +161,9 @@
     <section>
       <div class="col-medium card">
         <img src="images/card1.jpg" alt="Municipalidad" />
+        <h3>Parroquia San Juan Pablo II</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-          tellus vel quam ultricies interdum sed non sem. Nulla nisl sem,
-          sagittis et magna vel, commodo luctus ligula. Proin tincidunt orci vel
-          bibendum venenatis. Mauris non neque lobortis, pretium tortor et,
-          volutpat turpis. Curabitur bibendum gravida diam vel dictum.
-          Vestibulum ac egestas sapien. Mauris et finibus sapien. Cras varius
-          malesuada quam a ullamcorper. Fusce vehicula blandit pellentesque.
-          Cras non augue justo. Maecenas vitae suscipit dolor. Donec convallis,
-          augue ac varius ornare, elit turpis consectetur dolor, non convallis
-          justo diam non justo. Sed ut tincidunt tortor. Pellentesque eu sem
-          urna. Vivamus vulputate eleifend sem quis porta. Fusce a interdum
-          massa, eu ultrices nisi.
+          Actualmente imparte misas con alta regularidad. De martes a domingo a las 20:00 horas y el Domingo imparte tres misas durante la mañana. Esta parroquia es frecuentada por creyentes haitianos.
         </p>
       </div>
     </section>

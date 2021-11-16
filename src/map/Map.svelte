@@ -6,8 +6,8 @@
 	export let id = "map";
 	export let location = {
 		bounds: [
-			[-70.765793,-33.366741],
-            [-70.730892,-33.349861],
+		[-70.90639,-33.55921],
+		[-70.86639,-33.51921],
 		], // First
 	};
 	export let style;
