@@ -4991,7 +4991,7 @@ var app = (function () {
     			attr_dev(div, "id", /*id*/ ctx[1]);
     			attr_dev(div, "class", "svelte-1c44y5p");
     			add_render_callback(() => /*div_elementresize_handler*/ ctx[12].call(div));
-    			add_location(div, file$4, 86, 0, 1825);
+    			add_location(div, file$4, 86, 0, 1827);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5066,7 +5066,7 @@ var app = (function () {
     	let { id = "map" } = $$props;
 
     	let { location = {
-    		bounds: [[-70.90639, -33.55921], [-70.86639, -33.51921]], // First
+    		bounds: [[-70.74942, -33.35468], [-70.74942, -33.35468]], // First
     		
     	} } = $$props;
 
