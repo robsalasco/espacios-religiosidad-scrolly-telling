@@ -6,14 +6,14 @@
 	export let id = "map";
 	export let location = {
 		bounds: [
-		[-70.74942, -33.35468],
-		[-70.74942, -33.35468],
+		[-70.7611, -33.3631],
+		[-70.7611, -33.3631],
 		], // First
 	};
 	export let style;
 	export let interactive = true;
 	export let minzoom = 0;
-	export let maxzoom = 14;
+	export let maxzoom = 13;
 	export let zoom = null;
 
 	let container;

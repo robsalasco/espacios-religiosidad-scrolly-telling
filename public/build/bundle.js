@@ -4991,7 +4991,7 @@ var app = (function () {
     			attr_dev(div, "id", /*id*/ ctx[1]);
     			attr_dev(div, "class", "svelte-1c44y5p");
     			add_render_callback(() => /*div_elementresize_handler*/ ctx[12].call(div));
-    			add_location(div, file$4, 89, 0, 1942);
+    			add_location(div, file$4, 89, 0, 1938);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5066,14 +5066,14 @@ var app = (function () {
     	let { id = "map" } = $$props;
 
     	let { location = {
-    		bounds: [[-70.74942, -33.35468], [-70.74942, -33.35468]], // First
+    		bounds: [[-70.7611, -33.3631], [-70.7611, -33.3631]], // First
     		
     	} } = $$props;
 
     	let { style } = $$props;
     	let { interactive = true } = $$props;
     	let { minzoom = 0 } = $$props;
-    	let { maxzoom = 14 } = $$props;
+    	let { maxzoom = 13 } = $$props;
     	let { zoom = null } = $$props;
     	let container;
     	let w;
@@ -5732,10 +5732,10 @@ var app = (function () {
     			t5 = space();
     			p2 = element("p");
     			p2.textContent = "Curabitur eleifend lectus ut dolor pellentesque, id sollicitudin odio\n    luctus. Nam ultrices ornare felis, et viverra erat lacinia ac. Ut sit amet\n    dolor a tortor cursus porta. Curabitur accumsan hendrerit turpis ut mattis.\n    In imperdiet purus vitae erat molestie laoreet. Pellentesque a turpis id\n    nisl pharetra dictum non vitae elit. Maecenas vel metus gravida, ullamcorper\n    velit vehicula, molestie leo. Aliquam in ex in erat semper facilisis. Nunc\n    varius, ante sit amet gravida porttitor, lorem leo maximus nulla, eu viverra\n    lorem metus in lectus. Morbi lacinia at risus a maximus. Nulla dapibus,\n    nulla sed bibendum blandit, leo dui imperdiet ligula, ut efficitur purus\n    urna vel orci. Phasellus ante tellus, efficitur eu tellus non, euismod\n    congue est. Nullam vel dolor eu magna finibus pharetra vel in nunc.";
-    			add_location(h2, file, 138, 2, 3780);
-    			add_location(p0, file, 139, 2, 3815);
-    			add_location(p1, file, 152, 2, 4666);
-    			add_location(p2, file, 159, 2, 5034);
+    			add_location(h2, file, 138, 2, 3796);
+    			add_location(p0, file, 139, 2, 3831);
+    			add_location(p1, file, 152, 2, 4682);
+    			add_location(p2, file, 159, 2, 5050);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5785,9 +5785,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper\n    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec\n    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat\n    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor\n    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.\n    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam\n    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis\n    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum\n    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra\n    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec\n    ultrices. Sed commodo nulla et nunc condimentum tempor.";
-    			add_location(h2, file, 177, 2, 5933);
+    			add_location(h2, file, 177, 2, 5949);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 178, 2, 5964);
+    			add_location(p, file, 178, 2, 5980);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5841,10 +5841,10 @@ var app = (function () {
     			div0 = element("div");
     			create_component(map_1.$$.fragment);
     			attr_dev(div0, "class", "col-full height-full");
-    			add_location(div0, file, 196, 6, 6932);
-    			add_location(figure, file, 195, 4, 6917);
+    			add_location(div0, file, 196, 6, 6948);
+    			add_location(figure, file, 195, 4, 6933);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 194, 2, 6889);
+    			add_location(div1, file, 194, 2, 6905);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -6049,70 +6049,70 @@ var app = (function () {
     			p7.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 205, 8, 7149);
-    			add_location(h30, file, 206, 8, 7208);
-    			add_location(p0, file, 207, 8, 7253);
+    			add_location(img0, file, 205, 8, 7165);
+    			add_location(h30, file, 206, 8, 7224);
+    			add_location(p0, file, 207, 8, 7269);
     			attr_dev(div0, "class", "col-medium card");
-    			add_location(div0, file, 204, 6, 7111);
-    			add_location(section0, file, 203, 4, 7095);
+    			add_location(div0, file, 204, 6, 7127);
+    			add_location(section0, file, 203, 4, 7111);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 214, 6, 7556);
-    			add_location(h31, file, 215, 6, 7609);
-    			add_location(p1, file, 216, 6, 7666);
+    			add_location(img1, file, 214, 6, 7572);
+    			add_location(h31, file, 215, 6, 7625);
+    			add_location(p1, file, 216, 6, 7682);
     			attr_dev(div1, "class", "col-medium card");
-    			add_location(div1, file, 213, 6, 7520);
-    			add_location(section1, file, 212, 4, 7504);
+    			add_location(div1, file, 213, 6, 7536);
+    			add_location(section1, file, 212, 4, 7520);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 223, 8, 8109);
-    			add_location(h32, file, 224, 8, 8165);
-    			add_location(p2, file, 225, 8, 8219);
+    			add_location(img2, file, 223, 8, 8125);
+    			add_location(h32, file, 224, 8, 8181);
+    			add_location(p2, file, 225, 8, 8235);
     			attr_dev(div2, "class", "col-medium card");
-    			add_location(div2, file, 222, 6, 8071);
-    			add_location(section2, file, 221, 4, 8055);
+    			add_location(div2, file, 222, 6, 8087);
+    			add_location(section2, file, 221, 4, 8071);
     			if (!src_url_equal(img3.src, img3_src_value = "images/card4.jpg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Cementerio");
-    			add_location(img3, file, 236, 8, 8683);
-    			add_location(h33, file, 237, 8, 8739);
-    			add_location(p3, file, 238, 8, 8792);
+    			add_location(img3, file, 236, 8, 8699);
+    			add_location(h33, file, 237, 8, 8755);
+    			add_location(p3, file, 238, 8, 8808);
     			attr_dev(div3, "class", "col-medium card");
-    			add_location(div3, file, 235, 6, 8645);
-    			add_location(section3, file, 234, 4, 8629);
+    			add_location(div3, file, 235, 6, 8661);
+    			add_location(section3, file, 234, 4, 8645);
     			if (!src_url_equal(img4.src, img4_src_value = "images/card5.jpg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Cementerio");
-    			add_location(img4, file, 249, 8, 9256);
-    			add_location(h34, file, 250, 8, 9312);
-    			add_location(p4, file, 251, 8, 9359);
+    			add_location(img4, file, 249, 8, 9272);
+    			add_location(h34, file, 250, 8, 9328);
+    			add_location(p4, file, 251, 8, 9375);
     			attr_dev(div4, "class", "col-medium card");
-    			add_location(div4, file, 248, 6, 9218);
-    			add_location(section4, file, 247, 4, 9202);
+    			add_location(div4, file, 248, 6, 9234);
+    			add_location(section4, file, 247, 4, 9218);
     			if (!src_url_equal(img5.src, img5_src_value = "images/card6.jpg")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "Cementerio");
-    			add_location(img5, file, 262, 8, 9823);
-    			add_location(h35, file, 263, 8, 9879);
-    			add_location(p5, file, 264, 8, 9926);
+    			add_location(img5, file, 262, 8, 9839);
+    			add_location(h35, file, 263, 8, 9895);
+    			add_location(p5, file, 264, 8, 9942);
     			attr_dev(div5, "class", "col-medium card");
-    			add_location(div5, file, 261, 6, 9785);
-    			add_location(section5, file, 260, 4, 9769);
+    			add_location(div5, file, 261, 6, 9801);
+    			add_location(section5, file, 260, 4, 9785);
     			if (!src_url_equal(img6.src, img6_src_value = "images/card7.jpg")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Cementerio");
-    			add_location(img6, file, 275, 8, 10390);
-    			add_location(h36, file, 276, 8, 10446);
-    			add_location(p6, file, 277, 8, 10475);
+    			add_location(img6, file, 275, 8, 10406);
+    			add_location(h36, file, 276, 8, 10462);
+    			add_location(p6, file, 277, 8, 10491);
     			attr_dev(div6, "class", "col-medium card");
-    			add_location(div6, file, 274, 6, 10352);
-    			add_location(section6, file, 273, 4, 10336);
+    			add_location(div6, file, 274, 6, 10368);
+    			add_location(section6, file, 273, 4, 10352);
     			if (!src_url_equal(img7.src, img7_src_value = "images/card8.jpg")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Cementerio");
-    			add_location(img7, file, 288, 8, 10939);
-    			add_location(h37, file, 289, 8, 10995);
-    			add_location(p7, file, 290, 8, 11046);
+    			add_location(img7, file, 288, 8, 10955);
+    			add_location(h37, file, 289, 8, 11011);
+    			add_location(p7, file, 290, 8, 11062);
     			attr_dev(div7, "class", "col-medium card");
-    			add_location(div7, file, 287, 6, 10901);
-    			add_location(section7, file, 286, 4, 10885);
+    			add_location(div7, file, 287, 6, 10917);
+    			add_location(section7, file, 286, 4, 10901);
     			attr_dev(div8, "slot", "foreground");
-    			add_location(div8, file, 202, 2, 7067);
+    			add_location(div8, file, 202, 2, 7083);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div8, anchor);
@@ -6209,9 +6209,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 305, 2, 11499);
+    			add_location(h2, file, 305, 2, 11515);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 306, 2, 11523);
+    			add_location(p, file, 306, 2, 11539);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -6351,16 +6351,16 @@ var app = (function () {
     			attr_dev(img, "alt", "Test");
     			set_style(img, "width", "100%");
     			set_style(img, "height", "100%");
-    			add_location(img, file, 128, 2, 3507);
-    			add_location(span0, file, 130, 4, 3625);
+    			add_location(img, file, 128, 2, 3523);
+    			add_location(span0, file, 130, 4, 3641);
     			attr_dev(span1, "class", "border-pad-title bdbc");
-    			add_location(span1, file, 129, 2, 3584);
-    			add_location(span2, file, 133, 4, 3712);
+    			add_location(span1, file, 129, 2, 3600);
+    			add_location(span2, file, 133, 4, 3728);
     			attr_dev(span3, "class", "border-pad-subtitle bdbc");
-    			add_location(span3, file, 132, 2, 3668);
+    			add_location(span3, file, 132, 2, 3684);
     			set_style(section0, "margin-top", "180px");
     			set_style(section0, "position", "relative");
-    			add_location(section0, file, 127, 0, 3450);
+    			add_location(section0, file, 127, 0, 3466);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6532,37 +6532,29 @@ var app = (function () {
     	const mapActions = [
     		() => {
     			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 1', 'red', 'grey']);
-    			map.fitBounds(mapbounds.one, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 2', 'red', 'grey']);
-    			map.fitBounds(mapbounds.two, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 2', 'red', 'grey']); // map.fitBounds(mapbounds.one, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 3', 'red', 'grey']);
-    			map.fitBounds(mapbounds.three, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 3', 'red', 'grey']); // map.fitBounds(mapbounds.two, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 4', 'red', 'grey']);
-    			map.fitBounds(mapbounds.four, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 4', 'red', 'grey']); //  map.fitBounds(mapbounds.three, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 5', 'red', 'grey']);
-    			map.fitBounds(mapbounds.five, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 5', 'red', 'grey']); //  map.fitBounds(mapbounds.four, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 6', 'red', 'grey']);
-    			map.fitBounds(mapbounds.six, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 6', 'red', 'grey']); //  map.fitBounds(mapbounds.five, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 7', 'red', 'grey']);
-    			map.fitBounds(mapbounds.seven, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 7', 'red', 'grey']); //  map.fitBounds(mapbounds.six, { animate: animation });
     		},
     		() => {
-    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 8', 'red', 'grey']);
-    			map.fitBounds(mapbounds.eight, { animate: animation });
+    			map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 8', 'red', 'grey']); //  map.fitBounds(mapbounds.seven, { animate: animation });
     		}
-    	];
+    	]; //  map.fitBounds(mapbounds.eight, { animate: animation });
 
     	const writable_props = [];
 
