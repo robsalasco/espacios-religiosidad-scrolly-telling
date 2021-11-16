@@ -166,6 +166,8 @@ small {
 
 .card {
 	font-size: 12px;
+	max-width: 350px;
+
 }
 
 .card img {
