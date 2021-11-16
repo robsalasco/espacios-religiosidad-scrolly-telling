@@ -4991,7 +4991,7 @@ var app = (function () {
     			attr_dev(div, "id", /*id*/ ctx[1]);
     			attr_dev(div, "class", "svelte-1c44y5p");
     			add_render_callback(() => /*div_elementresize_handler*/ ctx[12].call(div));
-    			add_location(div, file$4, 86, 0, 1840);
+    			add_location(div, file$4, 86, 0, 1825);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5066,7 +5066,7 @@ var app = (function () {
     	let { id = "map" } = $$props;
 
     	let { location = {
-    		bounds: [[-70.765793, -33.366741], [-70.730892, -33.349861]], // First
+    		bounds: [[-70.90639, -33.55921], [-70.86639, -33.51921]], // First
     		
     	} } = $$props;
 
@@ -5623,8 +5623,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logos");
-    			add_location(img, file$1, 3, 6, 72);
+    			add_location(img, file$1, 3, 6, 84);
     			set_style(div0, "height", "125px");
+    			set_style(div0, "width", "80%");
     			add_location(div0, file$1, 2, 4, 37);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 1, 2, 11);
@@ -5730,10 +5731,10 @@ var app = (function () {
     			t5 = space();
     			p2 = element("p");
     			p2.textContent = "Curabitur eleifend lectus ut dolor pellentesque, id sollicitudin odio\n    luctus. Nam ultrices ornare felis, et viverra erat lacinia ac. Ut sit amet\n    dolor a tortor cursus porta. Curabitur accumsan hendrerit turpis ut mattis.\n    In imperdiet purus vitae erat molestie laoreet. Pellentesque a turpis id\n    nisl pharetra dictum non vitae elit. Maecenas vel metus gravida, ullamcorper\n    velit vehicula, molestie leo. Aliquam in ex in erat semper facilisis. Nunc\n    varius, ante sit amet gravida porttitor, lorem leo maximus nulla, eu viverra\n    lorem metus in lectus. Morbi lacinia at risus a maximus. Nulla dapibus,\n    nulla sed bibendum blandit, leo dui imperdiet ligula, ut efficitur purus\n    urna vel orci. Phasellus ante tellus, efficitur eu tellus non, euismod\n    congue est. Nullam vel dolor eu magna finibus pharetra vel in nunc.";
-    			add_location(h2, file, 95, 2, 2059);
-    			add_location(p0, file, 96, 2, 2094);
-    			add_location(p1, file, 109, 2, 2945);
-    			add_location(p2, file, 116, 2, 3313);
+    			add_location(h2, file, 95, 2, 2055);
+    			add_location(p0, file, 96, 2, 2090);
+    			add_location(p1, file, 109, 2, 2941);
+    			add_location(p2, file, 116, 2, 3309);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5783,9 +5784,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper\n    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec\n    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat\n    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor\n    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.\n    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam\n    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis\n    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum\n    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra\n    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec\n    ultrices. Sed commodo nulla et nunc condimentum tempor.";
-    			add_location(h2, file, 134, 2, 4212);
+    			add_location(h2, file, 134, 2, 4208);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 135, 2, 4243);
+    			add_location(p, file, 135, 2, 4239);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5823,7 +5824,7 @@ var app = (function () {
     		/*map_1_map_binding*/ ctx[4](value);
     	}
 
-    	let map_1_props = { style: mapstyle, interactive: false };
+    	let map_1_props = { style: mapstyle, interactive: true };
 
     	if (/*map*/ ctx[1] !== void 0) {
     		map_1_props.map = /*map*/ ctx[1];
@@ -5839,10 +5840,10 @@ var app = (function () {
     			div0 = element("div");
     			create_component(map_1.$$.fragment);
     			attr_dev(div0, "class", "col-full height-full");
-    			add_location(div0, file, 153, 6, 5211);
-    			add_location(figure, file, 152, 4, 5196);
+    			add_location(div0, file, 153, 6, 5207);
+    			add_location(figure, file, 152, 4, 5192);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 151, 2, 5168);
+    			add_location(div1, file, 151, 2, 5164);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -5896,20 +5897,22 @@ var app = (function () {
     	let img0;
     	let img0_src_value;
     	let t0;
-    	let p0;
+    	let h3;
     	let t2;
+    	let p0;
+    	let t4;
     	let section1;
     	let div1;
     	let img1;
     	let img1_src_value;
-    	let t3;
-    	let p1;
     	let t5;
+    	let p1;
+    	let t7;
     	let section2;
     	let div2;
     	let img2;
     	let img2_src_value;
-    	let t6;
+    	let t8;
     	let p2;
 
     	const block = {
@@ -5919,45 +5922,49 @@ var app = (function () {
     			div0 = element("div");
     			img0 = element("img");
     			t0 = space();
-    			p0 = element("p");
-    			p0.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut\n          tellus vel quam ultricies interdum sed non sem. Nulla nisl sem,\n          sagittis et magna vel, commodo luctus ligula. Proin tincidunt orci vel\n          bibendum venenatis. Mauris non neque lobortis, pretium tortor et,\n          volutpat turpis. Curabitur bibendum gravida diam vel dictum.\n          Vestibulum ac egestas sapien. Mauris et finibus sapien. Cras varius\n          malesuada quam a ullamcorper. Fusce vehicula blandit pellentesque.\n          Cras non augue justo. Maecenas vitae suscipit dolor. Donec convallis,\n          augue ac varius ornare, elit turpis consectetur dolor, non convallis\n          justo diam non justo. Sed ut tincidunt tortor. Pellentesque eu sem\n          urna. Vivamus vulputate eleifend sem quis porta. Fusce a interdum\n          massa, eu ultrices nisi.";
+    			h3 = element("h3");
+    			h3.textContent = "Parroquia San Juan Pablo II";
     			t2 = space();
+    			p0 = element("p");
+    			p0.textContent = "Actualmente imparte misas con alta regularidad. De martes a domingo a las 20:00 horas y el Domingo imparte tres misas durante la mañana. Esta parroquia es frecuentada por creyentes haitianos.";
+    			t4 = space();
     			section1 = element("section");
     			div1 = element("div");
     			img1 = element("img");
-    			t3 = space();
+    			t5 = space();
     			p1 = element("p");
     			p1.textContent = "Nam suscipit lectus mi, eu pretium purus pretium in. Aenean facilisis\n          id felis at pulvinar. Phasellus commodo vulputate elit, nec finibus\n          tellus porttitor sed. Etiam consectetur malesuada bibendum. Mauris\n          nibh ex, consectetur quis sollicitudin pharetra, porttitor et tellus.\n          Nulla vel urna leo. Nulla vel mauris aliquet, hendrerit tortor in,\n          mattis lectus. Maecenas sed diam pellentesque, scelerisque eros ac,\n          dictum augue. Fusce suscipit metus ac sapien blandit, facilisis\n          ullamcorper purus blandit. Aliquam ac luctus ex. Duis sit amet\n          scelerisque tortor. Integer tincidunt lacus venenatis fringilla\n          viverra. Aliquam pulvinar orci non consectetur lacinia. Aenean quis\n          posuere ipsum.";
-    			t5 = space();
+    			t7 = space();
     			section2 = element("section");
     			div2 = element("div");
     			img2 = element("img");
-    			t6 = space();
+    			t8 = space();
     			p2 = element("p");
     			p2.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 162, 8, 5429);
-    			add_location(p0, file, 163, 8, 5488);
+    			add_location(img0, file, 162, 8, 5424);
+    			add_location(h3, file, 163, 8, 5483);
+    			add_location(p0, file, 164, 8, 5528);
     			attr_dev(div0, "class", "col-medium card");
-    			add_location(div0, file, 161, 6, 5391);
-    			add_location(section0, file, 160, 4, 5375);
+    			add_location(div0, file, 161, 6, 5386);
+    			add_location(section0, file, 160, 4, 5370);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 181, 6, 6470);
-    			add_location(p1, file, 182, 6, 6523);
+    			add_location(img1, file, 171, 6, 5831);
+    			add_location(p1, file, 172, 6, 5884);
     			attr_dev(div1, "class", "col-medium card");
-    			add_location(div1, file, 180, 6, 6434);
-    			add_location(section1, file, 179, 4, 6418);
+    			add_location(div1, file, 170, 6, 5795);
+    			add_location(section1, file, 169, 4, 5779);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 199, 8, 7420);
-    			add_location(p2, file, 200, 8, 7476);
+    			add_location(img2, file, 189, 8, 6781);
+    			add_location(p2, file, 190, 8, 6837);
     			attr_dev(div2, "class", "col-medium card");
-    			add_location(div2, file, 198, 6, 7382);
-    			add_location(section2, file, 197, 4, 7366);
+    			add_location(div2, file, 188, 6, 6743);
+    			add_location(section2, file, 187, 4, 6727);
     			attr_dev(div3, "slot", "foreground");
-    			add_location(div3, file, 159, 2, 5347);
+    			add_location(div3, file, 159, 2, 5342);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -5965,18 +5972,20 @@ var app = (function () {
     			append_dev(section0, div0);
     			append_dev(div0, img0);
     			append_dev(div0, t0);
+    			append_dev(div0, h3);
+    			append_dev(div0, t2);
     			append_dev(div0, p0);
-    			append_dev(div3, t2);
+    			append_dev(div3, t4);
     			append_dev(div3, section1);
     			append_dev(section1, div1);
     			append_dev(div1, img1);
-    			append_dev(div1, t3);
+    			append_dev(div1, t5);
     			append_dev(div1, p1);
-    			append_dev(div3, t5);
+    			append_dev(div3, t7);
     			append_dev(div3, section2);
     			append_dev(section2, div2);
     			append_dev(div2, img2);
-    			append_dev(div2, t6);
+    			append_dev(div2, t8);
     			append_dev(div2, p2);
     		},
     		d: function destroy(detaching) {
@@ -5995,7 +6004,7 @@ var app = (function () {
     	return block;
     }
 
-    // (215:0) <Section>
+    // (205:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t1;
@@ -6008,9 +6017,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 215, 2, 7929);
+    			add_location(h2, file, 205, 2, 7290);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 216, 2, 7953);
+    			add_location(p, file, 206, 2, 7314);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -6028,7 +6037,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(215:0) <Section>",
+    		source: "(205:0) <Section>",
     		ctx
     	});
 
@@ -6150,16 +6159,16 @@ var app = (function () {
     			attr_dev(img, "alt", "Test");
     			set_style(img, "width", "100%");
     			set_style(img, "height", "100%");
-    			add_location(img, file, 85, 2, 1786);
-    			add_location(span0, file, 87, 4, 1904);
+    			add_location(img, file, 85, 2, 1782);
+    			add_location(span0, file, 87, 4, 1900);
     			attr_dev(span1, "class", "border-pad-title bdbc");
-    			add_location(span1, file, 86, 2, 1863);
-    			add_location(span2, file, 90, 4, 1991);
+    			add_location(span1, file, 86, 2, 1859);
+    			add_location(span2, file, 90, 4, 1987);
     			attr_dev(span3, "class", "border-pad-subtitle bdbc");
-    			add_location(span3, file, 89, 2, 1947);
+    			add_location(span3, file, 89, 2, 1943);
     			set_style(section0, "margin-top", "180px");
     			set_style(section0, "position", "relative");
-    			add_location(section0, file, 84, 0, 1729);
+    			add_location(section0, file, 84, 0, 1725);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6314,7 +6323,7 @@ var app = (function () {
     	let animation = getMotion(); // Set animation preference depending on browser preference
 
     	const mapbounds = {
-    		ew: [[-70.765793, -33.366741], [-70.730892, -33.349861]],
+    		ew: [[-70.90639, -33.55921], [-70.86639, -33.51921]],
     		fareham: [[-70.7407, -33.372115], [-70.705799, -33.355235]],
     		newport: [[-70.778391, -33.392035], [-70.74349, -33.375159]]
     	};
