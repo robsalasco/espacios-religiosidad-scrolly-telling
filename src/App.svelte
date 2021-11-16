@@ -205,24 +205,16 @@
     <section>
       <div class="col-medium card">
       <img src="images/card2.jpg" alt="Parroquia" />
+      <h3>Punto 2</h3>
       <p>
-          Nam suscipit lectus mi, eu pretium purus pretium in. Aenean facilisis
-          id felis at pulvinar. Phasellus commodo vulputate elit, nec finibus
-          tellus porttitor sed. Etiam consectetur malesuada bibendum. Mauris
-          nibh ex, consectetur quis sollicitudin pharetra, porttitor et tellus.
-          Nulla vel urna leo. Nulla vel mauris aliquet, hendrerit tortor in,
-          mattis lectus. Maecenas sed diam pellentesque, scelerisque eros ac,
-          dictum augue. Fusce suscipit metus ac sapien blandit, facilisis
-          ullamcorper purus blandit. Aliquam ac luctus ex. Duis sit amet
-          scelerisque tortor. Integer tincidunt lacus venenatis fringilla
-          viverra. Aliquam pulvinar orci non consectetur lacinia. Aenean quis
-          posuere ipsum.
+          Actualmente es una de los templos más activos y con más asistentes de Quilicura.El templo es principalmente es principalmente utilizado por la comunidad haitiana, impartiendo la oración en Creolé, sin embargo, el acceso es libre. En la iglesia se imparte la oración cada domingo, pero adicionlmente funciona un escuela dominical.
         </p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
         <img src="images/card3.jpg" alt="Cementerio" />
+        <h3>Iglesia Sagrada Familia de Quilicura</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
@@ -234,7 +226,8 @@
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card4.jpg" alt="Cementerio" />
+        <h3>Parroquia Nuestra Señora del Carmen</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
@@ -246,7 +239,8 @@
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card5.jpg" alt="Cementerio" />
+        <h3>Parroquia San Alberto Hurtado</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
@@ -258,7 +252,8 @@
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card6.jpg" alt="Cementerio" />
+        <h3>I. Municipalidad de Quilicura</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
@@ -270,7 +265,8 @@
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card7.jpg" alt="Cementerio" />
+        <h3>Cerro Renca</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
@@ -282,7 +278,8 @@
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card8.jpg" alt="Cementerio" />
+        <h3>Cementerio Municipal de Quilicura</h3>
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,
