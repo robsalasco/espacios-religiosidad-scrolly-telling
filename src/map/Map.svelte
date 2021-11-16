@@ -55,12 +55,15 @@
 			// Get initial zoom level
 			map.on("load", () => {
 				zoom = map.getZoom();
+				map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 1', 'red', 'grey']);
 			});
 
 			// Update zoom level when the view zooms
 			map.on("zoom", () => {
 				zoom = map.getZoom();
 			});
+
+
 		};
 
 		document.head.appendChild(link);

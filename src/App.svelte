@@ -80,27 +80,35 @@
   // Actions for MAP scroller
   const mapActions = [
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 1', 'red', 'grey']);
       map.fitBounds(mapbounds.one, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 2', 'red', 'grey']);
       map.fitBounds(mapbounds.two, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 3', 'red', 'grey']);
       map.fitBounds(mapbounds.three, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 4', 'red', 'grey']);
       map.fitBounds(mapbounds.four, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 5', 'red', 'grey']);
       map.fitBounds(mapbounds.five, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 6', 'red', 'grey']);
       map.fitBounds(mapbounds.six, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 7', 'red', 'grey']);
       map.fitBounds(mapbounds.seven, { animate: animation });
     },
     () => {
+      map.setPaintProperty('puntos-blxqan', 'circle-color', ['match', ['get', 'Name'], 'FICHA 8', 'red', 'grey']);
       map.fitBounds(mapbounds.eight, { animate: animation });
     },
   ];
