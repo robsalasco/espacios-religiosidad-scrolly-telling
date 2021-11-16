@@ -160,6 +160,7 @@
   <div slot="foreground">
     <section>
       <div class="col-medium">
+        <img src="images/card1.jpg" alt="Municipalidad" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
           tellus vel quam ultricies interdum sed non sem. Nulla nisl sem,
@@ -178,7 +179,8 @@
     </section>
     <section>
       <div class="col-medium">
-        <p>
+      <img src="images/card2.jpg" alt="Parroquia" />
+      <p>
           Nam suscipit lectus mi, eu pretium purus pretium in. Aenean facilisis
           id felis at pulvinar. Phasellus commodo vulputate elit, nec finibus
           tellus porttitor sed. Etiam consectetur malesuada bibendum. Mauris
@@ -195,6 +197,7 @@
     </section>
     <section>
       <div class="col-medium">
+        <img src="images/card3.jpg" alt="Cementerio" />
         <p>
           Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.
           Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,

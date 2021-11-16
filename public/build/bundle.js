@@ -5893,14 +5893,23 @@ var app = (function () {
     	let div3;
     	let section0;
     	let div0;
+    	let img0;
+    	let img0_src_value;
+    	let t0;
     	let p0;
-    	let t1;
+    	let t2;
     	let section1;
     	let div1;
-    	let p1;
+    	let img1;
+    	let img1_src_value;
     	let t3;
+    	let p1;
+    	let t5;
     	let section2;
     	let div2;
+    	let img2;
+    	let img2_src_value;
+    	let t6;
     	let p2;
 
     	const block = {
@@ -5908,30 +5917,45 @@ var app = (function () {
     			div3 = element("div");
     			section0 = element("section");
     			div0 = element("div");
+    			img0 = element("img");
+    			t0 = space();
     			p0 = element("p");
     			p0.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut\n          tellus vel quam ultricies interdum sed non sem. Nulla nisl sem,\n          sagittis et magna vel, commodo luctus ligula. Proin tincidunt orci vel\n          bibendum venenatis. Mauris non neque lobortis, pretium tortor et,\n          volutpat turpis. Curabitur bibendum gravida diam vel dictum.\n          Vestibulum ac egestas sapien. Mauris et finibus sapien. Cras varius\n          malesuada quam a ullamcorper. Fusce vehicula blandit pellentesque.\n          Cras non augue justo. Maecenas vitae suscipit dolor. Donec convallis,\n          augue ac varius ornare, elit turpis consectetur dolor, non convallis\n          justo diam non justo. Sed ut tincidunt tortor. Pellentesque eu sem\n          urna. Vivamus vulputate eleifend sem quis porta. Fusce a interdum\n          massa, eu ultrices nisi.";
-    			t1 = space();
+    			t2 = space();
     			section1 = element("section");
     			div1 = element("div");
+    			img1 = element("img");
+    			t3 = space();
     			p1 = element("p");
     			p1.textContent = "Nam suscipit lectus mi, eu pretium purus pretium in. Aenean facilisis\n          id felis at pulvinar. Phasellus commodo vulputate elit, nec finibus\n          tellus porttitor sed. Etiam consectetur malesuada bibendum. Mauris\n          nibh ex, consectetur quis sollicitudin pharetra, porttitor et tellus.\n          Nulla vel urna leo. Nulla vel mauris aliquet, hendrerit tortor in,\n          mattis lectus. Maecenas sed diam pellentesque, scelerisque eros ac,\n          dictum augue. Fusce suscipit metus ac sapien blandit, facilisis\n          ullamcorper purus blandit. Aliquam ac luctus ex. Duis sit amet\n          scelerisque tortor. Integer tincidunt lacus venenatis fringilla\n          viverra. Aliquam pulvinar orci non consectetur lacinia. Aenean quis\n          posuere ipsum.";
-    			t3 = space();
+    			t5 = space();
     			section2 = element("section");
     			div2 = element("div");
+    			img2 = element("img");
+    			t6 = space();
     			p2 = element("p");
     			p2.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
-    			add_location(p0, file, 162, 8, 5424);
+    			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "Municipalidad");
+    			add_location(img0, file, 162, 8, 5424);
+    			add_location(p0, file, 163, 8, 5483);
     			attr_dev(div0, "class", "col-medium");
     			add_location(div0, file, 161, 6, 5391);
     			add_location(section0, file, 160, 4, 5375);
-    			add_location(p1, file, 180, 8, 6403);
+    			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Parroquia");
+    			add_location(img1, file, 181, 6, 6460);
+    			add_location(p1, file, 182, 6, 6513);
     			attr_dev(div1, "class", "col-medium");
-    			add_location(div1, file, 179, 6, 6370);
-    			add_location(section1, file, 178, 4, 6354);
-    			add_location(p2, file, 197, 8, 7295);
+    			add_location(div1, file, 180, 6, 6429);
+    			add_location(section1, file, 179, 4, 6413);
+    			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Cementerio");
+    			add_location(img2, file, 199, 8, 7405);
+    			add_location(p2, file, 200, 8, 7461);
     			attr_dev(div2, "class", "col-medium");
-    			add_location(div2, file, 196, 6, 7262);
-    			add_location(section2, file, 195, 4, 7246);
+    			add_location(div2, file, 198, 6, 7372);
+    			add_location(section2, file, 197, 4, 7356);
     			attr_dev(div3, "slot", "foreground");
     			add_location(div3, file, 159, 2, 5347);
     		},
@@ -5939,14 +5963,20 @@ var app = (function () {
     			insert_dev(target, div3, anchor);
     			append_dev(div3, section0);
     			append_dev(section0, div0);
+    			append_dev(div0, img0);
+    			append_dev(div0, t0);
     			append_dev(div0, p0);
-    			append_dev(div3, t1);
+    			append_dev(div3, t2);
     			append_dev(div3, section1);
     			append_dev(section1, div1);
+    			append_dev(div1, img1);
+    			append_dev(div1, t3);
     			append_dev(div1, p1);
-    			append_dev(div3, t3);
+    			append_dev(div3, t5);
     			append_dev(div3, section2);
     			append_dev(section2, div2);
+    			append_dev(div2, img2);
+    			append_dev(div2, t6);
     			append_dev(div2, p2);
     		},
     		d: function destroy(detaching) {
@@ -5965,7 +5995,7 @@ var app = (function () {
     	return block;
     }
 
-    // (212:0) <Section>
+    // (215:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t1;
@@ -5978,9 +6008,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 212, 2, 7748);
+    			add_location(h2, file, 215, 2, 7914);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 213, 2, 7772);
+    			add_location(p, file, 216, 2, 7938);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5998,7 +6028,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(212:0) <Section>",
+    		source: "(215:0) <Section>",
     		ctx
     	});
 
