@@ -5725,6 +5725,71 @@ var app = (function () {
     var app_title$1 = "Espacios de religiosidad e identidad haitiana";
     var app_subtitle$1 = "En el sector norte de Santiago";
     var section_1_title$1 = "El proyecto de investigación";
+    var section_1_text$1 = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe a Chile, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
+    var section_2_title$1 = "Espacios de creencias";
+    var section_2_text$1 = "<p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy, las cuales se convierten en un aspecto central de la vida social.</p><p>El primer pilar identificado corresponde al catolisimo. El catolisismo es cronológicamente la religión adoptada de forma más temprana por el colectivo haitiana, acogido durante la colonización por parte de los franceses.</p><p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de la población esclavizada.</p><p>Y finalmente, el tercer pilar que corresponde al protestantismo, el cual tiene una influencia mucho más tardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XIX. Pero también durante el siglo XXI un evento socio-natural que aceleró la asimilación del protestantismo, fue el destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia las cuales prestaron ayuda a la sociedad haitiana.</p><p>Hoy en día, el catolicismo es la religión mayoritaria, y muchos de sus fieles además practican, de manera sincrética, el Vudú, siendo la población haitiana católica más abierta al vudú, que la población haitiana protestante. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p><p>A través del proyecto, hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, a pesar de enfrentar un proceso migratorio, permanece intacto.</p><p class='mb'>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factible desarrollar el sistema de creencias haitiano, y el cual se sustenta en la presencia de ocho instituciones señaladas en la cartografía a continuación.</p>";
+    var card_1_title$1 = "Parroquia San Juan Pablo II";
+    var card_1_text$1 = "Es una importante parroquia católica, es parte de la Familia Misionera Verbum Dei, quienes la fundaron en 2002. La parroquia da misas con alta regularidad, varias veces en la semana y a diversas horas, como también presta variados servicios a la comunidad. Actualmente cuanta con una importante presencia de feligreses haitianos.";
+    var card_2_title$1 = "Iglesia Evangélica Tabernaclé de la Grace";
+    var card_2_text$1 = "Actualmente es uno de los templos más activos y con más asistentes de Quilicura. El templo es principalmente visitado por miembros de la comunidad haitiana, impartiendo oración en Creolé, sin embargo, el acceso es libre. En la iglesia se imparte la oración cada semana, pero adicionlmente funciona un escuela dominical.";
+    var card_3_title$1 = "Iglesia Sagrada Familia de Quilicura";
+    var card_3_text$1 = "La Iglesia está en pleno funcionamiento a cargo del presbítero Josef Bernhard Bocktenk Tebroke. Durante octubre de 2021 fue restaurado el Cristo, anteriormente vandalizado en protestas. La Iglesia es una de las más relevantes dentro de la comuna de Quilicura y es punto de encuentro y reunión de comunidades migrantes. Además, es una de las iglesias que ha incorporado las nuevas tecnologías de la información, transmitiendo las actividades a través de sus redes sociales. Afuera de la iglesia, se instalan puestos comerciales informales liderados por la comunidad haitiana.";
+    var card_4_title$1 = "Parroquia Nuestra Señora del Carmen";
+    var card_4_text$1 = "La parroquia imparte misa regularmente cada semana. Además es un punto de encuentro muy relevante de la comunidad haitiana. La parroquia estuvo a cargo del destacado Presbítero Jean Wesly Joseph, miembro de la comunidad haitiana y el primer párroco de dicha nacionalidad en ser enviado a nuestro país. ";
+    var card_5_title$1 = "Parroquia San Alberto Hurtado";
+    var card_5_text$1 = "Parroquia fundada el año 2005. Imparte misas todos los días de la semana. Corresponde a un amplio espacio que permite la meditación y el encuentro entre las diversas comunidades.";
+    var card_6_title$1 = "I. Municipalidad de Quilicura";
+    var card_6_text$1 = "Actualmente el municipio es un punto de encuentro para las diversas comunidades migrantes que viven en Quilicura, las cuales buscan asesoría en diversos temas. Por ello el municipio destaca por la obtención del Sello migrante y cuenta con una Oficina de Migrantes y Refugiados.";
+    var card_7_title$1 = "Cerro Renca";
+    var card_7_text$1 = "El Cerro Renca hacia el sector de Vespucio sur - Lo Campino, es un importante lugar de peregrinaje para algunos miembros de la comunidad haitiana, principalmente por su cercanía al cementerio y además porque permite el contacto con la naturaleza.";
+    var card_8_title$1 = "Cementerio Municipal de Quilicura";
+    var card_8_text$1 = "El cementerio se encuentra en pleno funcionamiento y el año 2010 se construyó un memorial a los Cuasimodistas de Quilicura. Además, el cementerio presta servicio a la comunidad haitiana entregando asesoría en la defunción y sepulturas.";
+    var section_3_title$1 = "Líderes religiosos";
+    var leader_1_name$1 = "Lider 1";
+    var leader_1_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_2_name$1 = "Lider 2";
+    var leader_2_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_3_name$1 = "Lider 3";
+    var leader_3_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var section_4_title$1 = "Conclusiones";
+    var section_4_text$1 = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
+    var es = {
+    	app_title: app_title$1,
+    	app_subtitle: app_subtitle$1,
+    	section_1_title: section_1_title$1,
+    	section_1_text: section_1_text$1,
+    	section_2_title: section_2_title$1,
+    	section_2_text: section_2_text$1,
+    	card_1_title: card_1_title$1,
+    	card_1_text: card_1_text$1,
+    	card_2_title: card_2_title$1,
+    	card_2_text: card_2_text$1,
+    	card_3_title: card_3_title$1,
+    	card_3_text: card_3_text$1,
+    	card_4_title: card_4_title$1,
+    	card_4_text: card_4_text$1,
+    	card_5_title: card_5_title$1,
+    	card_5_text: card_5_text$1,
+    	card_6_title: card_6_title$1,
+    	card_6_text: card_6_text$1,
+    	card_7_title: card_7_title$1,
+    	card_7_text: card_7_text$1,
+    	card_8_title: card_8_title$1,
+    	card_8_text: card_8_text$1,
+    	section_3_title: section_3_title$1,
+    	leader_1_name: leader_1_name$1,
+    	leader_1_bio: leader_1_bio$1,
+    	leader_2_name: leader_2_name$1,
+    	leader_2_bio: leader_2_bio$1,
+    	leader_3_name: leader_3_name$1,
+    	leader_3_bio: leader_3_bio$1,
+    	section_4_title: section_4_title$1,
+    	section_4_text: section_4_text$1
+    };
+
+    var app_title = "Espas relijye ak idantite ayisyen";
+    var app_subtitle = "Nan sektè nò Santiago";
+    var section_1_title = "Pwojè a";
     var section_1_text = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe a Chile, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
     var section_2_title = "Espacios de creencias";
     var section_2_text = "<p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy, las cuales se convierten en un aspecto central de la vida social.</p><p>El primer pilar identificado corresponde al catolisimo. El catolisismo es cronológicamente la religión adoptada de forma más temprana por el colectivo haitiana, acogido durante la colonización por parte de los franceses.</p><p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de la población esclavizada.</p><p>Y finalmente, el tercer pilar que corresponde al protestantismo, el cual tiene una influencia mucho más tardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XIX. Pero también durante el siglo XXI un evento socio-natural que aceleró la asimilación del protestantismo, fue el destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia las cuales prestaron ayuda a la sociedad haitiana.</p><p>Hoy en día, el catolicismo es la religión mayoritaria, y muchos de sus fieles además practican, de manera sincrética, el Vudú, siendo la población haitiana católica más abierta al vudú, que la población haitiana protestante. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p><p>A través del proyecto, hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, a pesar de enfrentar un proceso migratorio, permanece intacto.</p><p class='mb'>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factible desarrollar el sistema de creencias haitiano, y el cual se sustenta en la presencia de ocho instituciones señaladas en la cartografía a continuación.</p>";
@@ -5753,10 +5818,10 @@ var app = (function () {
     var leader_3_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
     var section_4_title = "Conclusiones";
     var section_4_text = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
-    var es = {
-    	app_title: app_title$1,
-    	app_subtitle: app_subtitle$1,
-    	section_1_title: section_1_title$1,
+    var ht = {
+    	app_title: app_title,
+    	app_subtitle: app_subtitle,
+    	section_1_title: section_1_title,
     	section_1_text: section_1_text,
     	section_2_title: section_2_title,
     	section_2_text: section_2_text,
@@ -5785,15 +5850,6 @@ var app = (function () {
     	leader_3_bio: leader_3_bio,
     	section_4_title: section_4_title,
     	section_4_text: section_4_text
-    };
-
-    var app_title = "Espas relijye ak idantite ayisyen";
-    var app_subtitle = "Nan sektè nò Santiago";
-    var section_1_title = "Pwojè a";
-    var ht = {
-    	app_title: app_title,
-    	app_subtitle: app_subtitle,
-    	section_1_title: section_1_title
     };
 
     /* src/App.svelte generated by Svelte v3.42.1 */
