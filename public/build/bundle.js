@@ -5725,7 +5725,7 @@ var app = (function () {
     var app_title$1 = "Espacios de religiosidad e identidad haitiana";
     var app_subtitle$1 = "En el sector norte de Santiago";
     var section_1_title$1 = "El proyecto de investigación";
-    var section_1_text$1 = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe a Chile, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
+    var section_1_text$1 = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
     var section_2_title$1 = "Espacios de creencias";
     var section_2_text$1 = "<p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy, las cuales se convierten en un aspecto central de la vida social.</p><p>El primer pilar identificado corresponde al catolisimo. El catolisismo es cronológicamente la religión adoptada de forma más temprana por el colectivo haitiana, acogido durante la colonización por parte de los franceses.</p><p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de la población esclavizada.</p><p>Y finalmente, el tercer pilar que corresponde al protestantismo, el cual tiene una influencia mucho más tardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XIX. Pero también durante el siglo XXI un evento socio-natural que aceleró la asimilación del protestantismo, fue el destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia las cuales prestaron ayuda a la sociedad haitiana.</p><p>Hoy en día, el catolicismo es la religión mayoritaria, y muchos de sus fieles además practican, de manera sincrética, el Vudú, siendo la población haitiana católica más abierta al vudú, que la población haitiana protestante. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p><p>A través del proyecto, hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, a pesar de enfrentar un proceso migratorio, permanece intacto.</p><p class='mb'>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factible desarrollar el sistema de creencias haitiano, y el cual se sustenta en la presencia de ocho instituciones señaladas en la cartografía a continuación.</p>";
     var card_1_title$1 = "Parroquia San Juan Pablo II";
@@ -6418,7 +6418,7 @@ var app = (function () {
     			t1 = space();
     			html_tag = new HtmlTag();
     			html_anchor = empty();
-    			add_location(h2, file, 291, 2, 39076);
+    			add_location(h2, file, 291, 2, 39075);
     			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
@@ -6518,7 +6518,7 @@ var app = (function () {
     	let t24;
     	let t25;
     	let p2;
-    	let t26_value = /*$_*/ ctx[2]("leader_3_name") + "";
+    	let t26_value = /*$_*/ ctx[2]("leader_3_bio") + "";
     	let t26;
     	let t27;
     	let divider2;
@@ -6787,7 +6787,7 @@ var app = (function () {
     			if ((!current || dirty & /*$_*/ 4) && t19_value !== (t19_value = /*$_*/ ctx[2]("leader_2_name") + "")) set_data_dev(t19, t19_value);
     			if ((!current || dirty & /*$_*/ 4) && t21_value !== (t21_value = /*$_*/ ctx[2]("leader_2_bio") + "")) set_data_dev(t21, t21_value);
     			if ((!current || dirty & /*$_*/ 4) && t24_value !== (t24_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t24, t24_value);
-    			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t26, t26_value);
+    			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_bio") + "")) set_data_dev(t26, t26_value);
     			const section4_changes = {};
 
     			if (dirty & /*$$scope, $_*/ 516) {
