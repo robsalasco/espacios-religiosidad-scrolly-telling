@@ -404,3 +404,28 @@ svelte-scroller-background-container {
     margin-bottom: 10px;
 
 }
+
+.card-container {
+	margin-top: 140px;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card-child {
+	margin-top: 10px;
+	padding: 12px;
+    flex: 1;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	min-width: 400px;
+	max-width: 400px;
+	font-size: 12px;
+}  
+
+.card-child:first-child {
+    margin-right: 20px;
+} 
+
+.card-child:nth-child(2) {
+    margin-right: 20px;
+} 
