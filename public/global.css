@@ -417,15 +417,16 @@ svelte-scroller-background-container {
 	padding: 12px;
     flex: 1;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-	min-width: 300px;
-	max-width: 400px;
+	min-width: 280px;
+	max-width: 300px;
 	font-size: 12px;
+	margin:10px;
 }  
 
-.card-child:first-child {
+/* .card-child:first-child {
     margin-right: 20px;
-} 
+} */
 
-.card-child:nth-child(2) {
-    margin-right: 20px;
-} 
+/*.card-child:nth-child(2) {
+//    margin-right: 20px;
+}*/ 
