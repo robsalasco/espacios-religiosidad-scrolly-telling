@@ -126,11 +126,11 @@
 
 <Header />
 <section style="margin-top:180px;position: relative;">
-  <img src="images/image1.jpeg" alt="Test" style="width:100%;height:100%" />
-  <span class="border-pad-title bdbc">
+  <img src="images/image1.jpeg" alt="Test" style="width:100%;height:100%;z-index:-1000" />
+  <span class="border-pad-title bdbc" style="z-index:-999">
     <span>{$_("app_title")}</span>
   </span>
-  <span class="border-pad-subtitle bdbc">
+  <span class="border-pad-subtitle bdbc" style="z-index:-999">
     <span>{$_("app_subtitle")}</span>
   </span>
 </section>
