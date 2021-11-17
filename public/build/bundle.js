@@ -5745,12 +5745,15 @@ var app = (function () {
     var card_8_title$1 = "Cementerio Municipal de Quilicura";
     var card_8_text$1 = "El cementerio se encuentra en pleno funcionamiento y el año 2010 se construyó un memorial a los Cuasimodistas de Quilicura. Además, el cementerio presta servicio a la comunidad haitiana entregando asesoría en la defunción y sepulturas.";
     var section_3_title$1 = "Líderes religiosos";
-    var leader_1_name$1 = "Lider 1";
-    var leader_1_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
-    var leader_2_name$1 = "Lider 2";
-    var leader_2_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
-    var leader_3_name$1 = "Lider 3";
-    var leader_3_bio$1 = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_1_name$1 = "Enel Aimé";
+    var leader_1_title$1 = "Cristiano evangélico";
+    var leader_1_bio$1 = "<p>Vive en Chile hace 5 años. Es predicador y maestro de una escuela dominical hace más de 10, y actualmente es secretario del comité de la Iglesia Evangélica Tabernaclé de la Grace hace 3 años. Enel brinda servicios a la comunidad tanto como predicador como cumpliendo labores administrativas.</p><p>Su misión es predicar la palabra de Dios, para que, en sus palabras: <i>“la gente abra una puerta en su vida y reciba al Señor”</i>.</p><p>Sobre la forma de practicar las creencias en Chile, En el plantea: <i>“es igual, porque los creyentes que están aquí en Chile son los mismos que estaban allá en Haití, así que no hay una diferencia”</i>.</p><p>Sobre la forma de vivir la creencia, Enel plantea: <i>“lo vivo en todas partes, en soledad, con otras personas, en mi casa, en la calle, donde quiera que estoy vivo mi creencia, porque Dios anda conmigo, su espíritu santo siempre está conmigo”</i>.</p>";
+    var leader_2_name$1 = "Yamile Cabrera";
+    var leader_2_title$1 = "Ex coordinadora oficina Municipal para Migrantes y Refugiados en Quilicura";
+    var leader_2_bio$1 = "<p>Fue coordinadora del Departamento de la mujer y de la Oficina de Migrantes y Refugiados de la Municipalidad de Quilicura. Fue religiosa, parte de la congregación de las Terciarias Capuchinas hace tres décadas y recientemente candidata independiente a la alcaldía del mismo municipio.</p><p>Ha tenido un rol fundamental en el apoyo e integración migrante. Debido a su trabajo religioso aprendió francés, por lo tanto, ha tenido un mayor acercamiento a la comunidad haitiana.</p>";
+    var leader_3_name$1 = "Padre Lucas";
+    var leader_3_title$1 = "Parroquia Juan Pablo II";
+    var leader_3_bio$1 = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
     var section_4_title$1 = "Conclusiones";
     var section_4_text$1 = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
     var es = {
@@ -5778,10 +5781,13 @@ var app = (function () {
     	card_8_text: card_8_text$1,
     	section_3_title: section_3_title$1,
     	leader_1_name: leader_1_name$1,
+    	leader_1_title: leader_1_title$1,
     	leader_1_bio: leader_1_bio$1,
     	leader_2_name: leader_2_name$1,
+    	leader_2_title: leader_2_title$1,
     	leader_2_bio: leader_2_bio$1,
     	leader_3_name: leader_3_name$1,
+    	leader_3_title: leader_3_title$1,
     	leader_3_bio: leader_3_bio$1,
     	section_4_title: section_4_title$1,
     	section_4_text: section_4_text$1
@@ -5790,7 +5796,7 @@ var app = (function () {
     var app_title = "Espas relijye ak idantite ayisyen";
     var app_subtitle = "Nan sektè nò Santiago";
     var section_1_title = "Pwojè a";
-    var section_1_text = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe a Chile, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
+    var section_1_text = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
     var section_2_title = "Espacios de creencias";
     var section_2_text = "<p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy, las cuales se convierten en un aspecto central de la vida social.</p><p>El primer pilar identificado corresponde al catolisimo. El catolisismo es cronológicamente la religión adoptada de forma más temprana por el colectivo haitiana, acogido durante la colonización por parte de los franceses.</p><p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de la población esclavizada.</p><p>Y finalmente, el tercer pilar que corresponde al protestantismo, el cual tiene una influencia mucho más tardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XIX. Pero también durante el siglo XXI un evento socio-natural que aceleró la asimilación del protestantismo, fue el destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia las cuales prestaron ayuda a la sociedad haitiana.</p><p>Hoy en día, el catolicismo es la religión mayoritaria, y muchos de sus fieles además practican, de manera sincrética, el Vudú, siendo la población haitiana católica más abierta al vudú, que la población haitiana protestante. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p><p>A través del proyecto, hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, a pesar de enfrentar un proceso migratorio, permanece intacto.</p><p class='mb'>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factible desarrollar el sistema de creencias haitiano, y el cual se sustenta en la presencia de ocho instituciones señaladas en la cartografía a continuación.</p>";
     var card_1_title = "Parroquia San Juan Pablo II";
@@ -5810,12 +5816,15 @@ var app = (function () {
     var card_8_title = "Cementerio Municipal de Quilicura";
     var card_8_text = "El cementerio se encuentra en pleno funcionamiento y el año 2010 se construyó un memorial a los Cuasimodistas de Quilicura. Además, el cementerio presta servicio a la comunidad haitiana entregando asesoría en la defunción y sepulturas.";
     var section_3_title = "Líderes religiosos";
-    var leader_1_name = "Lider 1";
-    var leader_1_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
-    var leader_2_name = "Lider 2";
-    var leader_2_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
-    var leader_3_name = "Lider 3";
-    var leader_3_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_1_name = "Enel Aimé";
+    var leader_1_title = "Cristiano evangélico";
+    var leader_1_bio = "<p>Vive en Chile hace 5 años. Es predicador y maestro de una escuela dominical hace más de 10, y actualmente es secretario del comité de la Iglesia Evangélica Tabernaclé de la Grace hace 3 años. Enel brinda servicios a la comunidad tanto como predicador como cumpliendo labores administrativas.</p><p>Su misión es predicar la palabra de Dios, para que, en sus palabras: <i>“la gente abra una puerta en su vida y reciba al Señor”</i>.</p><p>Sobre la forma de practicar las creencias en Chile, En el plantea: <i>“es igual, porque los creyentes que están aquí en Chile son los mismos que estaban allá en Haití, así que no hay una diferencia”</i>.</p><p>Sobre la forma de vivir la creencia, Enel plantea: <i>“lo vivo en todas partes, en soledad, con otras personas, en mi casa, en la calle, donde quiera que estoy vivo mi creencia, porque Dios anda conmigo, su espíritu santo siempre está conmigo”</i>.</p>";
+    var leader_2_name = "Yamile Cabrera";
+    var leader_2_title = "Ex coordinadora oficina Municipal para Migrantes y Refugiados en Quilicura";
+    var leader_2_bio = "<p>Fue coordinadora del Departamento de la mujer y de la Oficina de Migrantes y Refugiados de la Municipalidad de Quilicura. Fue religiosa, parte de la congregación de las Terciarias Capuchinas hace tres décadas y recientemente candidata independiente a la alcaldía del mismo municipio.</p><p>Ha tenido un rol fundamental en el apoyo e integración migrante. Debido a su trabajo religioso aprendió francés, por lo tanto, ha tenido un mayor acercamiento a la comunidad haitiana.</p>";
+    var leader_3_name = "Padre Lucas";
+    var leader_3_title = "Parroquia Juan Pablo II";
+    var leader_3_bio = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
     var section_4_title = "Conclusiones";
     var section_4_text = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
     var ht = {
@@ -5843,10 +5852,13 @@ var app = (function () {
     	card_8_text: card_8_text,
     	section_3_title: section_3_title,
     	leader_1_name: leader_1_name,
+    	leader_1_title: leader_1_title,
     	leader_1_bio: leader_1_bio,
     	leader_2_name: leader_2_name,
+    	leader_2_title: leader_2_title,
     	leader_2_bio: leader_2_bio,
     	leader_3_name: leader_3_name,
+    	leader_3_title: leader_3_title,
     	leader_3_bio: leader_3_bio,
     	section_4_title: section_4_title,
     	section_4_text: section_4_text
@@ -6401,7 +6413,7 @@ var app = (function () {
     	return block;
     }
 
-    // (291:0) <Section>
+    // (294:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t0_value = /*$_*/ ctx[2]("section_4_title") + "";
@@ -6418,7 +6430,7 @@ var app = (function () {
     			t1 = space();
     			html_tag = new HtmlTag();
     			html_anchor = empty();
-    			add_location(h2, file, 291, 2, 39075);
+    			add_location(h2, file, 294, 2, 7146);
     			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
@@ -6444,7 +6456,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(291:0) <Section>",
+    		source: "(294:0) <Section>",
     		ctx
     	});
 
@@ -6488,43 +6500,55 @@ var app = (function () {
     	let div0;
     	let img1;
     	let img1_src_value;
+    	let img1_alt_value;
     	let t13;
     	let h30;
     	let t14_value = /*$_*/ ctx[2]("leader_1_name") + "";
     	let t14;
     	let t15;
-    	let p0;
-    	let t16_value = /*$_*/ ctx[2]("leader_1_bio") + "";
+    	let h40;
+    	let t16_value = /*$_*/ ctx[2]("leader_1_title") + "";
     	let t16;
     	let t17;
+    	let html_tag;
+    	let raw0_value = /*$_*/ ctx[2]("leader_1_bio") + "";
+    	let t18;
     	let div1;
     	let img2;
     	let img2_src_value;
-    	let t18;
-    	let h31;
-    	let t19_value = /*$_*/ ctx[2]("leader_2_name") + "";
+    	let img2_alt_value;
     	let t19;
+    	let h31;
+    	let t20_value = /*$_*/ ctx[2]("leader_2_name") + "";
     	let t20;
-    	let p1;
-    	let t21_value = /*$_*/ ctx[2]("leader_2_bio") + "";
     	let t21;
+    	let h41;
+    	let t22_value = /*$_*/ ctx[2]("leader_2_title") + "";
     	let t22;
+    	let t23;
+    	let html_tag_1;
+    	let raw1_value = /*$_*/ ctx[2]("leader_2_bio") + "";
+    	let t24;
     	let div2;
     	let img3;
     	let img3_src_value;
-    	let t23;
-    	let h32;
-    	let t24_value = /*$_*/ ctx[2]("leader_3_name") + "";
-    	let t24;
+    	let img3_alt_value;
     	let t25;
-    	let p2;
-    	let t26_value = /*$_*/ ctx[2]("leader_3_bio") + "";
+    	let h32;
+    	let t26_value = /*$_*/ ctx[2]("leader_3_name") + "";
     	let t26;
     	let t27;
-    	let divider2;
+    	let h42;
+    	let t28_value = /*$_*/ ctx[2]("leader_3_title") + "";
     	let t28;
-    	let section4;
     	let t29;
+    	let html_tag_2;
+    	let raw2_value = /*$_*/ ctx[2]("leader_3_bio") + "";
+    	let t30;
+    	let divider2;
+    	let t31;
+    	let section4;
+    	let t32;
     	let footer;
     	let current;
     	header = new Header({ $$inline: true });
@@ -6615,31 +6639,37 @@ var app = (function () {
     			h30 = element("h3");
     			t14 = text(t14_value);
     			t15 = space();
-    			p0 = element("p");
+    			h40 = element("h4");
     			t16 = text(t16_value);
     			t17 = space();
+    			html_tag = new HtmlTag();
+    			t18 = space();
     			div1 = element("div");
     			img2 = element("img");
-    			t18 = space();
+    			t19 = space();
     			h31 = element("h3");
-    			t19 = text(t19_value);
-    			t20 = space();
-    			p1 = element("p");
-    			t21 = text(t21_value);
-    			t22 = space();
+    			t20 = text(t20_value);
+    			t21 = space();
+    			h41 = element("h4");
+    			t22 = text(t22_value);
+    			t23 = space();
+    			html_tag_1 = new HtmlTag();
+    			t24 = space();
     			div2 = element("div");
     			img3 = element("img");
-    			t23 = space();
-    			h32 = element("h3");
-    			t24 = text(t24_value);
     			t25 = space();
-    			p2 = element("p");
+    			h32 = element("h3");
     			t26 = text(t26_value);
     			t27 = space();
-    			create_component(divider2.$$.fragment);
-    			t28 = space();
-    			create_component(section4.$$.fragment);
+    			h42 = element("h4");
+    			t28 = text(t28_value);
     			t29 = space();
+    			html_tag_2 = new HtmlTag();
+    			t30 = space();
+    			create_component(divider2.$$.fragment);
+    			t31 = space();
+    			create_component(section4.$$.fragment);
+    			t32 = space();
     			create_component(footer.$$.fragment);
     			if (!src_url_equal(img0.src, img0_src_value = "images/image1.jpeg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Imagen");
@@ -6659,27 +6689,30 @@ var app = (function () {
     			set_style(h2, "position", "absolute");
     			set_style(h2, "z-index", "-1000");
     			add_location(h2, file, 268, 2, 6357);
-    			if (!src_url_equal(img1.src, img1_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img1, "src", img1_src_value);
-    			attr_dev(img1, "alt", "Lider 1");
+    			if (!src_url_equal(img1.src, img1_src_value = "images/leader1.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", img1_alt_value = /*$_*/ ctx[2]("leader_1_name"));
     			add_location(img1, file, 271, 6, 6496);
-    			add_location(h30, file, 272, 6, 17241);
-    			add_location(p0, file, 273, 6, 17278);
+    			add_location(h30, file, 272, 6, 6561);
+    			add_location(h40, file, 273, 6, 6598);
+    			html_tag.a = null;
     			attr_dev(div0, "class", "card-child");
     			add_location(div0, file, 270, 4, 6465);
-    			if (!src_url_equal(img2.src, img2_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img2, "src", img2_src_value);
-    			attr_dev(img2, "alt", "Lider 2");
-    			add_location(img2, file, 276, 6, 17352);
-    			add_location(h31, file, 277, 6, 28097);
-    			add_location(p1, file, 278, 6, 28134);
+    			if (!src_url_equal(img2.src, img2_src_value = "images/leader2.png")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", img2_alt_value = /*$_*/ ctx[2]("leader_2_name"));
+    			add_location(img2, file, 277, 6, 6709);
+    			add_location(h31, file, 278, 6, 6774);
+    			add_location(h41, file, 279, 6, 6811);
+    			html_tag_1.a = null;
     			attr_dev(div1, "class", "card-child");
-    			add_location(div1, file, 275, 4, 17321);
-    			if (!src_url_equal(img3.src, img3_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img3, "src", img3_src_value);
-    			attr_dev(img3, "alt", "Lider 3");
-    			add_location(img3, file, 281, 6, 28208);
-    			add_location(h32, file, 282, 6, 38953);
-    			add_location(p2, file, 283, 6, 38990);
+    			add_location(div1, file, 276, 4, 6678);
+    			if (!src_url_equal(img3.src, img3_src_value = "images/leader3.png")) attr_dev(img3, "src", img3_src_value);
+    			attr_dev(img3, "alt", img3_alt_value = /*$_*/ ctx[2]("leader_3_name"));
+    			add_location(img3, file, 283, 6, 6922);
+    			add_location(h32, file, 284, 6, 6987);
+    			add_location(h42, file, 285, 6, 7024);
+    			html_tag_2.a = null;
     			attr_dev(div2, "class", "card-child");
-    			add_location(div2, file, 280, 4, 28177);
+    			add_location(div2, file, 282, 4, 6891);
     			attr_dev(div3, "class", "card-container");
     			add_location(div3, file, 269, 2, 6432);
     			attr_dev(section3, "class", "col-full centered");
@@ -6723,31 +6756,37 @@ var app = (function () {
     			append_dev(div0, h30);
     			append_dev(h30, t14);
     			append_dev(div0, t15);
-    			append_dev(div0, p0);
-    			append_dev(p0, t16);
-    			append_dev(div3, t17);
+    			append_dev(div0, h40);
+    			append_dev(h40, t16);
+    			append_dev(div0, t17);
+    			html_tag.m(raw0_value, div0);
+    			append_dev(div3, t18);
     			append_dev(div3, div1);
     			append_dev(div1, img2);
-    			append_dev(div1, t18);
+    			append_dev(div1, t19);
     			append_dev(div1, h31);
-    			append_dev(h31, t19);
-    			append_dev(div1, t20);
-    			append_dev(div1, p1);
-    			append_dev(p1, t21);
-    			append_dev(div3, t22);
+    			append_dev(h31, t20);
+    			append_dev(div1, t21);
+    			append_dev(div1, h41);
+    			append_dev(h41, t22);
+    			append_dev(div1, t23);
+    			html_tag_1.m(raw1_value, div1);
+    			append_dev(div3, t24);
     			append_dev(div3, div2);
     			append_dev(div2, img3);
-    			append_dev(div2, t23);
-    			append_dev(div2, h32);
-    			append_dev(h32, t24);
     			append_dev(div2, t25);
-    			append_dev(div2, p2);
-    			append_dev(p2, t26);
-    			insert_dev(target, t27, anchor);
+    			append_dev(div2, h32);
+    			append_dev(h32, t26);
+    			append_dev(div2, t27);
+    			append_dev(div2, h42);
+    			append_dev(h42, t28);
+    			append_dev(div2, t29);
+    			html_tag_2.m(raw2_value, div2);
+    			insert_dev(target, t30, anchor);
     			mount_component(divider2, target, anchor);
-    			insert_dev(target, t28, anchor);
+    			insert_dev(target, t31, anchor);
     			mount_component(section4, target, anchor);
-    			insert_dev(target, t29, anchor);
+    			insert_dev(target, t32, anchor);
     			mount_component(footer, target, anchor);
     			current = true;
     		},
@@ -6782,12 +6821,30 @@ var app = (function () {
 
     			scroller.$set(scroller_changes);
     			if ((!current || dirty & /*$_*/ 4) && t11_value !== (t11_value = /*$_*/ ctx[2]("section_3_title") + "")) set_data_dev(t11, t11_value);
+
+    			if (!current || dirty & /*$_*/ 4 && img1_alt_value !== (img1_alt_value = /*$_*/ ctx[2]("leader_1_name"))) {
+    				attr_dev(img1, "alt", img1_alt_value);
+    			}
+
     			if ((!current || dirty & /*$_*/ 4) && t14_value !== (t14_value = /*$_*/ ctx[2]("leader_1_name") + "")) set_data_dev(t14, t14_value);
-    			if ((!current || dirty & /*$_*/ 4) && t16_value !== (t16_value = /*$_*/ ctx[2]("leader_1_bio") + "")) set_data_dev(t16, t16_value);
-    			if ((!current || dirty & /*$_*/ 4) && t19_value !== (t19_value = /*$_*/ ctx[2]("leader_2_name") + "")) set_data_dev(t19, t19_value);
-    			if ((!current || dirty & /*$_*/ 4) && t21_value !== (t21_value = /*$_*/ ctx[2]("leader_2_bio") + "")) set_data_dev(t21, t21_value);
-    			if ((!current || dirty & /*$_*/ 4) && t24_value !== (t24_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t24, t24_value);
-    			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_bio") + "")) set_data_dev(t26, t26_value);
+    			if ((!current || dirty & /*$_*/ 4) && t16_value !== (t16_value = /*$_*/ ctx[2]("leader_1_title") + "")) set_data_dev(t16, t16_value);
+    			if ((!current || dirty & /*$_*/ 4) && raw0_value !== (raw0_value = /*$_*/ ctx[2]("leader_1_bio") + "")) html_tag.p(raw0_value);
+
+    			if (!current || dirty & /*$_*/ 4 && img2_alt_value !== (img2_alt_value = /*$_*/ ctx[2]("leader_2_name"))) {
+    				attr_dev(img2, "alt", img2_alt_value);
+    			}
+
+    			if ((!current || dirty & /*$_*/ 4) && t20_value !== (t20_value = /*$_*/ ctx[2]("leader_2_name") + "")) set_data_dev(t20, t20_value);
+    			if ((!current || dirty & /*$_*/ 4) && t22_value !== (t22_value = /*$_*/ ctx[2]("leader_2_title") + "")) set_data_dev(t22, t22_value);
+    			if ((!current || dirty & /*$_*/ 4) && raw1_value !== (raw1_value = /*$_*/ ctx[2]("leader_2_bio") + "")) html_tag_1.p(raw1_value);
+
+    			if (!current || dirty & /*$_*/ 4 && img3_alt_value !== (img3_alt_value = /*$_*/ ctx[2]("leader_3_name"))) {
+    				attr_dev(img3, "alt", img3_alt_value);
+    			}
+
+    			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t26, t26_value);
+    			if ((!current || dirty & /*$_*/ 4) && t28_value !== (t28_value = /*$_*/ ctx[2]("leader_3_title") + "")) set_data_dev(t28, t28_value);
+    			if ((!current || dirty & /*$_*/ 4) && raw2_value !== (raw2_value = /*$_*/ ctx[2]("leader_3_bio") + "")) html_tag_2.p(raw2_value);
     			const section4_changes = {};
 
     			if (dirty & /*$$scope, $_*/ 516) {
@@ -6837,11 +6894,11 @@ var app = (function () {
     			destroy_component(divider1, detaching);
     			if (detaching) detach_dev(t10);
     			if (detaching) detach_dev(section3);
-    			if (detaching) detach_dev(t27);
+    			if (detaching) detach_dev(t30);
     			destroy_component(divider2, detaching);
-    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(t31);
     			destroy_component(section4, detaching);
-    			if (detaching) detach_dev(t29);
+    			if (detaching) detach_dev(t32);
     			destroy_component(footer, detaching);
     		}
     	};
