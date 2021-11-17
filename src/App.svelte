@@ -137,20 +137,6 @@
 
 <Section>
   <h2>{$_("section_1_title")}</h2>
-  <p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy.</p>
-  <p>El primer pilar identificado corresponde al catolisimo. Siendo cronológicamente la religión más antigua adoptada, ocurrida durante la colonización por parte de los franceses, que permanecieron poco más de un siglo.</p>
-  <p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de toda la población esclavizada.</p>
-  <p>Y finalmente, el tercer pilar que corresponde a las iglesias protestantes, las cuales tienen una influencia mucho más trardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XXI.</p>
-  <p>También hubo ocurrió un evento socio-natural que aceleró la asimilación de la religión y que corresponde al destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.</p>
-  <p>Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus fieles practican también, de manera sincrética, el Vudú. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p>
-  <p>Hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, después de enfretar un proyecto migratorio, como el descrito hacia Chile, permanece intacto. </p>
-  <p>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.</p>
-</Section>
-
-<Divider />
-
-<Section>
-  <h2>Espacios religiosos</h2>
   <p class="mb">
     Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper
     sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec
@@ -164,6 +150,20 @@
     neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec
     ultrices. Sed commodo nulla et nunc condimentum tempor.
   </p>
+</Section>
+
+<Divider />
+
+<Section>
+  <h2>Espacios de creencias</h2>
+  <p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy.
+  <p>El primer pilar identificado corresponde al catolisimo. Siendo cronológicamente la religión más antigua adoptada, ocurrida durante la colonización por parte de los franceses, que permanecieron poco más de un siglo.</p>
+  <p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de toda la población esclavizada.</p>
+  <p>Y finalmente, el tercer pilar que corresponde a las iglesias protestantes, las cuales tienen una influencia mucho más trardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XXI.</p>
+  <p>También hubo ocurrió un evento socio-natural que aceleró la asimilación de la religión y que corresponde al destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.</p>
+  <p>Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus fieles practican también, de manera sincrética, el Vudú. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p>
+  <p>Hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, después de enfretar un proyecto migratorio, como el descrito hacia Chile, permanece intacto. </p>
+  <p class="mb">Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.</p>
 </Section>
 
 <Scroller {threshold} bind:index={index[1]}>

@@ -5688,7 +5688,7 @@ var app = (function () {
 
     var app_title$1 = "Espacios de religiosidad e identidad haitiana";
     var app_subtitle$1 = "En el sector norte de Santiago";
-    var section_1_title$1 = "Espacios de creencias";
+    var section_1_title$1 = "El proyecto";
     var es = {
     	app_title: app_title$1,
     	app_subtitle: app_subtitle$1,
@@ -5713,79 +5713,24 @@ var app = (function () {
     	let t0_value = /*$_*/ ctx[2]("section_1_title") + "";
     	let t0;
     	let t1;
-    	let p0;
-    	let t3;
-    	let p1;
-    	let t5;
-    	let p2;
-    	let t7;
-    	let p3;
-    	let t9;
-    	let p4;
-    	let t11;
-    	let p5;
-    	let t13;
-    	let p6;
-    	let t15;
-    	let p7;
+    	let p;
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
     			t0 = text(t0_value);
     			t1 = space();
-    			p0 = element("p");
-    			p0.textContent = "En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy.";
-    			t3 = space();
-    			p1 = element("p");
-    			p1.textContent = "El primer pilar identificado corresponde al catolisimo. Siendo cronológicamente la religión más antigua adoptada, ocurrida durante la colonización por parte de los franceses, que permanecieron poco más de un siglo.";
-    			t5 = space();
-    			p2 = element("p");
-    			p2.textContent = "El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de toda la población esclavizada.";
-    			t7 = space();
-    			p3 = element("p");
-    			p3.textContent = "Y finalmente, el tercer pilar que corresponde a las iglesias protestantes, las cuales tienen una influencia mucho más trardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XXI.";
-    			t9 = space();
-    			p4 = element("p");
-    			p4.textContent = "También hubo ocurrió un evento socio-natural que aceleró la asimilación de la religión y que corresponde al destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.";
-    			t11 = space();
-    			p5 = element("p");
-    			p5.textContent = "Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus fieles practican también, de manera sincrética, el Vudú. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.";
-    			t13 = space();
-    			p6 = element("p");
-    			p6.textContent = "Hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, después de enfretar un proyecto migratorio, como el descrito hacia Chile, permanece intacto.";
-    			t15 = space();
-    			p7 = element("p");
-    			p7.textContent = "Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.";
+    			p = element("p");
+    			p.textContent = "Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper\n    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec\n    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat\n    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor\n    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.\n    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam\n    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis\n    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum\n    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra\n    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec\n    ultrices. Sed commodo nulla et nunc condimentum tempor.";
     			add_location(h2, file, 138, 2, 3780);
-    			add_location(p0, file, 139, 2, 3815);
-    			add_location(p1, file, 140, 2, 3984);
-    			add_location(p2, file, 141, 2, 4208);
-    			add_location(p3, file, 142, 2, 4400);
-    			add_location(p4, file, 143, 2, 4610);
-    			add_location(p5, file, 144, 2, 4911);
-    			add_location(p6, file, 145, 2, 5136);
-    			add_location(p7, file, 146, 2, 5359);
+    			attr_dev(p, "class", "mb");
+    			add_location(p, file, 139, 2, 3815);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
     			append_dev(h2, t0);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, p2, anchor);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, p3, anchor);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, p4, anchor);
-    			insert_dev(target, t11, anchor);
-    			insert_dev(target, p5, anchor);
-    			insert_dev(target, t13, anchor);
-    			insert_dev(target, p6, anchor);
-    			insert_dev(target, t15, anchor);
-    			insert_dev(target, p7, anchor);
+    			insert_dev(target, p, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*$_*/ 4 && t0_value !== (t0_value = /*$_*/ ctx[2]("section_1_title") + "")) set_data_dev(t0, t0_value);
@@ -5793,21 +5738,7 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t13);
-    			if (detaching) detach_dev(p6);
-    			if (detaching) detach_dev(t15);
-    			if (detaching) detach_dev(p7);
+    			if (detaching) detach_dev(p);
     		}
     	};
 
@@ -5822,32 +5753,98 @@ var app = (function () {
     	return block;
     }
 
-    // (152:0) <Section>
+    // (157:0) <Section>
     function create_default_slot_1(ctx) {
     	let h2;
     	let t1;
-    	let p;
+    	let p0;
+    	let p1;
+    	let t4;
+    	let p2;
+    	let t6;
+    	let p3;
+    	let t8;
+    	let p4;
+    	let t10;
+    	let p5;
+    	let t12;
+    	let p6;
+    	let t14;
+    	let p7;
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
-    			h2.textContent = "Espacios religiosos";
+    			h2.textContent = "Espacios de creencias";
     			t1 = space();
-    			p = element("p");
-    			p.textContent = "Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper\n    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec\n    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat\n    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor\n    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.\n    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam\n    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis\n    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum\n    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra\n    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec\n    ultrices. Sed commodo nulla et nunc condimentum tempor.";
-    			add_location(h2, file, 152, 2, 5669);
-    			attr_dev(p, "class", "mb");
-    			add_location(p, file, 153, 2, 5700);
+    			p0 = element("p");
+    			p0.textContent = "En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy.\n  ";
+    			p1 = element("p");
+    			p1.textContent = "El primer pilar identificado corresponde al catolisimo. Siendo cronológicamente la religión más antigua adoptada, ocurrida durante la colonización por parte de los franceses, que permanecieron poco más de un siglo.";
+    			t4 = space();
+    			p2 = element("p");
+    			p2.textContent = "El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de toda la población esclavizada.";
+    			t6 = space();
+    			p3 = element("p");
+    			p3.textContent = "Y finalmente, el tercer pilar que corresponde a las iglesias protestantes, las cuales tienen una influencia mucho más trardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XXI.";
+    			t8 = space();
+    			p4 = element("p");
+    			p4.textContent = "También hubo ocurrió un evento socio-natural que aceleró la asimilación de la religión y que corresponde al destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.";
+    			t10 = space();
+    			p5 = element("p");
+    			p5.textContent = "Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus fieles practican también, de manera sincrética, el Vudú. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.";
+    			t12 = space();
+    			p6 = element("p");
+    			p6.textContent = "Hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, después de enfretar un proyecto migratorio, como el descrito hacia Chile, permanece intacto.";
+    			t14 = space();
+    			p7 = element("p");
+    			p7.textContent = "Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.";
+    			add_location(h2, file, 157, 2, 4718);
+    			add_location(p0, file, 158, 2, 4751);
+    			add_location(p1, file, 159, 2, 4916);
+    			add_location(p2, file, 160, 2, 5140);
+    			add_location(p3, file, 161, 2, 5332);
+    			add_location(p4, file, 162, 2, 5542);
+    			add_location(p5, file, 163, 2, 5843);
+    			add_location(p6, file, 164, 2, 6068);
+    			attr_dev(p7, "class", "mb");
+    			add_location(p7, file, 165, 2, 6291);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, p0, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, p5, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, p6, anchor);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, p7, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(p6);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(p7);
     		}
     	};
 
@@ -5855,7 +5852,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(152:0) <Section>",
+    		source: "(157:0) <Section>",
     		ctx
     	});
 
@@ -5891,10 +5888,10 @@ var app = (function () {
     			div0 = element("div");
     			create_component(map_1.$$.fragment);
     			attr_dev(div0, "class", "col-full height-full");
-    			add_location(div0, file, 171, 6, 6668);
-    			add_location(figure, file, 170, 4, 6653);
+    			add_location(div0, file, 171, 6, 6677);
+    			add_location(figure, file, 170, 4, 6662);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 169, 2, 6625);
+    			add_location(div1, file, 169, 2, 6634);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -6099,70 +6096,70 @@ var app = (function () {
     			p7.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 180, 8, 6885);
-    			add_location(h30, file, 181, 8, 6944);
-    			add_location(p0, file, 182, 8, 6989);
+    			add_location(img0, file, 180, 8, 6894);
+    			add_location(h30, file, 181, 8, 6953);
+    			add_location(p0, file, 182, 8, 6998);
     			attr_dev(div0, "class", "col-medium card");
-    			add_location(div0, file, 179, 6, 6847);
-    			add_location(section0, file, 178, 4, 6831);
+    			add_location(div0, file, 179, 6, 6856);
+    			add_location(section0, file, 178, 4, 6840);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 189, 6, 7292);
-    			add_location(h31, file, 190, 6, 7345);
-    			add_location(p1, file, 191, 6, 7402);
+    			add_location(img1, file, 189, 6, 7301);
+    			add_location(h31, file, 190, 6, 7354);
+    			add_location(p1, file, 191, 6, 7411);
     			attr_dev(div1, "class", "col-medium card");
-    			add_location(div1, file, 188, 6, 7256);
-    			add_location(section1, file, 187, 4, 7240);
+    			add_location(div1, file, 188, 6, 7265);
+    			add_location(section1, file, 187, 4, 7249);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 198, 8, 7845);
-    			add_location(h32, file, 199, 8, 7901);
-    			add_location(p2, file, 200, 8, 7955);
+    			add_location(img2, file, 198, 8, 7854);
+    			add_location(h32, file, 199, 8, 7910);
+    			add_location(p2, file, 200, 8, 7964);
     			attr_dev(div2, "class", "col-medium card");
-    			add_location(div2, file, 197, 6, 7807);
-    			add_location(section2, file, 196, 4, 7791);
+    			add_location(div2, file, 197, 6, 7816);
+    			add_location(section2, file, 196, 4, 7800);
     			if (!src_url_equal(img3.src, img3_src_value = "images/card4.jpg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Cementerio");
-    			add_location(img3, file, 211, 8, 8419);
-    			add_location(h33, file, 212, 8, 8475);
-    			add_location(p3, file, 213, 8, 8528);
+    			add_location(img3, file, 211, 8, 8428);
+    			add_location(h33, file, 212, 8, 8484);
+    			add_location(p3, file, 213, 8, 8537);
     			attr_dev(div3, "class", "col-medium card");
-    			add_location(div3, file, 210, 6, 8381);
-    			add_location(section3, file, 209, 4, 8365);
+    			add_location(div3, file, 210, 6, 8390);
+    			add_location(section3, file, 209, 4, 8374);
     			if (!src_url_equal(img4.src, img4_src_value = "images/card5.jpg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Cementerio");
-    			add_location(img4, file, 224, 8, 8992);
-    			add_location(h34, file, 225, 8, 9048);
-    			add_location(p4, file, 226, 8, 9095);
+    			add_location(img4, file, 224, 8, 9001);
+    			add_location(h34, file, 225, 8, 9057);
+    			add_location(p4, file, 226, 8, 9104);
     			attr_dev(div4, "class", "col-medium card");
-    			add_location(div4, file, 223, 6, 8954);
-    			add_location(section4, file, 222, 4, 8938);
+    			add_location(div4, file, 223, 6, 8963);
+    			add_location(section4, file, 222, 4, 8947);
     			if (!src_url_equal(img5.src, img5_src_value = "images/card6.jpg")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "Cementerio");
-    			add_location(img5, file, 237, 8, 9559);
-    			add_location(h35, file, 238, 8, 9615);
-    			add_location(p5, file, 239, 8, 9662);
+    			add_location(img5, file, 237, 8, 9568);
+    			add_location(h35, file, 238, 8, 9624);
+    			add_location(p5, file, 239, 8, 9671);
     			attr_dev(div5, "class", "col-medium card");
-    			add_location(div5, file, 236, 6, 9521);
-    			add_location(section5, file, 235, 4, 9505);
+    			add_location(div5, file, 236, 6, 9530);
+    			add_location(section5, file, 235, 4, 9514);
     			if (!src_url_equal(img6.src, img6_src_value = "images/card7.jpg")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Cementerio");
-    			add_location(img6, file, 250, 8, 10126);
-    			add_location(h36, file, 251, 8, 10182);
-    			add_location(p6, file, 252, 8, 10211);
+    			add_location(img6, file, 250, 8, 10135);
+    			add_location(h36, file, 251, 8, 10191);
+    			add_location(p6, file, 252, 8, 10220);
     			attr_dev(div6, "class", "col-medium card");
-    			add_location(div6, file, 249, 6, 10088);
-    			add_location(section6, file, 248, 4, 10072);
+    			add_location(div6, file, 249, 6, 10097);
+    			add_location(section6, file, 248, 4, 10081);
     			if (!src_url_equal(img7.src, img7_src_value = "images/card8.jpg")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Cementerio");
-    			add_location(img7, file, 263, 8, 10675);
-    			add_location(h37, file, 264, 8, 10731);
-    			add_location(p7, file, 265, 8, 10782);
+    			add_location(img7, file, 263, 8, 10684);
+    			add_location(h37, file, 264, 8, 10740);
+    			add_location(p7, file, 265, 8, 10791);
     			attr_dev(div7, "class", "col-medium card");
-    			add_location(div7, file, 262, 6, 10637);
-    			add_location(section7, file, 261, 4, 10621);
+    			add_location(div7, file, 262, 6, 10646);
+    			add_location(section7, file, 261, 4, 10630);
     			attr_dev(div8, "slot", "foreground");
-    			add_location(div8, file, 177, 2, 6803);
+    			add_location(div8, file, 177, 2, 6812);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div8, anchor);
@@ -6259,9 +6256,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 280, 2, 11235);
+    			add_location(h2, file, 280, 2, 11244);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 281, 2, 11259);
+    			add_location(p, file, 281, 2, 11268);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
