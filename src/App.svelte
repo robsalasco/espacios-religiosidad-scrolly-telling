@@ -271,15 +271,10 @@
 <Section>
   <h2>Conclusiones</h2>
   <p class="mb">
-    Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum
-    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,
-    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo
-    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam
-    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras
-    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas
-    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum
-    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi
-    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.
+    Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de prácticas culturales. La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permite el desarrollo de ritos como también ayuda a la difusión del sistema de creencias haitiano. 
+  </p>
+  <p class="mb">
+    La red, tiene un peso reconocido a nivel nacional e internacional y está sustenada por párrocos y religosos reconocidos. Es tan graviante el peso de dicha red de instituciones religiosas que atrae feligreses de distintos puntos de la Región Metropolitana.
   </p>
 </Section>
 
