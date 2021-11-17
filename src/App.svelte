@@ -171,7 +171,7 @@
 <section style="margin-top:180px;position: relative;">
   <img
     src="images/image1.jpeg"
-    alt="Test"
+    alt="Imagen"
     style="width:100%;height:100%;z-index:-1000"
   />
   <span class="border-pad-title bdbc">
@@ -183,14 +183,14 @@
 </section>
 
 <Section>
-  <h2>{@html $_("section_1_title")}</h2>
+  <h2>{$_("section_1_title")}</h2>
   <p>{@html $_("section_1_text")}</p>
 </Section>
 
 <Divider />
 
 <Section>
-  <h2>{@html $_("section_2_title")}</h2>
+  <h2>{$_("section_2_title")}</h2>
   {@html $_("section_2_text")}
 </Section>
 
