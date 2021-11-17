@@ -137,18 +137,9 @@
 
 <Section>
   <h2>{$_("section_1_title")}</h2>
-  <p class="mb">
-    Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper
-    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec
-    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat
-    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor
-    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.
-    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam
-    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis
-    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum
-    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra
-    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec
-    ultrices. Sed commodo nulla et nunc condimentum tempor.
+  <p>
+    La llegada de migrantes provenientes de Centroamérica y del Caribe a Chile, correspondientes a lo que se ha denominado última oleada migratoria (2010-2020), se ancló espacialmente en Quilicura y el área norte dela RM. Dentro del patrimonio inmaterial que se ha identificado portan y desarrollan estos nuevos residentes, una de las prácticas que más destacan en la comunidad haitiana es laforma de vivir su religiosidad. 
+    Es por ello que el objetivo general de la presente investigación es: visibilizar los discursos, prácticas culturales-religiosas, y formas de habitar asociada a la religiosidad de los residentes haitianos de la comuna de Quilicura y el sector norte como también identificar espacios donde se realizan dichas prácticas religiosas.
   </p>
 </Section>
 

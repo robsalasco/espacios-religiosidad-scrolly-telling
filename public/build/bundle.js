@@ -5688,7 +5688,7 @@ var app = (function () {
 
     var app_title$1 = "Espacios de religiosidad e identidad haitiana";
     var app_subtitle$1 = "En el sector norte de Santiago";
-    var section_1_title$1 = "El proyecto";
+    var section_1_title$1 = "Introducción";
     var es = {
     	app_title: app_title$1,
     	app_subtitle: app_subtitle$1,
@@ -5721,9 +5721,8 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			p = element("p");
-    			p.textContent = "Praesent eget mattis ante. In auctor tellus sed ipsum pulvinar, quis semper\n    sapien ultricies. Donec pulvinar feugiat lectus hendrerit porta. Cras nec\n    egestas diam. Praesent consequat consectetur est in venenatis. Duis volutpat\n    nisi eu tempus interdum. Vivamus convallis metus eros, consectetur porttitor\n    risus viverra nec. Proin a lectus lobortis, commodo urna eget, rutrum mi.\n    Donec blandit quam sit amet diam laoreet, eu facilisis urna laoreet. Aliquam\n    aliquam augue nisi, ac feugiat justo volutpat ut. Cras pulvinar facilisis\n    rutrum. Nulla mollis tellus in nunc pharetra, quis scelerisque ipsum\n    tristique. Nulla bibendum turpis consequat aliquam porta. Integer viverra\n    neque tincidunt nulla elementum euismod. Morbi ultrices aliquam dui nec\n    ultrices. Sed commodo nulla et nunc condimentum tempor.";
+    			p.textContent = "La llegada de migrantes provenientes de Centroamérica y del Caribe a Chile, correspondientes a lo que se ha denominado última oleada migratoria (2010-2020), se ancló espacialmente en Quilicura y el área norte dela RM. Dentro del patrimonio inmaterial que se ha identificado portan y desarrollan estos nuevos residentes, una de las prácticas que más destacan en la comunidad haitiana es laforma de vivir su religiosidad. \n    Es por ello que el objetivo general de la presente investigación es: visibilizar los discursos, prácticas culturales-religiosas, y formas de habitar asociada a la religiosidad de los residentes haitianos de la comuna de Quilicura y el sector norte como también identificar espacios donde se realizan dichas prácticas religiosas.";
     			add_location(h2, file, 138, 2, 3780);
-    			attr_dev(p, "class", "mb");
     			add_location(p, file, 139, 2, 3815);
     		},
     		m: function mount(target, anchor) {
@@ -5753,7 +5752,7 @@ var app = (function () {
     	return block;
     }
 
-    // (157:0) <Section>
+    // (148:0) <Section>
     function create_default_slot_1(ctx) {
     	let h2;
     	let t1;
@@ -5799,16 +5798,16 @@ var app = (function () {
     			t14 = space();
     			p7 = element("p");
     			p7.textContent = "Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.";
-    			add_location(h2, file, 157, 2, 4718);
-    			add_location(p0, file, 158, 2, 4751);
-    			add_location(p1, file, 159, 2, 4916);
-    			add_location(p2, file, 160, 2, 5140);
-    			add_location(p3, file, 161, 2, 5332);
-    			add_location(p4, file, 162, 2, 5542);
-    			add_location(p5, file, 163, 2, 5843);
-    			add_location(p6, file, 164, 2, 6068);
+    			add_location(h2, file, 148, 2, 4621);
+    			add_location(p0, file, 149, 2, 4654);
+    			add_location(p1, file, 150, 2, 4819);
+    			add_location(p2, file, 151, 2, 5043);
+    			add_location(p3, file, 152, 2, 5235);
+    			add_location(p4, file, 153, 2, 5445);
+    			add_location(p5, file, 154, 2, 5746);
+    			add_location(p6, file, 155, 2, 5971);
     			attr_dev(p7, "class", "mb");
-    			add_location(p7, file, 165, 2, 6291);
+    			add_location(p7, file, 156, 2, 6194);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -5852,14 +5851,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(157:0) <Section>",
+    		source: "(148:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:2) 
+    // (161:2) 
     function create_background_slot(ctx) {
     	let div1;
     	let figure;
@@ -5888,10 +5887,10 @@ var app = (function () {
     			div0 = element("div");
     			create_component(map_1.$$.fragment);
     			attr_dev(div0, "class", "col-full height-full");
-    			add_location(div0, file, 171, 6, 6677);
-    			add_location(figure, file, 170, 4, 6662);
+    			add_location(div0, file, 162, 6, 6580);
+    			add_location(figure, file, 161, 4, 6565);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 169, 2, 6634);
+    			add_location(div1, file, 160, 2, 6537);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -5930,14 +5929,14 @@ var app = (function () {
     		block,
     		id: create_background_slot.name,
     		type: "slot",
-    		source: "(170:2) ",
+    		source: "(161:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:2) 
+    // (169:2) 
     function create_foreground_slot(ctx) {
     	let div8;
     	let section0;
@@ -6096,70 +6095,70 @@ var app = (function () {
     			p7.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 180, 8, 6894);
-    			add_location(h30, file, 181, 8, 6953);
-    			add_location(p0, file, 182, 8, 6998);
+    			add_location(img0, file, 171, 8, 6797);
+    			add_location(h30, file, 172, 8, 6856);
+    			add_location(p0, file, 173, 8, 6901);
     			attr_dev(div0, "class", "col-medium card");
-    			add_location(div0, file, 179, 6, 6856);
-    			add_location(section0, file, 178, 4, 6840);
+    			add_location(div0, file, 170, 6, 6759);
+    			add_location(section0, file, 169, 4, 6743);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 189, 6, 7301);
-    			add_location(h31, file, 190, 6, 7354);
-    			add_location(p1, file, 191, 6, 7411);
+    			add_location(img1, file, 180, 6, 7204);
+    			add_location(h31, file, 181, 6, 7257);
+    			add_location(p1, file, 182, 6, 7314);
     			attr_dev(div1, "class", "col-medium card");
-    			add_location(div1, file, 188, 6, 7265);
-    			add_location(section1, file, 187, 4, 7249);
+    			add_location(div1, file, 179, 6, 7168);
+    			add_location(section1, file, 178, 4, 7152);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 198, 8, 7854);
-    			add_location(h32, file, 199, 8, 7910);
-    			add_location(p2, file, 200, 8, 7964);
+    			add_location(img2, file, 189, 8, 7757);
+    			add_location(h32, file, 190, 8, 7813);
+    			add_location(p2, file, 191, 8, 7867);
     			attr_dev(div2, "class", "col-medium card");
-    			add_location(div2, file, 197, 6, 7816);
-    			add_location(section2, file, 196, 4, 7800);
+    			add_location(div2, file, 188, 6, 7719);
+    			add_location(section2, file, 187, 4, 7703);
     			if (!src_url_equal(img3.src, img3_src_value = "images/card4.jpg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Cementerio");
-    			add_location(img3, file, 211, 8, 8428);
-    			add_location(h33, file, 212, 8, 8484);
-    			add_location(p3, file, 213, 8, 8537);
+    			add_location(img3, file, 202, 8, 8331);
+    			add_location(h33, file, 203, 8, 8387);
+    			add_location(p3, file, 204, 8, 8440);
     			attr_dev(div3, "class", "col-medium card");
-    			add_location(div3, file, 210, 6, 8390);
-    			add_location(section3, file, 209, 4, 8374);
+    			add_location(div3, file, 201, 6, 8293);
+    			add_location(section3, file, 200, 4, 8277);
     			if (!src_url_equal(img4.src, img4_src_value = "images/card5.jpg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Cementerio");
-    			add_location(img4, file, 224, 8, 9001);
-    			add_location(h34, file, 225, 8, 9057);
-    			add_location(p4, file, 226, 8, 9104);
+    			add_location(img4, file, 215, 8, 8904);
+    			add_location(h34, file, 216, 8, 8960);
+    			add_location(p4, file, 217, 8, 9007);
     			attr_dev(div4, "class", "col-medium card");
-    			add_location(div4, file, 223, 6, 8963);
-    			add_location(section4, file, 222, 4, 8947);
+    			add_location(div4, file, 214, 6, 8866);
+    			add_location(section4, file, 213, 4, 8850);
     			if (!src_url_equal(img5.src, img5_src_value = "images/card6.jpg")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "Cementerio");
-    			add_location(img5, file, 237, 8, 9568);
-    			add_location(h35, file, 238, 8, 9624);
-    			add_location(p5, file, 239, 8, 9671);
+    			add_location(img5, file, 228, 8, 9471);
+    			add_location(h35, file, 229, 8, 9527);
+    			add_location(p5, file, 230, 8, 9574);
     			attr_dev(div5, "class", "col-medium card");
-    			add_location(div5, file, 236, 6, 9530);
-    			add_location(section5, file, 235, 4, 9514);
+    			add_location(div5, file, 227, 6, 9433);
+    			add_location(section5, file, 226, 4, 9417);
     			if (!src_url_equal(img6.src, img6_src_value = "images/card7.jpg")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Cementerio");
-    			add_location(img6, file, 250, 8, 10135);
-    			add_location(h36, file, 251, 8, 10191);
-    			add_location(p6, file, 252, 8, 10220);
+    			add_location(img6, file, 241, 8, 10038);
+    			add_location(h36, file, 242, 8, 10094);
+    			add_location(p6, file, 243, 8, 10123);
     			attr_dev(div6, "class", "col-medium card");
-    			add_location(div6, file, 249, 6, 10097);
-    			add_location(section6, file, 248, 4, 10081);
+    			add_location(div6, file, 240, 6, 10000);
+    			add_location(section6, file, 239, 4, 9984);
     			if (!src_url_equal(img7.src, img7_src_value = "images/card8.jpg")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Cementerio");
-    			add_location(img7, file, 263, 8, 10684);
-    			add_location(h37, file, 264, 8, 10740);
-    			add_location(p7, file, 265, 8, 10791);
+    			add_location(img7, file, 254, 8, 10587);
+    			add_location(h37, file, 255, 8, 10643);
+    			add_location(p7, file, 256, 8, 10694);
     			attr_dev(div7, "class", "col-medium card");
-    			add_location(div7, file, 262, 6, 10646);
-    			add_location(section7, file, 261, 4, 10630);
+    			add_location(div7, file, 253, 6, 10549);
+    			add_location(section7, file, 252, 4, 10533);
     			attr_dev(div8, "slot", "foreground");
-    			add_location(div8, file, 177, 2, 6812);
+    			add_location(div8, file, 168, 2, 6715);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div8, anchor);
@@ -6236,14 +6235,14 @@ var app = (function () {
     		block,
     		id: create_foreground_slot.name,
     		type: "slot",
-    		source: "(178:2) ",
+    		source: "(169:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (280:0) <Section>
+    // (271:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t1;
@@ -6256,9 +6255,9 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ut interdum a lorem at lacinia. Aliquam at nulla ac dui elementum\n    consectetur vitae non orci. Nam et nisi convallis, laoreet felis at,\n    eleifend augue. Curabitur ac nibh mauris. In suscipit diam quis leo\n    pulvinar, vitae ultricies lacus suscipit. Donec non lacus neque. Aliquam\n    molestie quis dui sit amet cursus. Proin porta a nibh at efficitur. Cras\n    dictum volutpat accumsan. Ut sollicitudin venenatis purus a rutrum. Maecenas\n    in ante a ante fringilla rhoncus. Nullam non commodo dui. Proin bibendum\n    sapien accumsan massa fermentum iaculis vehicula feugiat elit. Duis quis mi\n    urna. Sed rutrum justo sapien, vitae sagittis ante cursus sit amet.";
-    			add_location(h2, file, 280, 2, 11244);
+    			add_location(h2, file, 271, 2, 11147);
     			attr_dev(p, "class", "mb");
-    			add_location(p, file, 281, 2, 11268);
+    			add_location(p, file, 272, 2, 11171);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -6276,7 +6275,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(280:0) <Section>",
+    		source: "(271:0) <Section>",
     		ctx
     	});
 
