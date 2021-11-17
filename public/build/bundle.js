@@ -126,6 +126,9 @@ var app = (function () {
     function space() {
         return text(' ');
     }
+    function empty() {
+        return text('');
+    }
     function listen(node, event, handler, options) {
         node.addEventListener(event, handler, options);
         return () => node.removeEventListener(event, handler, options);
@@ -210,6 +213,39 @@ var app = (function () {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, bubbles, false, detail);
         return e;
+    }
+    class HtmlTag {
+        constructor() {
+            this.e = this.n = null;
+        }
+        c(html) {
+            this.h(html);
+        }
+        m(html, target, anchor = null) {
+            if (!this.e) {
+                this.e = element(target.nodeName);
+                this.t = target;
+                this.c(html);
+            }
+            this.i(anchor);
+        }
+        h(html) {
+            this.e.innerHTML = html;
+            this.n = Array.from(this.e.childNodes);
+        }
+        i(anchor) {
+            for (let i = 0; i < this.n.length; i += 1) {
+                insert(this.t, this.n[i], anchor);
+            }
+        }
+        p(html) {
+            this.d();
+            this.h(html);
+            this.i(this.a);
+        }
+        d() {
+            this.n.forEach(detach);
+        }
     }
 
     let current_component;
@@ -5688,11 +5724,67 @@ var app = (function () {
 
     var app_title$1 = "Espacios de religiosidad e identidad haitiana";
     var app_subtitle$1 = "En el sector norte de Santiago";
-    var section_1_title$1 = "Introducción";
+    var section_1_title$1 = "Introducción - El proyecto de investigación";
+    var section_1_text = "<p>La llegada de migrantes a Chile, provenientes de Centroamérica y del Caribe a Chile, es lo que se ha denominado como la última oleada migratoria (2010-2020) y se ancló espacialmente en el área norte de la Región Metropolitana, específicamente en la Comuna de Quilicura.</p><p>En dicho territorio, hemos podido identificar el patrimonio inmaterial que portan estos migrantes, particularmente los pertenecientes a la comunidad haitiana, entre cuyas prácticas culturales que más destacan es la forma de vivir su religiosidad.</p><p>Es por ello, que el objetivo general de la presente investigación es; visibilizar los discursos, prácticas culturales-religiosas como también identificar los espacios donde desenvuelven las creencias la comunidad haitiana.</p>";
+    var section_2_title = "Espacios de creencias";
+    var section_2_text = "<p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy, las cuales se convierten en un aspecto central de la vida social.</p><p>El primer pilar identificado corresponde al catolisimo. El catolisismo es cronológicamente la religión adoptada de forma más temprana por el colectivo haitiana, acogido durante la colonización por parte de los franceses.</p><p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de la población esclavizada.</p><p>Y finalmente, el tercer pilar que corresponde al protestantismo, el cual tiene una influencia mucho más tardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XIX. Pero también durante el siglo XXI un evento socio-natural que aceleró la asimilación del protestantismo, fue el destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia las cuales prestaron ayuda a la sociedad haitiana.</p><p>Hoy en día, el catolicismo es la religión mayoritaria, y muchos de sus fieles además practican, de manera sincrética, el Vudú, siendo la población haitiana católica más abierta al vudú, que la población haitiana protestante. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p><p>A través del proyecto, hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, a pesar de enfrentar un proceso migratorio, permanece intacto.</p><p class='mb'>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factible desarrollar el sistema de creencias haitiano, y el cual se sustenta en la presencia de ocho instituciones señaladas en la cartografía a continuación.</p>";
+    var card_1_title = "Parroquia San Juan Pablo II";
+    var card_1_text = "Es una importante parroquia católica, es parte de la Familia Misionera Verbum Dei, quienes la fundaron en 2002. La parroquia da misas con alta regularidad, varias veces en la semana y a diversas horas, como también presta variados servicios a la comunidad. Actualmente cuanta con una importante presencia de feligreses haitianos.";
+    var card_2_title = "Iglesia Evangélica Tabernaclé de la Grace";
+    var card_2_text = "Actualmente es uno de los templos más activos y con más asistentes de Quilicura. El templo es principalmente visitado por miembros de la comunidad haitiana, impartiendo oración en Creolé, sin embargo, el acceso es libre. En la iglesia se imparte la oración cada semana, pero adicionlmente funciona un escuela dominical.";
+    var card_3_title = "Iglesia Sagrada Familia de Quilicura";
+    var card_3_text = "La Iglesia está en pleno funcionamiento a cargo del presbítero Josef Bernhard Bocktenk Tebroke. Durante octubre de 2021 fue restaurado el Cristo, anteriormente vandalizado en protestas. La Iglesia es una de las más relevantes dentro de la comuna de Quilicura y es punto de encuentro y reunión de comunidades migrantes. Además, es una de las iglesias que ha incorporado las nuevas tecnologías de la información, transmitiendo las actividades a través de sus redes sociales. Afuera de la iglesia, se instalan puestos comerciales informales liderados por la comunidad haitiana.";
+    var card_4_title = "Parroquia Nuestra Señora del Carmen";
+    var card_4_text = "La parroquia imparte misa regularmente cada semana. Además es un punto de encuentro muy relevante de la comunidad haitiana. La parroquia estuvo a cargo del destacado Presbítero Jean Wesly Joseph, miembro de la comunidad haitiana y el primer párroco de dicha nacionalidad en ser enviado a nuestro país. ";
+    var card_5_title = "Parroquia San Alberto Hurtado";
+    var card_5_text = "Parroquia fundada el año 2005. Imparte misas todos los días de la semana. Corresponde a un amplio espacio que permite la meditación y el encuentro entre las diversas comunidades.";
+    var card_6_title = "I. Municipalidad de Quilicura";
+    var card_6_text = "Actualmente el municipio es un punto de encuentro para las diversas comunidades migrantes que viven en Quilicura, las cuales buscan asesoría en diversos temas. Por ello el municipio destaca por la obtención del Sello migrante y cuenta con una Oficina de Migrantes y Refugiados.";
+    var card_7_title = "Cerro Renca";
+    var card_7_text = "El Cerro Renca hacia el sector de Vespucio sur - Lo Campino, es un importante lugar de peregrinaje para algunos miembros de la comunidad haitiana, principalmente por su cercanía al cementerio y además porque permite el contacto con la naturaleza.";
+    var card_8_title = "Cementerio Municipal de Quilicura";
+    var card_8_text = "El cementerio se encuentra en pleno funcionamiento y el año 2010 se construyó un memorial a los Cuasimodistas de Quilicura. Además, el cementerio presta servicio a la comunidad haitiana entregando asesoría en la defunción y sepulturas.";
+    var section_3_title = "Líderes religiosos";
+    var leader_1_name = "Lider 1";
+    var leader_1_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_2_name = "Lider 2";
+    var leader_2_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var leader_3_name = "Lider 3";
+    var leader_3_bio = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    var section_4_title = "Conclusiones";
+    var section_4_text = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
     var es = {
     	app_title: app_title$1,
     	app_subtitle: app_subtitle$1,
-    	section_1_title: section_1_title$1
+    	section_1_title: section_1_title$1,
+    	section_1_text: section_1_text,
+    	section_2_title: section_2_title,
+    	section_2_text: section_2_text,
+    	card_1_title: card_1_title,
+    	card_1_text: card_1_text,
+    	card_2_title: card_2_title,
+    	card_2_text: card_2_text,
+    	card_3_title: card_3_title,
+    	card_3_text: card_3_text,
+    	card_4_title: card_4_title,
+    	card_4_text: card_4_text,
+    	card_5_title: card_5_title,
+    	card_5_text: card_5_text,
+    	card_6_title: card_6_title,
+    	card_6_text: card_6_text,
+    	card_7_title: card_7_title,
+    	card_7_text: card_7_text,
+    	card_8_title: card_8_title,
+    	card_8_text: card_8_text,
+    	section_3_title: section_3_title,
+    	leader_1_name: leader_1_name,
+    	leader_1_bio: leader_1_bio,
+    	leader_2_name: leader_2_name,
+    	leader_2_bio: leader_2_bio,
+    	leader_3_name: leader_3_name,
+    	leader_3_bio: leader_3_bio,
+    	section_4_title: section_4_title,
+    	section_4_text: section_4_text
     };
 
     var app_title = "Espas relijye ak idantite ayisyen";
@@ -5710,33 +5802,31 @@ var app = (function () {
     // (185:0) <Section>
     function create_default_slot_2(ctx) {
     	let h2;
-    	let t0_value = /*$_*/ ctx[2]("section_1_title") + "";
-    	let t0;
-    	let t1;
+    	let raw0_value = /*$_*/ ctx[2]("section_1_title") + "";
+    	let t;
     	let p;
+    	let raw1_value = /*$_*/ ctx[2]("section_1_text") + "";
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
-    			t0 = text(t0_value);
-    			t1 = space();
+    			t = space();
     			p = element("p");
-    			p.textContent = "La llegada de migrantes provenientes de Centroamérica y del Caribe a Chile,\n    correspondientes a lo que se ha denominado última oleada migratoria\n    (2010-2020), se ancló espacialmente en Quilicura y el área norte dela RM.\n    Dentro del patrimonio inmaterial que se ha identificado portan y desarrollan\n    estos nuevos residentes, una de las prácticas que más destacan en la\n    comunidad haitiana es laforma de vivir su religiosidad. Es por ello que el\n    objetivo general de la presente investigación es: visibilizar los discursos,\n    prácticas culturales-religiosas, y formas de habitar asociada a la\n    religiosidad de los residentes haitianos de la comuna de Quilicura y el\n    sector norte como también identificar espacios donde se realizan dichas\n    prácticas religiosas.";
     			add_location(h2, file, 185, 2, 4191);
-    			add_location(p, file, 186, 2, 4226);
+    			add_location(p, file, 186, 2, 4232);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
-    			append_dev(h2, t0);
-    			insert_dev(target, t1, anchor);
+    			h2.innerHTML = raw0_value;
+    			insert_dev(target, t, anchor);
     			insert_dev(target, p, anchor);
+    			p.innerHTML = raw1_value;
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$_*/ 4 && t0_value !== (t0_value = /*$_*/ ctx[2]("section_1_title") + "")) set_data_dev(t0, t0_value);
-    		},
+    			if (dirty & /*$_*/ 4 && raw0_value !== (raw0_value = /*$_*/ ctx[2]("section_1_title") + "")) h2.innerHTML = raw0_value;			if (dirty & /*$_*/ 4 && raw1_value !== (raw1_value = /*$_*/ ctx[2]("section_1_text") + "")) p.innerHTML = raw1_value;		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
-    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t);
     			if (detaching) detach_dev(p);
     		}
     	};
@@ -5752,102 +5842,39 @@ var app = (function () {
     	return block;
     }
 
-    // (204:0) <Section>
+    // (192:0) <Section>
     function create_default_slot_1(ctx) {
     	let h2;
-    	let t1;
-    	let p0;
-    	let t3;
-    	let p1;
-    	let t5;
-    	let p2;
-    	let t7;
-    	let p3;
-    	let t9;
-    	let p4;
-    	let t11;
-    	let p5;
-    	let t13;
-    	let p6;
-    	let t15;
-    	let p7;
+    	let raw0_value = /*$_*/ ctx[2]("section_2_title") + "";
+    	let t;
+    	let html_tag;
+    	let raw1_value = /*$_*/ ctx[2]("section_2_text") + "";
+    	let html_anchor;
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
-    			h2.textContent = "Espacios de creencias";
-    			t1 = space();
-    			p0 = element("p");
-    			p0.textContent = "En el desarrollo del proyecto hemos denominado “pilares” a las instituciones\n    religiosas que forman parte del sistema de creencias haitiano hasta el día\n    de hoy.";
-    			t3 = space();
-    			p1 = element("p");
-    			p1.textContent = "El primer pilar identificado corresponde al catolisimo. Siendo\n    cronológicamente la religión más antigua adoptada, ocurrida durante la\n    colonización por parte de los franceses, que permanecieron poco más de un\n    siglo.";
-    			t5 = space();
-    			p2 = element("p");
-    			p2.textContent = "El segundo pilar, corresponde al vudú, traído por esclavos originarios del\n    Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de\n    toda la población esclavizada.";
-    			t7 = space();
-    			p3 = element("p");
-    			p3.textContent = "Y finalmente, el tercer pilar que corresponde a las iglesias protestantes,\n    las cuales tienen una influencia mucho más trardía, en conjunto con la\n    ocupación de Estados Unidos a comienzos del siglo XXI.";
-    			t9 = space();
-    			p4 = element("p");
-    			p4.textContent = "También hubo ocurrió un evento socio-natural que aceleró la asimilación de\n    la religión y que corresponde al destructivo terremoto del 12 de enero de\n    2010 que permitió la llegada de gran cantidad de organizaciones de\n    beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.";
-    			t11 = space();
-    			p5 = element("p");
-    			p5.textContent = "Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus\n    fieles practican también, de manera sincrética, el Vudú. Por otro lado,\n    cerca del 35% de la población haitiana es fiel a una iglesia evangélica.";
-    			t13 = space();
-    			p6 = element("p");
-    			p6.textContent = "Hemos podido constatar, que el sistema de creencias haitiano, fundamentado\n    en los tres pilares anteriormente descritos, después de enfretar un proyecto\n    migratorio, como el descrito hacia Chile, permanece intacto.";
-    			t15 = space();
-    			p7 = element("p");
-    			p7.textContent = "Particularmente, hemos evidenciado que el sector norte de Santiago y la\n    comuna de Quilicura son espacios dónde es factibile desarrollar el sistema\n    de creencias haitiano y que se sustenta en la presencia de 8 instituciones\n    señaladas en la cartografía a continuación.";
-    			add_location(h2, file, 204, 2, 5067);
-    			add_location(p0, file, 205, 2, 5100);
-    			add_location(p1, file, 210, 2, 5285);
-    			add_location(p2, file, 216, 2, 5529);
-    			add_location(p3, file, 221, 2, 5737);
-    			add_location(p4, file, 226, 2, 5963);
-    			add_location(p5, file, 232, 2, 6284);
-    			add_location(p6, file, 237, 2, 6525);
-    			attr_dev(p7, "class", "mb");
-    			add_location(p7, file, 242, 2, 6763);
+    			t = space();
+    			html_tag = new HtmlTag();
+    			html_anchor = empty();
+    			add_location(h2, file, 192, 2, 4305);
+    			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, p2, anchor);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, p3, anchor);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, p4, anchor);
-    			insert_dev(target, t11, anchor);
-    			insert_dev(target, p5, anchor);
-    			insert_dev(target, t13, anchor);
-    			insert_dev(target, p6, anchor);
-    			insert_dev(target, t15, anchor);
-    			insert_dev(target, p7, anchor);
+    			h2.innerHTML = raw0_value;
+    			insert_dev(target, t, anchor);
+    			html_tag.m(raw1_value, target, anchor);
+    			insert_dev(target, html_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$_*/ 4 && raw0_value !== (raw0_value = /*$_*/ ctx[2]("section_2_title") + "")) h2.innerHTML = raw0_value;			if (dirty & /*$_*/ 4 && raw1_value !== (raw1_value = /*$_*/ ctx[2]("section_2_text") + "")) html_tag.p(raw1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t13);
-    			if (detaching) detach_dev(p6);
-    			if (detaching) detach_dev(t15);
-    			if (detaching) detach_dev(p7);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(html_anchor);
+    			if (detaching) html_tag.d();
     		}
     	};
 
@@ -5855,14 +5882,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(204:0) <Section>",
+    		source: "(192:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (252:2) 
+    // (198:2) 
     function create_background_slot(ctx) {
     	let div1;
     	let figure;
@@ -5891,10 +5918,10 @@ var app = (function () {
     			div0 = element("div");
     			create_component(map_1.$$.fragment);
     			attr_dev(div0, "class", "col-full height-full");
-    			add_location(div0, file, 253, 6, 7169);
-    			add_location(figure, file, 252, 4, 7154);
+    			add_location(div0, file, 199, 6, 4477);
+    			add_location(figure, file, 198, 4, 4462);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 251, 2, 7126);
+    			add_location(div1, file, 197, 2, 4434);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -5933,14 +5960,14 @@ var app = (function () {
     		block,
     		id: create_background_slot.name,
     		type: "slot",
-    		source: "(252:2) ",
+    		source: "(198:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (260:2) 
+    // (206:2) 
     function create_foreground_slot(ctx) {
     	let div8;
     	let section0;
@@ -5949,8 +5976,12 @@ var app = (function () {
     	let img0_src_value;
     	let t0;
     	let h30;
+    	let t1_value = /*$_*/ ctx[2]("card_1_title") + "";
+    	let t1;
     	let t2;
     	let p0;
+    	let t3_value = /*$_*/ ctx[2]("card_1_text") + "";
+    	let t3;
     	let t4;
     	let section1;
     	let div1;
@@ -5958,8 +5989,12 @@ var app = (function () {
     	let img1_src_value;
     	let t5;
     	let h31;
+    	let t6_value = /*$_*/ ctx[2]("card_2_title") + "";
+    	let t6;
     	let t7;
     	let p1;
+    	let t8_value = /*$_*/ ctx[2]("card_2_text") + "";
+    	let t8;
     	let t9;
     	let section2;
     	let div2;
@@ -5967,8 +6002,12 @@ var app = (function () {
     	let img2_src_value;
     	let t10;
     	let h32;
+    	let t11_value = /*$_*/ ctx[2]("card_3_title") + "";
+    	let t11;
     	let t12;
     	let p2;
+    	let t13_value = /*$_*/ ctx[2]("card_3_text") + "";
+    	let t13;
     	let t14;
     	let section3;
     	let div3;
@@ -5976,8 +6015,12 @@ var app = (function () {
     	let img3_src_value;
     	let t15;
     	let h33;
+    	let t16_value = /*$_*/ ctx[2]("card_4_title") + "";
+    	let t16;
     	let t17;
     	let p3;
+    	let t18_value = /*$_*/ ctx[2]("card_4_text") + "";
+    	let t18;
     	let t19;
     	let section4;
     	let div4;
@@ -5985,8 +6028,12 @@ var app = (function () {
     	let img4_src_value;
     	let t20;
     	let h34;
+    	let t21_value = /*$_*/ ctx[2]("card_5_title") + "";
+    	let t21;
     	let t22;
     	let p4;
+    	let t23_value = /*$_*/ ctx[2]("card_5_text") + "";
+    	let t23;
     	let t24;
     	let section5;
     	let div5;
@@ -5994,8 +6041,12 @@ var app = (function () {
     	let img5_src_value;
     	let t25;
     	let h35;
+    	let t26_value = /*$_*/ ctx[2]("card_6_title") + "";
+    	let t26;
     	let t27;
     	let p5;
+    	let t28_value = /*$_*/ ctx[2]("card_6_text") + "";
+    	let t28;
     	let t29;
     	let section6;
     	let div6;
@@ -6003,8 +6054,12 @@ var app = (function () {
     	let img6_src_value;
     	let t30;
     	let h36;
+    	let t31_value = /*$_*/ ctx[2]("card_7_title") + "";
+    	let t31;
     	let t32;
     	let p6;
+    	let t33_value = /*$_*/ ctx[2]("card_7_text") + "";
+    	let t33;
     	let t34;
     	let section7;
     	let div7;
@@ -6012,8 +6067,12 @@ var app = (function () {
     	let img7_src_value;
     	let t35;
     	let h37;
+    	let t36_value = /*$_*/ ctx[2]("card_8_title") + "";
+    	let t36;
     	let t37;
     	let p7;
+    	let t38_value = /*$_*/ ctx[2]("card_8_text") + "";
+    	let t38;
 
     	const block = {
     		c: function create() {
@@ -6023,146 +6082,146 @@ var app = (function () {
     			img0 = element("img");
     			t0 = space();
     			h30 = element("h3");
-    			h30.textContent = "Parroquia San Juan Pablo II";
+    			t1 = text(t1_value);
     			t2 = space();
     			p0 = element("p");
-    			p0.textContent = "Actualmente imparte misas con alta regularidad. De martes a domingo a\n          las 20:00 horas y el Domingo imparte tres misas durante la mañana.\n          Esta parroquia es frecuentada por creyentes haitianos.";
+    			t3 = text(t3_value);
     			t4 = space();
     			section1 = element("section");
     			div1 = element("div");
     			img1 = element("img");
     			t5 = space();
     			h31 = element("h3");
-    			h31.textContent = "Iglesia Evangélica Tabernaclé de la Grace";
+    			t6 = text(t6_value);
     			t7 = space();
     			p1 = element("p");
-    			p1.textContent = "Actualmente es una de los templos más activos y con más asistentes de\n          Quilicura.El templo es principalmente es principalmente utilizado por\n          la comunidad haitiana, impartiendo la oración en Creolé, sin embargo,\n          el acceso es libre. En la iglesia se imparte la oración cada domingo,\n          pero adicionlmente funciona un escuela dominical.";
+    			t8 = text(t8_value);
     			t9 = space();
     			section2 = element("section");
     			div2 = element("div");
     			img2 = element("img");
     			t10 = space();
     			h32 = element("h3");
-    			h32.textContent = "Iglesia Sagrada Familia de Quilicura";
+    			t11 = text(t11_value);
     			t12 = space();
     			p2 = element("p");
-    			p2.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t13 = text(t13_value);
     			t14 = space();
     			section3 = element("section");
     			div3 = element("div");
     			img3 = element("img");
     			t15 = space();
     			h33 = element("h3");
-    			h33.textContent = "Parroquia Nuestra Señora del Carmen";
+    			t16 = text(t16_value);
     			t17 = space();
     			p3 = element("p");
-    			p3.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t18 = text(t18_value);
     			t19 = space();
     			section4 = element("section");
     			div4 = element("div");
     			img4 = element("img");
     			t20 = space();
     			h34 = element("h3");
-    			h34.textContent = "Parroquia San Alberto Hurtado";
+    			t21 = text(t21_value);
     			t22 = space();
     			p4 = element("p");
-    			p4.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t23 = text(t23_value);
     			t24 = space();
     			section5 = element("section");
     			div5 = element("div");
     			img5 = element("img");
     			t25 = space();
     			h35 = element("h3");
-    			h35.textContent = "I. Municipalidad de Quilicura";
+    			t26 = text(t26_value);
     			t27 = space();
     			p5 = element("p");
-    			p5.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t28 = text(t28_value);
     			t29 = space();
     			section6 = element("section");
     			div6 = element("div");
     			img6 = element("img");
     			t30 = space();
     			h36 = element("h3");
-    			h36.textContent = "Cerro Renca";
+    			t31 = text(t31_value);
     			t32 = space();
     			p6 = element("p");
-    			p6.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t33 = text(t33_value);
     			t34 = space();
     			section7 = element("section");
     			div7 = element("div");
     			img7 = element("img");
     			t35 = space();
     			h37 = element("h3");
-    			h37.textContent = "Cementerio Municipal de Quilicura";
+    			t36 = text(t36_value);
     			t37 = space();
     			p7 = element("p");
-    			p7.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate.\n          Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis,\n          laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi.\n          Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus,\n          at rhoncus magna viverra semper.";
+    			t38 = text(t38_value);
     			if (!src_url_equal(img0.src, img0_src_value = "images/card1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Municipalidad");
-    			add_location(img0, file, 262, 8, 7386);
-    			add_location(h30, file, 263, 8, 7445);
-    			add_location(p0, file, 264, 8, 7490);
+    			add_location(img0, file, 208, 8, 4694);
+    			add_location(h30, file, 209, 8, 4753);
+    			add_location(p0, file, 210, 8, 4791);
     			attr_dev(div0, "class", "col-medium card");
-    			add_location(div0, file, 261, 6, 7348);
-    			add_location(section0, file, 260, 4, 7332);
+    			add_location(div0, file, 207, 6, 4656);
+    			add_location(section0, file, 206, 4, 4640);
     			if (!src_url_equal(img1.src, img1_src_value = "images/card2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Parroquia");
-    			add_location(img1, file, 273, 8, 7815);
-    			add_location(h31, file, 274, 8, 7870);
-    			add_location(p1, file, 275, 8, 7929);
+    			add_location(img1, file, 215, 8, 4904);
+    			add_location(h31, file, 216, 8, 4959);
+    			add_location(p1, file, 217, 8, 4997);
     			attr_dev(div1, "class", "col-medium card");
-    			add_location(div1, file, 272, 6, 7777);
-    			add_location(section1, file, 271, 4, 7761);
+    			add_location(div1, file, 214, 6, 4866);
+    			add_location(section1, file, 213, 4, 4850);
     			if (!src_url_equal(img2.src, img2_src_value = "images/card3.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Cementerio");
-    			add_location(img2, file, 286, 8, 8412);
-    			add_location(h32, file, 287, 8, 8468);
-    			add_location(p2, file, 288, 8, 8522);
+    			add_location(img2, file, 222, 8, 5110);
+    			add_location(h32, file, 223, 8, 5166);
+    			add_location(p2, file, 224, 8, 5204);
     			attr_dev(div2, "class", "col-medium card");
-    			add_location(div2, file, 285, 6, 8374);
-    			add_location(section2, file, 284, 4, 8358);
+    			add_location(div2, file, 221, 6, 5072);
+    			add_location(section2, file, 220, 4, 5056);
     			if (!src_url_equal(img3.src, img3_src_value = "images/card4.jpg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Cementerio");
-    			add_location(img3, file, 299, 8, 8986);
-    			add_location(h33, file, 300, 8, 9042);
-    			add_location(p3, file, 301, 8, 9095);
+    			add_location(img3, file, 229, 8, 5317);
+    			add_location(h33, file, 230, 8, 5373);
+    			add_location(p3, file, 231, 8, 5411);
     			attr_dev(div3, "class", "col-medium card");
-    			add_location(div3, file, 298, 6, 8948);
-    			add_location(section3, file, 297, 4, 8932);
+    			add_location(div3, file, 228, 6, 5279);
+    			add_location(section3, file, 227, 4, 5263);
     			if (!src_url_equal(img4.src, img4_src_value = "images/card5.jpg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Cementerio");
-    			add_location(img4, file, 312, 8, 9559);
-    			add_location(h34, file, 313, 8, 9615);
-    			add_location(p4, file, 314, 8, 9662);
+    			add_location(img4, file, 236, 8, 5524);
+    			add_location(h34, file, 237, 8, 5580);
+    			add_location(p4, file, 238, 8, 5618);
     			attr_dev(div4, "class", "col-medium card");
-    			add_location(div4, file, 311, 6, 9521);
-    			add_location(section4, file, 310, 4, 9505);
+    			add_location(div4, file, 235, 6, 5486);
+    			add_location(section4, file, 234, 4, 5470);
     			if (!src_url_equal(img5.src, img5_src_value = "images/card6.jpg")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "Cementerio");
-    			add_location(img5, file, 325, 8, 10126);
-    			add_location(h35, file, 326, 8, 10182);
-    			add_location(p5, file, 327, 8, 10229);
+    			add_location(img5, file, 243, 8, 5731);
+    			add_location(h35, file, 244, 8, 5787);
+    			add_location(p5, file, 245, 8, 5825);
     			attr_dev(div5, "class", "col-medium card");
-    			add_location(div5, file, 324, 6, 10088);
-    			add_location(section5, file, 323, 4, 10072);
+    			add_location(div5, file, 242, 6, 5693);
+    			add_location(section5, file, 241, 4, 5677);
     			if (!src_url_equal(img6.src, img6_src_value = "images/card7.jpg")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Cementerio");
-    			add_location(img6, file, 338, 8, 10693);
-    			add_location(h36, file, 339, 8, 10749);
-    			add_location(p6, file, 340, 8, 10778);
+    			add_location(img6, file, 250, 8, 5938);
+    			add_location(h36, file, 251, 8, 5994);
+    			add_location(p6, file, 252, 8, 6032);
     			attr_dev(div6, "class", "col-medium card");
-    			add_location(div6, file, 337, 6, 10655);
-    			add_location(section6, file, 336, 4, 10639);
+    			add_location(div6, file, 249, 6, 5900);
+    			add_location(section6, file, 248, 4, 5884);
     			if (!src_url_equal(img7.src, img7_src_value = "images/card8.jpg")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Cementerio");
-    			add_location(img7, file, 351, 8, 11242);
-    			add_location(h37, file, 352, 8, 11298);
-    			add_location(p7, file, 353, 8, 11349);
+    			add_location(img7, file, 257, 8, 6145);
+    			add_location(h37, file, 258, 8, 6201);
+    			add_location(p7, file, 259, 8, 6239);
     			attr_dev(div7, "class", "col-medium card");
-    			add_location(div7, file, 350, 6, 11204);
-    			add_location(section7, file, 349, 4, 11188);
+    			add_location(div7, file, 256, 6, 6107);
+    			add_location(section7, file, 255, 4, 6091);
     			attr_dev(div8, "slot", "foreground");
-    			add_location(div8, file, 259, 2, 7304);
+    			add_location(div8, file, 205, 2, 4612);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div8, anchor);
@@ -6171,64 +6230,98 @@ var app = (function () {
     			append_dev(div0, img0);
     			append_dev(div0, t0);
     			append_dev(div0, h30);
+    			append_dev(h30, t1);
     			append_dev(div0, t2);
     			append_dev(div0, p0);
+    			append_dev(p0, t3);
     			append_dev(div8, t4);
     			append_dev(div8, section1);
     			append_dev(section1, div1);
     			append_dev(div1, img1);
     			append_dev(div1, t5);
     			append_dev(div1, h31);
+    			append_dev(h31, t6);
     			append_dev(div1, t7);
     			append_dev(div1, p1);
+    			append_dev(p1, t8);
     			append_dev(div8, t9);
     			append_dev(div8, section2);
     			append_dev(section2, div2);
     			append_dev(div2, img2);
     			append_dev(div2, t10);
     			append_dev(div2, h32);
+    			append_dev(h32, t11);
     			append_dev(div2, t12);
     			append_dev(div2, p2);
+    			append_dev(p2, t13);
     			append_dev(div8, t14);
     			append_dev(div8, section3);
     			append_dev(section3, div3);
     			append_dev(div3, img3);
     			append_dev(div3, t15);
     			append_dev(div3, h33);
+    			append_dev(h33, t16);
     			append_dev(div3, t17);
     			append_dev(div3, p3);
+    			append_dev(p3, t18);
     			append_dev(div8, t19);
     			append_dev(div8, section4);
     			append_dev(section4, div4);
     			append_dev(div4, img4);
     			append_dev(div4, t20);
     			append_dev(div4, h34);
+    			append_dev(h34, t21);
     			append_dev(div4, t22);
     			append_dev(div4, p4);
+    			append_dev(p4, t23);
     			append_dev(div8, t24);
     			append_dev(div8, section5);
     			append_dev(section5, div5);
     			append_dev(div5, img5);
     			append_dev(div5, t25);
     			append_dev(div5, h35);
+    			append_dev(h35, t26);
     			append_dev(div5, t27);
     			append_dev(div5, p5);
+    			append_dev(p5, t28);
     			append_dev(div8, t29);
     			append_dev(div8, section6);
     			append_dev(section6, div6);
     			append_dev(div6, img6);
     			append_dev(div6, t30);
     			append_dev(div6, h36);
+    			append_dev(h36, t31);
     			append_dev(div6, t32);
     			append_dev(div6, p6);
+    			append_dev(p6, t33);
     			append_dev(div8, t34);
     			append_dev(div8, section7);
     			append_dev(section7, div7);
     			append_dev(div7, img7);
     			append_dev(div7, t35);
     			append_dev(div7, h37);
+    			append_dev(h37, t36);
     			append_dev(div7, t37);
     			append_dev(div7, p7);
+    			append_dev(p7, t38);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$_*/ 4 && t1_value !== (t1_value = /*$_*/ ctx[2]("card_1_title") + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*$_*/ 4 && t3_value !== (t3_value = /*$_*/ ctx[2]("card_1_text") + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*$_*/ 4 && t6_value !== (t6_value = /*$_*/ ctx[2]("card_2_title") + "")) set_data_dev(t6, t6_value);
+    			if (dirty & /*$_*/ 4 && t8_value !== (t8_value = /*$_*/ ctx[2]("card_2_text") + "")) set_data_dev(t8, t8_value);
+    			if (dirty & /*$_*/ 4 && t11_value !== (t11_value = /*$_*/ ctx[2]("card_3_title") + "")) set_data_dev(t11, t11_value);
+    			if (dirty & /*$_*/ 4 && t13_value !== (t13_value = /*$_*/ ctx[2]("card_3_text") + "")) set_data_dev(t13, t13_value);
+    			if (dirty & /*$_*/ 4 && t16_value !== (t16_value = /*$_*/ ctx[2]("card_4_title") + "")) set_data_dev(t16, t16_value);
+    			if (dirty & /*$_*/ 4 && t18_value !== (t18_value = /*$_*/ ctx[2]("card_4_text") + "")) set_data_dev(t18, t18_value);
+    			if (dirty & /*$_*/ 4 && t21_value !== (t21_value = /*$_*/ ctx[2]("card_5_title") + "")) set_data_dev(t21, t21_value);
+    			if (dirty & /*$_*/ 4 && t23_value !== (t23_value = /*$_*/ ctx[2]("card_5_text") + "")) set_data_dev(t23, t23_value);
+    			if (dirty & /*$_*/ 4 && t26_value !== (t26_value = /*$_*/ ctx[2]("card_6_title") + "")) set_data_dev(t26, t26_value);
+    			if (dirty & /*$_*/ 4 && t28_value !== (t28_value = /*$_*/ ctx[2]("card_6_text") + "")) set_data_dev(t28, t28_value);
+    			if (dirty & /*$_*/ 4 && t31_value !== (t31_value = /*$_*/ ctx[2]("card_7_title") + "")) set_data_dev(t31, t31_value);
+    			if (dirty & /*$_*/ 4 && t33_value !== (t33_value = /*$_*/ ctx[2]("card_7_text") + "")) set_data_dev(t33, t33_value);
+    			if (dirty & /*$_*/ 4 && t36_value !== (t36_value = /*$_*/ ctx[2]("card_8_title") + "")) set_data_dev(t36, t36_value);
+    			if (dirty & /*$_*/ 4 && t38_value !== (t38_value = /*$_*/ ctx[2]("card_8_text") + "")) set_data_dev(t38, t38_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div8);
@@ -6239,50 +6332,49 @@ var app = (function () {
     		block,
     		id: create_foreground_slot.name,
     		type: "slot",
-    		source: "(260:2) ",
+    		source: "(206:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (391:0) <Section>
+    // (291:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
+    	let t0_value = /*$_*/ ctx[2]("section_4_title") + "";
+    	let t0;
     	let t1;
-    	let p0;
-    	let t3;
-    	let p1;
+    	let html_tag;
+    	let raw_value = /*$_*/ ctx[2]("section_4_text") + "";
+    	let html_anchor;
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
-    			h2.textContent = "Conclusiones";
+    			t0 = text(t0_value);
     			t1 = space();
-    			p0 = element("p");
-    			p0.textContent = "Dentro de los principales hallazgos, encontramos una compleja red de\n    instituciones religiosas interconectas en la comuna de Quilicura que son el\n    soporte de prácticas culturales. La red no sólo se compone de iglesias, sino\n    también de instituciones públicas, como el Municipio de Quilicura, o el\n    cementerio Municipal que permite el desarrollo de ritos como también ayuda a\n    la difusión del sistema de creencias haitiano.";
-    			t3 = space();
-    			p1 = element("p");
-    			p1.textContent = "La red, tiene un peso reconocido a nivel nacional e internacional y está\n    sustenada por párrocos y religosos reconocidos. Es tan graviante el peso de\n    dicha red de instituciones religiosas que atrae feligreses de distintos\n    puntos de la Región Metropolitana.";
-    			add_location(h2, file, 391, 2, 45369);
-    			attr_dev(p0, "class", "mb");
-    			add_location(p0, file, 392, 2, 45393);
-    			attr_dev(p1, "class", "mb");
-    			add_location(p1, file, 400, 2, 45859);
+    			html_tag = new HtmlTag();
+    			html_anchor = empty();
+    			add_location(h2, file, 291, 2, 39086);
+    			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
+    			append_dev(h2, t0);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p1, anchor);
+    			html_tag.m(raw_value, target, anchor);
+    			insert_dev(target, html_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$_*/ 4 && t0_value !== (t0_value = /*$_*/ ctx[2]("section_4_title") + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*$_*/ 4 && raw_value !== (raw_value = /*$_*/ ctx[2]("section_4_text") + "")) html_tag.p(raw_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(html_anchor);
+    			if (detaching) html_tag.d();
     		}
     	};
 
@@ -6290,7 +6382,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(391:0) <Section>",
+    		source: "(291:0) <Section>",
     		ctx
     	});
 
@@ -6327,6 +6419,8 @@ var app = (function () {
     	let t10;
     	let section3;
     	let h2;
+    	let t11_value = /*$_*/ ctx[2]("section_3_title") + "";
+    	let t11;
     	let t12;
     	let div3;
     	let div0;
@@ -6334,24 +6428,36 @@ var app = (function () {
     	let img1_src_value;
     	let t13;
     	let h30;
+    	let t14_value = /*$_*/ ctx[2]("leader_1_name") + "";
+    	let t14;
     	let t15;
     	let p0;
+    	let t16_value = /*$_*/ ctx[2]("leader_1_bio") + "";
+    	let t16;
     	let t17;
     	let div1;
     	let img2;
     	let img2_src_value;
     	let t18;
     	let h31;
+    	let t19_value = /*$_*/ ctx[2]("leader_2_name") + "";
+    	let t19;
     	let t20;
     	let p1;
+    	let t21_value = /*$_*/ ctx[2]("leader_2_bio") + "";
+    	let t21;
     	let t22;
     	let div2;
     	let img3;
     	let img3_src_value;
     	let t23;
     	let h32;
+    	let t24_value = /*$_*/ ctx[2]("leader_3_name") + "";
+    	let t24;
     	let t25;
     	let p2;
+    	let t26_value = /*$_*/ ctx[2]("leader_3_name") + "";
+    	let t26;
     	let t27;
     	let divider2;
     	let t28;
@@ -6438,35 +6544,35 @@ var app = (function () {
     			t10 = space();
     			section3 = element("section");
     			h2 = element("h2");
-    			h2.textContent = "Líderes religiosos";
+    			t11 = text(t11_value);
     			t12 = space();
     			div3 = element("div");
     			div0 = element("div");
     			img1 = element("img");
     			t13 = space();
     			h30 = element("h3");
-    			h30.textContent = "Lider 1";
+    			t14 = text(t14_value);
     			t15 = space();
     			p0 = element("p");
-    			p0.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    			t16 = text(t16_value);
     			t17 = space();
     			div1 = element("div");
     			img2 = element("img");
     			t18 = space();
     			h31 = element("h3");
-    			h31.textContent = "Lider 2";
+    			t19 = text(t19_value);
     			t20 = space();
     			p1 = element("p");
-    			p1.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    			t21 = text(t21_value);
     			t22 = space();
     			div2 = element("div");
     			img3 = element("img");
     			t23 = space();
     			h32 = element("h3");
-    			h32.textContent = "Lider 3";
+    			t24 = text(t24_value);
     			t25 = space();
     			p2 = element("p");
-    			p2.textContent = "Curabitur sit amet tristique ligula. Nam ornare vel leo id vulputate. Praesent varius quis libero sit amet euismod. Suspendisse arcu turpis, laoreet nec finibus vitae, mollis quis arcu. Mauris eu laoreet mi. Cras malesuada quis mi quis aliquet. Vestibulum molestie velit risus, at rhoncus magna viverra semper.";
+    			t26 = text(t26_value);
     			t27 = space();
     			create_component(divider2.$$.fragment);
     			t28 = space();
@@ -6490,32 +6596,32 @@ var app = (function () {
     			add_location(section0, file, 170, 0, 3833);
     			set_style(h2, "position", "absolute");
     			set_style(h2, "z-index", "-1000");
-    			add_location(h2, file, 368, 2, 11828);
+    			add_location(h2, file, 268, 2, 6367);
     			if (!src_url_equal(img1.src, img1_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Lider 1");
-    			add_location(img1, file, 371, 6, 11962);
-    			add_location(h30, file, 372, 6, 22707);
-    			add_location(p0, file, 373, 6, 22730);
+    			add_location(img1, file, 271, 6, 6506);
+    			add_location(h30, file, 272, 6, 17251);
+    			add_location(p0, file, 273, 6, 17288);
     			attr_dev(div0, "class", "card-child");
-    			add_location(div0, file, 370, 4, 11931);
+    			add_location(div0, file, 270, 4, 6475);
     			if (!src_url_equal(img2.src, img2_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Lider 2");
-    			add_location(img2, file, 376, 6, 23094);
-    			add_location(h31, file, 377, 6, 33839);
-    			add_location(p1, file, 378, 6, 33862);
+    			add_location(img2, file, 276, 6, 17362);
+    			add_location(h31, file, 277, 6, 28107);
+    			add_location(p1, file, 278, 6, 28144);
     			attr_dev(div1, "class", "card-child");
-    			add_location(div1, file, 375, 4, 23063);
+    			add_location(div1, file, 275, 4, 17331);
     			if (!src_url_equal(img3.src, img3_src_value = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAH0CAYAAAAT2nuAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABkKADAAQAAAABAAAB9AAAAAB3g75BAAAeuUlEQVR4Ae3dZ28jx9IGUDrnnHPCem0D/uL//xP2k2EbsOFwnXPO+UUJd4TWLEmJtdu7Ve89A6xFSexm8VRjHs4MKV9z4cKFfzc2AgQIECBwoMC1B97f3QkQIECAwJGAALEQCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICUgQFJsBhEgQICAALEGCBAgQCAlIEBSbAYRIECAgACxBggQIEAgJSBAUmwGESBAgIAAsQYIECBAICVwfWqUQa0FHnrooc2tt9569Bz+/fffzQcffLD5559/zvycrr/++qPxN9988yZuX3PNNZs//vjj6N8PP/ywiTkz26x5M7VcyTGLYeYx//zzzzMNm2U7a94zPSl3uuoCAuSqt+DKFnDXXXdtHn/88RMP+vHHH58pQGJnEeHz4IMPbq69dvvB619//bX55ptvNp988snm77//PvE4u76ZNe+ux6v285dffnmn52m1vvnmm5uffvpp591m2c6ad+cT8YuSAgKkZFvmFHXDDTdsnn766dTkN9100+b8+fObmGPfFjuWCJg777xz884772x+++23fXffzJp374MW+mV47grjs5QZR3+7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vNueg5/VExAg9XqiIgIECLQQcA2kRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAgKkRZsUSYAAgXoCAqReT1REgACBFgICpEWbFEmAAIF6AgKkXk9URIAAgRYCAqRFmxRJgACBegICpF5PVESAAIEWAv8HttA74x7SmfMAAAAASUVORK5CYII=")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Lider 3");
-    			add_location(img3, file, 381, 6, 34226);
-    			add_location(h32, file, 382, 6, 44971);
-    			add_location(p2, file, 383, 6, 44994);
+    			add_location(img3, file, 281, 6, 28218);
+    			add_location(h32, file, 282, 6, 38963);
+    			add_location(p2, file, 283, 6, 39000);
     			attr_dev(div2, "class", "card-child");
-    			add_location(div2, file, 380, 4, 34195);
+    			add_location(div2, file, 280, 4, 28187);
     			attr_dev(div3, "class", "card-container");
-    			add_location(div3, file, 369, 2, 11898);
+    			add_location(div3, file, 269, 2, 6442);
     			attr_dev(section3, "class", "col-full centered");
-    			add_location(section3, file, 367, 0, 11790);
+    			add_location(section3, file, 267, 0, 6329);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6546,28 +6652,35 @@ var app = (function () {
     			insert_dev(target, t10, anchor);
     			insert_dev(target, section3, anchor);
     			append_dev(section3, h2);
+    			append_dev(h2, t11);
     			append_dev(section3, t12);
     			append_dev(section3, div3);
     			append_dev(div3, div0);
     			append_dev(div0, img1);
     			append_dev(div0, t13);
     			append_dev(div0, h30);
+    			append_dev(h30, t14);
     			append_dev(div0, t15);
     			append_dev(div0, p0);
+    			append_dev(p0, t16);
     			append_dev(div3, t17);
     			append_dev(div3, div1);
     			append_dev(div1, img2);
     			append_dev(div1, t18);
     			append_dev(div1, h31);
+    			append_dev(h31, t19);
     			append_dev(div1, t20);
     			append_dev(div1, p1);
+    			append_dev(p1, t21);
     			append_dev(div3, t22);
     			append_dev(div3, div2);
     			append_dev(div2, img3);
     			append_dev(div2, t23);
     			append_dev(div2, h32);
+    			append_dev(h32, t24);
     			append_dev(div2, t25);
     			append_dev(div2, p2);
+    			append_dev(p2, t26);
     			insert_dev(target, t27, anchor);
     			mount_component(divider2, target, anchor);
     			insert_dev(target, t28, anchor);
@@ -6588,14 +6701,14 @@ var app = (function () {
     			section1.$set(section1_changes);
     			const section2_changes = {};
 
-    			if (dirty & /*$$scope*/ 512) {
+    			if (dirty & /*$$scope, $_*/ 516) {
     				section2_changes.$$scope = { dirty, ctx };
     			}
 
     			section2.$set(section2_changes);
     			const scroller_changes = {};
 
-    			if (dirty & /*$$scope, map*/ 514) {
+    			if (dirty & /*$$scope, $_, map*/ 518) {
     				scroller_changes.$$scope = { dirty, ctx };
     			}
 
@@ -6606,9 +6719,16 @@ var app = (function () {
     			}
 
     			scroller.$set(scroller_changes);
+    			if ((!current || dirty & /*$_*/ 4) && t11_value !== (t11_value = /*$_*/ ctx[2]("section_3_title") + "")) set_data_dev(t11, t11_value);
+    			if ((!current || dirty & /*$_*/ 4) && t14_value !== (t14_value = /*$_*/ ctx[2]("leader_1_name") + "")) set_data_dev(t14, t14_value);
+    			if ((!current || dirty & /*$_*/ 4) && t16_value !== (t16_value = /*$_*/ ctx[2]("leader_1_bio") + "")) set_data_dev(t16, t16_value);
+    			if ((!current || dirty & /*$_*/ 4) && t19_value !== (t19_value = /*$_*/ ctx[2]("leader_2_name") + "")) set_data_dev(t19, t19_value);
+    			if ((!current || dirty & /*$_*/ 4) && t21_value !== (t21_value = /*$_*/ ctx[2]("leader_2_bio") + "")) set_data_dev(t21, t21_value);
+    			if ((!current || dirty & /*$_*/ 4) && t24_value !== (t24_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t24, t24_value);
+    			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t26, t26_value);
     			const section4_changes = {};
 
-    			if (dirty & /*$$scope*/ 512) {
+    			if (dirty & /*$$scope, $_*/ 516) {
     				section4_changes.$$scope = { dirty, ctx };
     			}
 
