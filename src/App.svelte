@@ -137,39 +137,14 @@
 
 <Section>
   <h2>{$_("section_1_title")}</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget tempor
-    dui. Fusce ipsum arcu, aliquet vitae pellentesque id, aliquet at dui. Nulla
-    bibendum ultrices sapien vel ultricies. Vivamus vestibulum dictum magna, eu
-    eleifend diam gravida vitae. Proin eget imperdiet sapien, et gravida nunc.
-    Aliquam at faucibus eros. Nunc in condimentum odio. Nam nisi turpis, gravida
-    quis viverra non, blandit facilisis nibh. Vestibulum auctor ligula sit amet
-    neque rhoncus luctus sit amet vel urna. Nulla tincidunt ultrices nisi, ac
-    tempus magna iaculis quis. Duis tempor mi sit amet aliquet lobortis. Mauris
-    at ipsum nec leo faucibus bibendum. Aliquam rutrum placerat quam, nec
-    ullamcorper dui pharetra ac. Vivamus nec neque fringilla, aliquet tortor
-    eget, scelerisque dui. Proin non maximus arcu.
-  </p>
-  <p>
-    Donec volutpat ante quis fermentum molestie. Etiam eleifend egestas elit in
-    vehicula. Cras dapibus lorem quis felis imperdiet, eget maximus nisl cursus.
-    In hac habitasse platea dictumst. Donec dapibus luctus mauris venenatis
-    congue. Nullam dapibus sodales laoreet. Proin molestie cursus pellentesque.
-    In hendrerit fringilla tincidunt.
-  </p>
-  <p>
-    Curabitur eleifend lectus ut dolor pellentesque, id sollicitudin odio
-    luctus. Nam ultrices ornare felis, et viverra erat lacinia ac. Ut sit amet
-    dolor a tortor cursus porta. Curabitur accumsan hendrerit turpis ut mattis.
-    In imperdiet purus vitae erat molestie laoreet. Pellentesque a turpis id
-    nisl pharetra dictum non vitae elit. Maecenas vel metus gravida, ullamcorper
-    velit vehicula, molestie leo. Aliquam in ex in erat semper facilisis. Nunc
-    varius, ante sit amet gravida porttitor, lorem leo maximus nulla, eu viverra
-    lorem metus in lectus. Morbi lacinia at risus a maximus. Nulla dapibus,
-    nulla sed bibendum blandit, leo dui imperdiet ligula, ut efficitur purus
-    urna vel orci. Phasellus ante tellus, efficitur eu tellus non, euismod
-    congue est. Nullam vel dolor eu magna finibus pharetra vel in nunc.
-  </p>
+  <p>En el desarrollo del proyecto hemos denominado “pilares” a las instituciones religiosas que forman parte del sistema de creencias haitiano hasta el día de hoy.</p>
+  <p>El primer pilar identificado corresponde al catolisimo. Siendo cronológicamente la religión más antigua adoptada, ocurrida durante la colonización por parte de los franceses, que permanecieron poco más de un siglo.</p>
+  <p>El segundo pilar, corresponde al vudú, traído por esclavos originarios del Golfo de Guinea, en África. Siendo el vudú parte del sistema de creencias de toda la población esclavizada.</p>
+  <p>Y finalmente, el tercer pilar que corresponde a las iglesias protestantes, las cuales tienen una influencia mucho más trardía, en conjunto con la ocupación de Estados Unidos a comienzos del siglo XXI.</p>
+  <p>También hubo ocurrió un evento socio-natural que aceleró la asimilación de la religión y que corresponde al destructivo terremoto del 12 de enero de 2010 que permitió la llegada de gran cantidad de organizaciones de beneficencia que llegaron a prestar ayuda a la devastada sociedad haitiana.</p>
+  <p>Hoy en día, el catolicismo es la religión maayoritaria y muchos de sus fieles practican también, de manera sincrética, el Vudú. Por otro lado, cerca del 35% de la población haitiana es fiel a una iglesia evangélica.</p>
+  <p>Hemos podido constatar, que el sistema de creencias haitiano, fundamentado en los tres pilares anteriormente descritos, después de enfretar un proyecto migratorio, como el descrito hacia Chile, permanece intacto. </p>
+  <p>Particularmente, hemos evidenciado que el sector norte de Santiago y la comuna de Quilicura son espacios dónde es factibile desarrollar el sistema de creencias haitiano y que se sustenta en la presencia de 8 instituciones señaladas en la cartografía a continuación.</p>
 </Section>
 
 <Divider />
