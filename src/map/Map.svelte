@@ -5,16 +5,15 @@
 	export let map;
 	export let id = "map";
 	export let location = {
-		bounds: [
-		[-70.74942, -33.35468],
-		[-70.74942, -33.35468],
-		], // First
+		lon: -70.74942, 
+		lat: -33.35468,
+		zoom: 15
 	};
 	export let style;
 	export let interactive = true;
 	export let minzoom = 0;
-	export let maxzoom = 13;
-	export let zoom = null;
+	export let maxzoom = 15;
+	export let zoom = 15;
 
 	let container;
 	let w;

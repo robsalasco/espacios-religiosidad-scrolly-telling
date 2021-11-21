@@ -38,38 +38,14 @@
   // Config
   const mapstyle = "mapbox://styles/robsalasco/ckvuzcvvf05k014qa4om6ldop";
   const mapbounds = {
-    one: [
-      [-70.74942, -33.35468],
-      [-70.74942, -33.35468],
-    ],
-    two: [
-      [-70.7611, -33.3631],
-      [-70.7611, -33.3631],
-    ],
-    three: [
-      [-70.7363, -33.37752],
-      [-70.7363, -33.37752],
-    ],
-    four: [
-      [-70.74917, -33.36477],
-      [-70.74917, -33.36477],
-    ],
-    five: [
-      [-70.72975, -33.36544],
-      [-70.72975, -33.36544],
-    ],
-    six: [
-      [-70.71925, -33.36972],
-      [-70.71925, -33.36972],
-    ],
-    seven: [
-      [-70.7412, -33.38473],
-      [-70.7412, -33.38473],
-    ],
-    eight: [
-      [-70.73216, -33.36904],
-      [-70.73216, -33.36904],
-    ],
+    one: [-70.74942, -33.35468],
+    two: [-70.7611, -33.3631],
+    three: [-70.74917, -33.36477],
+    four: [-70.72975, -33.36544],
+    five: [-70.71925, -33.36972],
+    six: [-70.73216, -33.36904],
+    seven: [-70.7363, -33.37752],
+    eight: [-70.7412, -33.38473]
   };
   // State
   let map = null;
@@ -84,7 +60,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.one, { animate: animation });
+      map.flyTo({center: mapbounds.one, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -94,7 +70,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.two, { animate: animation });
+      map.flyTo({center: mapbounds.two, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -104,7 +80,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.three, { animate: animation });
+      map.flyTo({center: mapbounds.three, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -114,7 +90,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.four, { animate: animation });
+      map.flyTo({center: mapbounds.four, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -124,7 +100,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.five, { animate: animation });
+      map.flyTo({center: mapbounds.five, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -134,7 +110,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.six, { animate: animation });
+      map.flyTo({center: mapbounds.six, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -144,7 +120,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.seven, { animate: animation });
+      map.flyTo({center: mapbounds.seven, zoom: 15});
     },
     () => {
       map.setPaintProperty("puntos-blxqan", "circle-color", [
@@ -154,7 +130,7 @@
         "red",
         "grey",
       ]);
-      map.fitBounds(mapbounds.eight, { animate: animation });
+      map.flyTo({center: mapbounds.eight, zoom: 15});
     },
   ];
 
