@@ -182,56 +182,56 @@
   <div slot="foreground">
     <section>
       <div class="col-medium card">
-        <img src="images/card1.jpg" alt="Municipalidad" />
+        <img src="images/card1.jpg" alt="Parroquia San Juan Pablo II" />
         <h3>{$_("card_1_title")}</h3>
         <p>{$_("card_1_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card2.jpg" alt="Parroquia" />
+        <img src="images/card2.jpg" alt="Iglesia Evangélica Tabernaclé de la Grace" />
         <h3>{$_("card_2_title")}</h3>
         <p>{$_("card_2_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card3.jpg" alt="Cementerio" />
+        <img src="images/card3.jpg" alt="Iglesia Sagrada Familia de Quilicura" />
         <h3>{$_("card_3_title")}</h3>
         <p>{$_("card_3_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card4.jpg" alt="Cementerio" />
+        <img src="images/card4.jpg" alt="Parroquia Nuestra Señora del Carmen" />
         <h3>{$_("card_4_title")}</h3>
         <p>{$_("card_4_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card5.jpg" alt="Cementerio" />
+        <img src="images/card5.jpg" alt="Parroquia San Alberto Hurtado" />
         <h3>{$_("card_5_title")}</h3>
         <p>{$_("card_5_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card6.jpg" alt="Cementerio" />
+        <img src="images/card6.jpg" alt="I. Municipalidad de Quilicura" />
         <h3>{$_("card_6_title")}</h3>
         <p>{$_("card_6_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card7.jpg" alt="Cementerio" />
+        <img src="images/card7.jpg" alt="Cerro Renca" />
         <h3>{$_("card_7_title")}</h3>
         <p>{$_("card_7_text")}</p>
       </div>
     </section>
     <section>
       <div class="col-medium card">
-        <img src="images/card8.jpg" alt="Cementerio" />
+        <img src="images/card8.jpg" alt="Cementerio Municipal de Quilicura" />
         <h3>{$_("card_8_title")}</h3>
         <p>{$_("card_8_text")}</p>
       </div>
