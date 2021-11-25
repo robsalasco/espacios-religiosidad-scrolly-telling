@@ -267,9 +267,16 @@
 
 <Divider />
 
+<section class="col-full centered">
+  <h2>Investigadores</h2>
+  <p></p>
+</section>
+
+<Divider />
+
 <Section>
   <h2>{$_("section_4_title")}</h2>
   {@html $_("section_4_text")}
 </Section>
 
-<Footer />
+<Footer text={$_("footer_text")} />

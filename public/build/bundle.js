@@ -5643,6 +5643,9 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let footer;
     	let div1;
+    	let p;
+    	let t0;
+    	let t1;
     	let div0;
     	let img;
     	let img_src_value;
@@ -5651,17 +5654,22 @@ var app = (function () {
     		c: function create() {
     			footer = element("footer");
     			div1 = element("div");
+    			p = element("p");
+    			t0 = text(/*text*/ ctx[0]);
+    			t1 = space();
     			div0 = element("div");
     			img = element("img");
+    			set_style(p, "font-size", "12px");
+    			add_location(p, file$1, 6, 4, 76);
     			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logos");
-    			add_location(img, file$1, 3, 6, 84);
+    			add_location(img, file$1, 8, 6, 164);
     			set_style(div0, "height", "125px");
     			set_style(div0, "width", "80%");
-    			add_location(div0, file$1, 2, 4, 37);
+    			add_location(div0, file$1, 7, 4, 117);
     			attr_dev(div1, "class", "wrapper");
-    			add_location(div1, file$1, 1, 2, 11);
-    			add_location(footer, file$1, 0, 0, 0);
+    			add_location(div1, file$1, 5, 2, 50);
+    			add_location(footer, file$1, 4, 0, 39);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5669,10 +5677,15 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, footer, anchor);
     			append_dev(footer, div1);
+    			append_dev(div1, p);
+    			append_dev(p, t0);
+    			append_dev(div1, t1);
     			append_dev(div1, div0);
     			append_dev(div0, img);
     		},
-    		p: noop,
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*text*/ 1) set_data_dev(t0, /*text*/ ctx[0]);
+    		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
@@ -5691,22 +5704,37 @@ var app = (function () {
     	return block;
     }
 
-    function instance$1($$self, $$props) {
+    function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Footer', slots, []);
-    	const writable_props = [];
+    	let { text } = $$props;
+    	const writable_props = ['text'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Footer> was created with unknown prop '${key}'`);
     	});
 
-    	return [];
+    	$$self.$$set = $$props => {
+    		if ('text' in $$props) $$invalidate(0, text = $$props.text);
+    	};
+
+    	$$self.$capture_state = () => ({ text });
+
+    	$$self.$inject_state = $$props => {
+    		if ('text' in $$props) $$invalidate(0, text = $$props.text);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [text];
     }
 
     class Footer extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { text: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -5714,6 +5742,21 @@ var app = (function () {
     			options,
     			id: create_fragment$1.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*text*/ ctx[0] === undefined && !('text' in props)) {
+    			console.warn("<Footer> was created without expected prop 'text'");
+    		}
+    	}
+
+    	get text() {
+    		throw new Error("<Footer>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set text(value) {
+    		throw new Error("<Footer>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
@@ -5751,6 +5794,7 @@ var app = (function () {
     var leader_3_bio$1 = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
     var section_4_title$1 = "Conclusiones";
     var section_4_text$1 = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
+    var footer_text$1 = "Espacios de religiosidad e Identidad haitiana en el sector norte de Santiago - Folio: 592285 ​Fondart Regional / Culturas Migrantes";
     var es = {
     	app_title: app_title$1,
     	app_subtitle: app_subtitle$1,
@@ -5785,7 +5829,8 @@ var app = (function () {
     	leader_3_title: leader_3_title$1,
     	leader_3_bio: leader_3_bio$1,
     	section_4_title: section_4_title$1,
-    	section_4_text: section_4_text$1
+    	section_4_text: section_4_text$1,
+    	footer_text: footer_text$1
     };
 
     var app_title = "Espas relijye ak idantite ayisyen";
@@ -5822,6 +5867,7 @@ var app = (function () {
     var leader_3_bio = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
     var section_4_title = "Konklizyon";
     var section_4_text = "<p>Nan prensipal dekouvèt nou,nou rankontre yon komplèks rezo enstitisyon relijyez ki entèkonekte nan komin Quilicura a ki sipòte pratik sosyo kiltirèl ayisyèn nan.</p><p>Rezo a genyen yon enpòtans nan nivo nasyonal ak entènasyonal e li jwenn sipò prèt ak relijyez ki trè rekonèt.rezo entistisyon sa telman empòtan ke li atire fidèl nan diferan pwen nan rejyon metwopilitèn nan ki vin konvèti komin Quilicura a kòm yon pilye nan kolektivite ayisyen an.</p>";
+    var footer_text = "Espas relijye ak idantite ayisyen nan sektè nò Santiago - Folio: 592285 Fondart Regional / Culturas Migrantes. Yon Pwojè ki finanse pa FONDART RM ( rejyon metropolitèn), konvokatwa 2021.";
     var ht = {
     	app_title: app_title,
     	app_subtitle: app_subtitle,
@@ -5856,7 +5902,8 @@ var app = (function () {
     	leader_3_title: leader_3_title,
     	leader_3_bio: leader_3_bio,
     	section_4_title: section_4_title,
-    	section_4_text: section_4_text
+    	section_4_text: section_4_text,
+    	footer_text: footer_text
     };
 
     /* src/App.svelte generated by Svelte v3.42.1 */
@@ -6408,7 +6455,7 @@ var app = (function () {
     	return block;
     }
 
-    // (270:0) <Section>
+    // (277:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t0_value = /*$_*/ ctx[2]("section_4_title") + "";
@@ -6425,7 +6472,7 @@ var app = (function () {
     			t1 = space();
     			html_tag = new HtmlTag();
     			html_anchor = empty();
-    			add_location(h2, file, 270, 2, 6884);
+    			add_location(h2, file, 277, 2, 6981);
     			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
@@ -6451,7 +6498,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(270:0) <Section>",
+    		source: "(277:0) <Section>",
     		ctx
     	});
 
@@ -6487,7 +6534,7 @@ var app = (function () {
     	let divider1;
     	let t10;
     	let section3;
-    	let h2;
+    	let h20;
     	let t11_value = /*$_*/ ctx[2]("section_3_title") + "";
     	let t11;
     	let t12;
@@ -6543,7 +6590,14 @@ var app = (function () {
     	let divider2;
     	let t31;
     	let section4;
-    	let t32;
+    	let h21;
+    	let t33;
+    	let p;
+    	let t34;
+    	let divider3;
+    	let t35;
+    	let section5;
+    	let t36;
     	let footer;
     	let current;
     	header = new Header({ $$inline: true });
@@ -6587,8 +6641,9 @@ var app = (function () {
     	binding_callbacks.push(() => bind(scroller, 'index', scroller_index_binding));
     	divider1 = new Divider({ $$inline: true });
     	divider2 = new Divider({ $$inline: true });
+    	divider3 = new Divider({ $$inline: true });
 
-    	section4 = new Section({
+    	section5 = new Section({
     			props: {
     				$$slots: { default: [create_default_slot] },
     				$$scope: { ctx }
@@ -6596,7 +6651,10 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	footer = new Footer({ $$inline: true });
+    	footer = new Footer({
+    			props: { text: /*$_*/ ctx[2]("footer_text") },
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
@@ -6624,7 +6682,7 @@ var app = (function () {
     			create_component(divider1.$$.fragment);
     			t10 = space();
     			section3 = element("section");
-    			h2 = element("h2");
+    			h20 = element("h2");
     			t11 = text(t11_value);
     			t12 = space();
     			div3 = element("div");
@@ -6663,8 +6721,16 @@ var app = (function () {
     			t30 = space();
     			create_component(divider2.$$.fragment);
     			t31 = space();
-    			create_component(section4.$$.fragment);
-    			t32 = space();
+    			section4 = element("section");
+    			h21 = element("h2");
+    			h21.textContent = "Investigadores";
+    			t33 = space();
+    			p = element("p");
+    			t34 = space();
+    			create_component(divider3.$$.fragment);
+    			t35 = space();
+    			create_component(section5.$$.fragment);
+    			t36 = space();
     			create_component(footer.$$.fragment);
     			if (!src_url_equal(img0.src, img0_src_value = "images/image1.jpeg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Imagen");
@@ -6681,9 +6747,9 @@ var app = (function () {
     			set_style(section0, "margin-top", "180px");
     			set_style(section0, "position", "relative");
     			add_location(section0, file, 146, 0, 3412);
-    			set_style(h2, "position", "absolute");
-    			set_style(h2, "z-index", "-1000");
-    			add_location(h2, file, 244, 2, 6095);
+    			set_style(h20, "position", "absolute");
+    			set_style(h20, "z-index", "-1000");
+    			add_location(h20, file, 244, 2, 6095);
     			if (!src_url_equal(img1.src, img1_src_value = "images/leader1.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", img1_alt_value = /*$_*/ ctx[2]("leader_1_name"));
     			add_location(img1, file, 247, 6, 6234);
@@ -6712,6 +6778,10 @@ var app = (function () {
     			add_location(div3, file, 245, 2, 6170);
     			attr_dev(section3, "class", "col-full centered");
     			add_location(section3, file, 243, 0, 6057);
+    			add_location(h21, file, 270, 2, 6910);
+    			add_location(p, file, 271, 2, 6936);
+    			attr_dev(section4, "class", "col-full centered");
+    			add_location(section4, file, 269, 0, 6872);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6741,8 +6811,8 @@ var app = (function () {
     			mount_component(divider1, target, anchor);
     			insert_dev(target, t10, anchor);
     			insert_dev(target, section3, anchor);
-    			append_dev(section3, h2);
-    			append_dev(h2, t11);
+    			append_dev(section3, h20);
+    			append_dev(h20, t11);
     			append_dev(section3, t12);
     			append_dev(section3, div3);
     			append_dev(div3, div0);
@@ -6780,8 +6850,15 @@ var app = (function () {
     			insert_dev(target, t30, anchor);
     			mount_component(divider2, target, anchor);
     			insert_dev(target, t31, anchor);
-    			mount_component(section4, target, anchor);
-    			insert_dev(target, t32, anchor);
+    			insert_dev(target, section4, anchor);
+    			append_dev(section4, h21);
+    			append_dev(section4, t33);
+    			append_dev(section4, p);
+    			insert_dev(target, t34, anchor);
+    			mount_component(divider3, target, anchor);
+    			insert_dev(target, t35, anchor);
+    			mount_component(section5, target, anchor);
+    			insert_dev(target, t36, anchor);
     			mount_component(footer, target, anchor);
     			current = true;
     		},
@@ -6840,13 +6917,16 @@ var app = (function () {
     			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t26, t26_value);
     			if ((!current || dirty & /*$_*/ 4) && t28_value !== (t28_value = /*$_*/ ctx[2]("leader_3_title") + "")) set_data_dev(t28, t28_value);
     			if ((!current || dirty & /*$_*/ 4) && raw2_value !== (raw2_value = /*$_*/ ctx[2]("leader_3_bio") + "")) html_tag_2.p(raw2_value);
-    			const section4_changes = {};
+    			const section5_changes = {};
 
     			if (dirty & /*$$scope, $_*/ 516) {
-    				section4_changes.$$scope = { dirty, ctx };
+    				section5_changes.$$scope = { dirty, ctx };
     			}
 
-    			section4.$set(section4_changes);
+    			section5.$set(section5_changes);
+    			const footer_changes = {};
+    			if (dirty & /*$_*/ 4) footer_changes.text = /*$_*/ ctx[2]("footer_text");
+    			footer.$set(footer_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -6857,7 +6937,8 @@ var app = (function () {
     			transition_in(scroller.$$.fragment, local);
     			transition_in(divider1.$$.fragment, local);
     			transition_in(divider2.$$.fragment, local);
-    			transition_in(section4.$$.fragment, local);
+    			transition_in(divider3.$$.fragment, local);
+    			transition_in(section5.$$.fragment, local);
     			transition_in(footer.$$.fragment, local);
     			current = true;
     		},
@@ -6869,7 +6950,8 @@ var app = (function () {
     			transition_out(scroller.$$.fragment, local);
     			transition_out(divider1.$$.fragment, local);
     			transition_out(divider2.$$.fragment, local);
-    			transition_out(section4.$$.fragment, local);
+    			transition_out(divider3.$$.fragment, local);
+    			transition_out(section5.$$.fragment, local);
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -6892,8 +6974,12 @@ var app = (function () {
     			if (detaching) detach_dev(t30);
     			destroy_component(divider2, detaching);
     			if (detaching) detach_dev(t31);
-    			destroy_component(section4, detaching);
-    			if (detaching) detach_dev(t32);
+    			if (detaching) detach_dev(section4);
+    			if (detaching) detach_dev(t34);
+    			destroy_component(divider3, detaching);
+    			if (detaching) detach_dev(t35);
+    			destroy_component(section5, detaching);
+    			if (detaching) detach_dev(t36);
     			destroy_component(footer, detaching);
     		}
     	};
