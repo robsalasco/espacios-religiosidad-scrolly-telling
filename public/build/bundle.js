@@ -5660,13 +5660,15 @@ var app = (function () {
     			div0 = element("div");
     			img = element("img");
     			set_style(p, "font-size", "12px");
+    			set_style(p, "width", "80%");
+    			set_style(p, "text-align", "center");
     			add_location(p, file$1, 6, 4, 76);
     			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logos");
-    			add_location(img, file$1, 8, 6, 164);
+    			add_location(img, file$1, 8, 6, 193);
     			set_style(div0, "height", "125px");
     			set_style(div0, "width", "80%");
-    			add_location(div0, file$1, 7, 4, 117);
+    			add_location(div0, file$1, 7, 4, 146);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 5, 2, 50);
     			add_location(footer, file$1, 4, 0, 39);
