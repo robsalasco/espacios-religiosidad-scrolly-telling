@@ -268,15 +268,22 @@
 <Divider />
 
 <section class="col-full centered">
-  <h2>Investigadores</h2>
-  <p></p>
+  <h2 style="position:absolute;z-index:-1000">{$_("section_4_title")}</h2>
+  <div class="card-container">
+    <div class="card-child">
+      <img src="images/researcher1.jpg" alt="investigador" />
+      <h3>{$_("researcher_1_name")}</h3>
+      <h4>{$_("researcher_1_title")}</h4>
+      {@html $_("researcher_1_bio")}
+    </div>
+  </div>
 </section>
 
 <Divider />
 
 <Section>
-  <h2>{$_("section_4_title")}</h2>
-  {@html $_("section_4_text")}
+  <h2>{$_("section_5_title")}</h2>
+  {@html $_("section_5_text")}
 </Section>
 
 <Footer text={$_("footer_text")} />

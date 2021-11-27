@@ -5667,7 +5667,7 @@ var app = (function () {
     			attr_dev(img, "alt", "Logos");
     			add_location(img, file$1, 8, 6, 193);
     			set_style(div0, "height", "125px");
-    			set_style(div0, "width", "80%");
+    			set_style(div0, "width", "90%");
     			add_location(div0, file$1, 7, 4, 146);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 5, 2, 50);
@@ -5794,8 +5794,12 @@ var app = (function () {
     var leader_3_name$1 = "Padre Lucas";
     var leader_3_title$1 = "Parroquia Juan Pablo II";
     var leader_3_bio$1 = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
-    var section_4_title$1 = "Conclusiones";
-    var section_4_text$1 = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
+    var section_4_title$1 = "Investigadores";
+    var researcher_1_name$1 = "Gabriel Abarca Brown";
+    var researcher_1_title$1 = "Investigador postdoctoral de la Universidad de Copenhague e investigador adjunto de la Universidad Diego Portales";
+    var researcher_1_bio$1 = "<p>Gabriel es psicólogo clínico y doctor en Antropología del King's College London. Su trabajo se focaliza en las intersecciones entre las disciplinas ”psi”, la salud mental global, la subjetividad y la vida cotidiana. Particularmente se centra en comprender las múltiples interacciones entre las tecnologías ”psi” y los diferentes sistemas de conocimientos, prácticas y valores en salud en contextos transculturales, destacando cuestiones  raciales, de clase y de género desde un enfoque decolonial e interdisciplinario. Esto lo llevó a trabajar con migrantes haitianos y dominicanos en Chile, y a explorar las negociaciones entre biomedicina, psiquiatría, religión y medicina haitiano-creole.</p><p>“…Para entender bien el vudú no hay que ubicarlo en el lugar de la creencia, porque no se trata de que si tú crees o no crees…el vudú es una cosmovisión que está encarnada en los sujetos… es una manera de entender el cuerpo, la vida, la persona…”</p>";
+    var section_5_title$1 = "Conclusiones";
+    var section_5_text$1 = "<p>Dentro de los principales hallazgos, encontramos una compleja red de instituciones religiosas interconectas en la comuna de Quilicura que son el soporte de las prácticas socio-culturales haitianas.</p><p>La red no sólo se compone de iglesias, sino también de instituciones públicas, como el Municipio de Quilicura, o el cementerio Municipal que permiten el desarrollo de ritos y actividades, como también prestan ayuda a la difusión del sistema de creencias. A pesar de aquello el vudú, sigue siendo la menos visibilizada.</p><p class='mb'>La red, tiene un importante peso a nivel nacional e internacional y está sustentada por párrocos y religiosos reconocidos. Es tan gravitante dicha red de instituciones que atraen feligreses de distintos puntos de la Región Metropolitana, convirtiendo a la comuna de Quilicura en un pívot para el colectivo haitiano.</p>";
     var footer_text$1 = "Espacios de religiosidad e Identidad haitiana en el sector norte de Santiago - Folio: 592285 ​Fondart Regional / Culturas Migrantes";
     var es = {
     	app_title: app_title$1,
@@ -5831,7 +5835,11 @@ var app = (function () {
     	leader_3_title: leader_3_title$1,
     	leader_3_bio: leader_3_bio$1,
     	section_4_title: section_4_title$1,
-    	section_4_text: section_4_text$1,
+    	researcher_1_name: researcher_1_name$1,
+    	researcher_1_title: researcher_1_title$1,
+    	researcher_1_bio: researcher_1_bio$1,
+    	section_5_title: section_5_title$1,
+    	section_5_text: section_5_text$1,
     	footer_text: footer_text$1
     };
 
@@ -5867,8 +5875,12 @@ var app = (function () {
     var leader_3_name = "Padre Lucas";
     var leader_3_title = "Parroquia Juan Pablo II";
     var leader_3_bio = "<p>Es un imporantante miembro para la comunidad católica. Su nombre es Luc Yamb y es conocido popularmente como Padre Lucas. Su aporte en la difusión del catoliscimo en Chile es invaluable, desde impartir misas en diversas instancias, generar espacios digitales para la difusión de la fe, hasta vincularse con la Universidad Católica para la formación de profesionales.</p>";
-    var section_4_title = "Konklizyon";
-    var section_4_text = "<p>Nan prensipal dekouvèt nou,nou rankontre yon komplèks rezo enstitisyon relijyez ki entèkonekte nan komin Quilicura a ki sipòte pratik sosyo kiltirèl ayisyèn nan.</p><p>Rezo a genyen yon enpòtans nan nivo nasyonal ak entènasyonal e li jwenn sipò prèt ak relijyez ki trè rekonèt.rezo entistisyon sa telman empòtan ke li atire fidèl nan diferan pwen nan rejyon metwopilitèn nan ki vin konvèti komin Quilicura a kòm yon pilye nan kolektivite ayisyen an.</p>";
+    var section_4_title = "Investigadores";
+    var researcher_1_name = "Gabriel Abarca Brown";
+    var researcher_1_title = "Investigador postdoctoral de la Universidad de Copenhague e investigador adjunto de la Universidad Diego Portales";
+    var researcher_1_bio = "<p>Gabriel es psicólogo clínico y doctor en Antropología del King's College London. Su trabajo se focaliza en las intersecciones entre las disciplinas ”psi”, la salud mental global, la subjetividad y la vida cotidiana. Particularmente se centra en comprender las múltiples interacciones entre las tecnologías ”psi” y los diferentes sistemas de conocimientos, prácticas y valores en salud en contextos transculturales, destacando cuestiones  raciales, de clase y de género desde un enfoque decolonial e interdisciplinario. Esto lo llevó a trabajar con migrantes haitianos y dominicanos en Chile, y a explorar las negociaciones entre biomedicina, psiquiatría, religión y medicina haitiano-creole.</p><p>“…Para entender bien el vudú no hay que ubicarlo en el lugar de la creencia, porque no se trata de que si tú crees o no crees…el vudú es una cosmovisión que está encarnada en los sujetos… es una manera de entender el cuerpo, la vida, la persona…”</p>";
+    var section_5_title = "Konklizyon";
+    var section_5_text = "<p>Nan prensipal dekouvèt nou,nou rankontre yon komplèks rezo enstitisyon relijyez ki entèkonekte nan komin Quilicura a ki sipòte pratik sosyo kiltirèl ayisyèn nan.</p><p>Rezo a genyen yon enpòtans nan nivo nasyonal ak entènasyonal e li jwenn sipò prèt ak relijyez ki trè rekonèt.rezo entistisyon sa telman empòtan ke li atire fidèl nan diferan pwen nan rejyon metwopilitèn nan ki vin konvèti komin Quilicura a kòm yon pilye nan kolektivite ayisyen an.</p>";
     var footer_text = "Espas relijye ak idantite ayisyen nan sektè nò Santiago - Folio: 592285 Fondart Regional / Culturas Migrantes. Yon Pwojè ki finanse pa FONDART RM ( rejyon metropolitèn), konvokatwa 2021.";
     var ht = {
     	app_title: app_title,
@@ -5904,7 +5916,11 @@ var app = (function () {
     	leader_3_title: leader_3_title,
     	leader_3_bio: leader_3_bio,
     	section_4_title: section_4_title,
-    	section_4_text: section_4_text,
+    	researcher_1_name: researcher_1_name,
+    	researcher_1_title: researcher_1_title,
+    	researcher_1_bio: researcher_1_bio,
+    	section_5_title: section_5_title,
+    	section_5_text: section_5_text,
     	footer_text: footer_text
     };
 
@@ -6457,14 +6473,14 @@ var app = (function () {
     	return block;
     }
 
-    // (277:0) <Section>
+    // (284:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
-    	let t0_value = /*$_*/ ctx[2]("section_4_title") + "";
+    	let t0_value = /*$_*/ ctx[2]("section_5_title") + "";
     	let t0;
     	let t1;
     	let html_tag;
-    	let raw_value = /*$_*/ ctx[2]("section_4_text") + "";
+    	let raw_value = /*$_*/ ctx[2]("section_5_text") + "";
     	let html_anchor;
 
     	const block = {
@@ -6474,7 +6490,7 @@ var app = (function () {
     			t1 = space();
     			html_tag = new HtmlTag();
     			html_anchor = empty();
-    			add_location(h2, file, 277, 2, 6981);
+    			add_location(h2, file, 284, 2, 7282);
     			html_tag.a = html_anchor;
     		},
     		m: function mount(target, anchor) {
@@ -6485,8 +6501,8 @@ var app = (function () {
     			insert_dev(target, html_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$_*/ 4 && t0_value !== (t0_value = /*$_*/ ctx[2]("section_4_title") + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*$_*/ 4 && raw_value !== (raw_value = /*$_*/ ctx[2]("section_4_text") + "")) html_tag.p(raw_value);
+    			if (dirty & /*$_*/ 4 && t0_value !== (t0_value = /*$_*/ ctx[2]("section_5_title") + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*$_*/ 4 && raw_value !== (raw_value = /*$_*/ ctx[2]("section_5_text") + "")) html_tag.p(raw_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
@@ -6500,7 +6516,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(277:0) <Section>",
+    		source: "(284:0) <Section>",
     		ctx
     	});
 
@@ -6593,13 +6609,29 @@ var app = (function () {
     	let t31;
     	let section4;
     	let h21;
+    	let t32_value = /*$_*/ ctx[2]("section_4_title") + "";
+    	let t32;
     	let t33;
-    	let p;
+    	let div5;
+    	let div4;
+    	let img4;
+    	let img4_src_value;
     	let t34;
-    	let divider3;
+    	let h33;
+    	let t35_value = /*$_*/ ctx[2]("researcher_1_name") + "";
     	let t35;
-    	let section5;
     	let t36;
+    	let h43;
+    	let t37_value = /*$_*/ ctx[2]("researcher_1_title") + "";
+    	let t37;
+    	let t38;
+    	let html_tag_3;
+    	let raw3_value = /*$_*/ ctx[2]("researcher_1_bio") + "";
+    	let t39;
+    	let divider3;
+    	let t40;
+    	let section5;
+    	let t41;
     	let footer;
     	let current;
     	header = new Header({ $$inline: true });
@@ -6725,14 +6757,24 @@ var app = (function () {
     			t31 = space();
     			section4 = element("section");
     			h21 = element("h2");
-    			h21.textContent = "Investigadores";
+    			t32 = text(t32_value);
     			t33 = space();
-    			p = element("p");
+    			div5 = element("div");
+    			div4 = element("div");
+    			img4 = element("img");
     			t34 = space();
-    			create_component(divider3.$$.fragment);
-    			t35 = space();
-    			create_component(section5.$$.fragment);
+    			h33 = element("h3");
+    			t35 = text(t35_value);
     			t36 = space();
+    			h43 = element("h4");
+    			t37 = text(t37_value);
+    			t38 = space();
+    			html_tag_3 = new HtmlTag();
+    			t39 = space();
+    			create_component(divider3.$$.fragment);
+    			t40 = space();
+    			create_component(section5.$$.fragment);
+    			t41 = space();
     			create_component(footer.$$.fragment);
     			if (!src_url_equal(img0.src, img0_src_value = "images/image1.jpeg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Imagen");
@@ -6780,8 +6822,19 @@ var app = (function () {
     			add_location(div3, file, 245, 2, 6170);
     			attr_dev(section3, "class", "col-full centered");
     			add_location(section3, file, 243, 0, 6057);
+    			set_style(h21, "position", "absolute");
+    			set_style(h21, "z-index", "-1000");
     			add_location(h21, file, 270, 2, 6910);
-    			add_location(p, file, 271, 2, 6936);
+    			if (!src_url_equal(img4.src, img4_src_value = "images/researcher1.jpg")) attr_dev(img4, "src", img4_src_value);
+    			attr_dev(img4, "alt", "investigador");
+    			add_location(img4, file, 273, 6, 7049);
+    			add_location(h33, file, 274, 6, 7111);
+    			add_location(h43, file, 275, 6, 7152);
+    			html_tag_3.a = null;
+    			attr_dev(div4, "class", "card-child");
+    			add_location(div4, file, 272, 4, 7018);
+    			attr_dev(div5, "class", "card-container");
+    			add_location(div5, file, 271, 2, 6985);
     			attr_dev(section4, "class", "col-full centered");
     			add_location(section4, file, 269, 0, 6872);
     		},
@@ -6854,13 +6907,24 @@ var app = (function () {
     			insert_dev(target, t31, anchor);
     			insert_dev(target, section4, anchor);
     			append_dev(section4, h21);
+    			append_dev(h21, t32);
     			append_dev(section4, t33);
-    			append_dev(section4, p);
-    			insert_dev(target, t34, anchor);
+    			append_dev(section4, div5);
+    			append_dev(div5, div4);
+    			append_dev(div4, img4);
+    			append_dev(div4, t34);
+    			append_dev(div4, h33);
+    			append_dev(h33, t35);
+    			append_dev(div4, t36);
+    			append_dev(div4, h43);
+    			append_dev(h43, t37);
+    			append_dev(div4, t38);
+    			html_tag_3.m(raw3_value, div4);
+    			insert_dev(target, t39, anchor);
     			mount_component(divider3, target, anchor);
-    			insert_dev(target, t35, anchor);
+    			insert_dev(target, t40, anchor);
     			mount_component(section5, target, anchor);
-    			insert_dev(target, t36, anchor);
+    			insert_dev(target, t41, anchor);
     			mount_component(footer, target, anchor);
     			current = true;
     		},
@@ -6919,6 +6983,10 @@ var app = (function () {
     			if ((!current || dirty & /*$_*/ 4) && t26_value !== (t26_value = /*$_*/ ctx[2]("leader_3_name") + "")) set_data_dev(t26, t26_value);
     			if ((!current || dirty & /*$_*/ 4) && t28_value !== (t28_value = /*$_*/ ctx[2]("leader_3_title") + "")) set_data_dev(t28, t28_value);
     			if ((!current || dirty & /*$_*/ 4) && raw2_value !== (raw2_value = /*$_*/ ctx[2]("leader_3_bio") + "")) html_tag_2.p(raw2_value);
+    			if ((!current || dirty & /*$_*/ 4) && t32_value !== (t32_value = /*$_*/ ctx[2]("section_4_title") + "")) set_data_dev(t32, t32_value);
+    			if ((!current || dirty & /*$_*/ 4) && t35_value !== (t35_value = /*$_*/ ctx[2]("researcher_1_name") + "")) set_data_dev(t35, t35_value);
+    			if ((!current || dirty & /*$_*/ 4) && t37_value !== (t37_value = /*$_*/ ctx[2]("researcher_1_title") + "")) set_data_dev(t37, t37_value);
+    			if ((!current || dirty & /*$_*/ 4) && raw3_value !== (raw3_value = /*$_*/ ctx[2]("researcher_1_bio") + "")) html_tag_3.p(raw3_value);
     			const section5_changes = {};
 
     			if (dirty & /*$$scope, $_*/ 516) {
@@ -6977,11 +7045,11 @@ var app = (function () {
     			destroy_component(divider2, detaching);
     			if (detaching) detach_dev(t31);
     			if (detaching) detach_dev(section4);
-    			if (detaching) detach_dev(t34);
+    			if (detaching) detach_dev(t39);
     			destroy_component(divider3, detaching);
-    			if (detaching) detach_dev(t35);
+    			if (detaching) detach_dev(t40);
     			destroy_component(section5, detaching);
-    			if (detaching) detach_dev(t36);
+    			if (detaching) detach_dev(t41);
     			destroy_component(footer, detaching);
     		}
     	};
