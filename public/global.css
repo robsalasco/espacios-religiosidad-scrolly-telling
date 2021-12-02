@@ -19,6 +19,8 @@ body {
     font-style: normal;
 	line-height: 1.5;
 	word-wrap: break-word;
+	background-image: url("images/pattern.svg");
+	background-repeat: repeat;
 }
 
 /* COMPONENTS */
@@ -79,6 +81,8 @@ header .wrapper {
 	align-items: center;
 	flex-direction: column;
 	background-color: white;
+	background-image: url("images/pattern.svg");
+
 }
 
 footer .wrapper {
@@ -421,6 +425,7 @@ svelte-scroller-background-container {
 	max-width: 300px;
 	font-size: 12px;
 	margin:10px;
+	background-color: white;
 }
 
 .card-child p {

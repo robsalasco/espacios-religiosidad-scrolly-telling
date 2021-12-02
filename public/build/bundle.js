@@ -5643,32 +5643,34 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let footer;
     	let div1;
-    	let p;
-    	let t0;
-    	let t1;
     	let div0;
     	let img;
     	let img_src_value;
+    	let t0;
+    	let p;
+    	let t1;
 
     	const block = {
     		c: function create() {
     			footer = element("footer");
     			div1 = element("div");
-    			p = element("p");
-    			t0 = text(/*text*/ ctx[0]);
-    			t1 = space();
     			div0 = element("div");
     			img = element("img");
+    			t0 = space();
+    			p = element("p");
+    			t1 = text(/*text*/ ctx[0]);
+    			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Logos");
+    			add_location(img, file$1, 7, 6, 123);
+    			set_style(div0, "height", "125px");
+    			set_style(div0, "width", "90%");
+    			add_location(div0, file$1, 6, 4, 76);
     			set_style(p, "font-size", "12px");
     			set_style(p, "width", "80%");
     			set_style(p, "text-align", "center");
-    			add_location(p, file$1, 6, 4, 76);
-    			if (!src_url_equal(img.src, img_src_value = "images/footer-logos.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Logos");
-    			add_location(img, file$1, 8, 6, 193);
-    			set_style(div0, "height", "125px");
-    			set_style(div0, "width", "90%");
-    			add_location(div0, file$1, 7, 4, 146);
+    			set_style(p, "margin-top", "40px");
+    			set_style(p, "margin-bottom", "40px");
+    			add_location(p, file$1, 9, 4, 187);
     			attr_dev(div1, "class", "wrapper");
     			add_location(div1, file$1, 5, 2, 50);
     			add_location(footer, file$1, 4, 0, 39);
@@ -5679,14 +5681,14 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, footer, anchor);
     			append_dev(footer, div1);
-    			append_dev(div1, p);
-    			append_dev(p, t0);
-    			append_dev(div1, t1);
     			append_dev(div1, div0);
     			append_dev(div0, img);
+    			append_dev(div1, t0);
+    			append_dev(div1, p);
+    			append_dev(p, t1);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*text*/ 1) set_data_dev(t0, /*text*/ ctx[0]);
+    			if (dirty & /*text*/ 1) set_data_dev(t1, /*text*/ ctx[0]);
     		},
     		i: noop,
     		o: noop,
