@@ -19,8 +19,12 @@ body {
     font-style: normal;
 	line-height: 1.5;
 	word-wrap: break-word;
+}
+
+section {
 	background-image: url("images/pattern.svg");
 	background-repeat: repeat;
+	background-size: 3%;
 }
 
 /* COMPONENTS */
@@ -81,8 +85,6 @@ header .wrapper {
 	align-items: center;
 	flex-direction: column;
 	background-color: white;
-	background-image: url("images/pattern.svg");
-
 }
 
 footer .wrapper {
@@ -99,9 +101,6 @@ section, nav, footer, figure, caption {
 	display: flex;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	margin: 0;
 	padding: 0;
 	z-index: -10;
