@@ -49,6 +49,8 @@
 				maxZoom: maxzoom,
 				interactive: interactive,
 				...options,
+				bearing: 0,
+				pitch: 90
 			});
 
 			// Get initial zoom level
