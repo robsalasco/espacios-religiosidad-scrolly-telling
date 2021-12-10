@@ -7073,7 +7073,7 @@ var app = (function () {
 
     // MAP CODE
     // Config
-    const mapstyle = "mapbox://styles/robsalasco/ckvuzcvvf05k014qa4om6ldop";
+    const mapstyle = "mapbox://styles/robsalasco/ckwzw1phw1nqb14muwcvs0ddo";
 
     function instance($$self, $$props, $$invalidate) {
     	let $_;

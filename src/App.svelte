@@ -36,7 +36,7 @@
 
   // MAP CODE
   // Config
-  const mapstyle = "mapbox://styles/robsalasco/ckvuzcvvf05k014qa4om6ldop";
+  const mapstyle = "mapbox://styles/robsalasco/ckwzw1phw1nqb14muwcvs0ddo";
   const mapbounds = {
     one: [-70.74942, -33.35468],
     two: [-70.7611, -33.3631],
